@@ -1,0 +1,57 @@
+  <div class="card">
+    <div class="card-header">
+        Dynamic Form Array
+    </div>
+    <div class="card-body">
+        <form [formGroup]="addForm">
+            <div formArrayName="rows">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ingredient Name</th>
+                  <th>Unit Price</th>
+                  <th>Quantity</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of addForm.controls.rows.controls; let i = index" [formGroupName]="i">
+                  <td>          
+                    <div class="form-group row">
+                      <div class="col-sm-12">
+                        <select (change)="onSelectIngredient($event,i)" class="form-control" formControlName="ingredient_id">
+                          <option value="null" hidden>-- Select Ingredient --</option>
+                          <option *ngFor="let ingredient of ingredients"  [value]="ingredient.id">
+                            {{ingredient.name}}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </td>
+                  <td>          
+                    <div class="form-group row">
+                      <div class="col-sm-12">
+                        <input type="number" class="form-control" placeholder="Unit Price" formControlName="unit_price">
+          
+                      </div>
+                    </div>
+                  </td>
+                  <td>          
+                    <div class="form-group row">
+                      <div class="col-sm-12">
+                        <input type="number" class="form-control" placeholder="Quantity" formControlName="quantity">
+          
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-square btn-danger btn-sm waves-effect waves-light"  (click)="onDeleteRow(i)" [disabled]="addForm.controls.rows.controls.length === 1"> <i class="icofont icofont-ui-delete"></i> Remove</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-square btn-primary btn-sm waves-effect waves-light" (click)="initGroup()" [disabled]="addForm.invalid"> <i class="icofont icofont-ui-delete"></i> Add Row</button>
+          </div>
+          </form>
+    </div>
+</div>
