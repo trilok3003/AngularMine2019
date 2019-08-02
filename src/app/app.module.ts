@@ -9,13 +9,17 @@ import { GroupDataComponent } from './compoents/group-data/group-data.component'
 import { DyanamicFormComponent } from './compoents/dyanamic-form/dyanamic-form.component';
 import { from } from 'rxjs';
 import { NavbarComponent } from './compoents/navbar/navbar.component';
+import { GroupByPipe } from './pipes/group-by.pipe';
+import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/group-by-pipe-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GroupDataComponent,
     DyanamicFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    GroupByPipe,
+    GroupByPipeExampleComponent
   ],
   imports: [
     BrowserModule,
