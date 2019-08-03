@@ -20,6 +20,7 @@ export class DatepickerComponent implements OnInit {
   pick;
   time;
   day;
+  totalDays;
   @Input()  label:  string = 'Date';
   @Input()  value:  string;
   @Output() update: EventEmitter<string> = new EventEmitter<string>();
@@ -31,6 +32,7 @@ export class DatepickerComponent implements OnInit {
     this.date1 = this.date.getDate();
     this.day = this.date.getDay();
     this.time = this.date.getTime();
+    this.totalDays =  new Date(this.year, this.month, 0).getDate(); 
   }
   onPick() {
     this.update.emit(this.pick)
@@ -41,7 +43,35 @@ export class DatepickerComponent implements OnInit {
    return this.date1
    }
    if(row !==0) {
-   return this.date1 + num +1
+  return this.date1 + num +1
    }
   }
+  formatDate(date){
+    var dd = date.getDate();
+    var mm = date.getMonth()+1;
+    var yyyy = date.getFullYear();
+    if(dd<10) {dd='0'+dd}
+    if(mm<10) {mm='0'+mm}
+    date = mm+'/'+dd+'/'+yyyy;
+    return date
+ }
+ Last7Days () {
+  var result = [];
+  for (var i=0; i<7; i++) {
+      var d = new Date();
+      d.setDate(d.getDate() - i);
+      result.push( this.formatDate(d) )
+  }
+
+  return(result.join(','));
+}
+// Last7DaysByOtherMethod () {
+//   return '0123456'.split('').map((n) => {
+//       var d = new Date();
+//       d.setDate(d.getDate() - n);
+//       return ((day, month, year) => {
+//           return [day<10 ? '0'+day : day, month<10 ? '0'+month : month, year].join('/');
+//       })(d.getDate(), d.getMonth(), d.getFullYear());
+//   }).join(',');
+// }
 }
