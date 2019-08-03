@@ -11,6 +11,7 @@ import { from } from 'rxjs';
 import { NavbarComponent } from './compoents/navbar/navbar.component';
 import { GroupByPipe } from './pipes/group-by.pipe';
 import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/group-by-pipe-example.component';
+import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-example/behaviour-subject-example.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/g
     DyanamicFormComponent,
     NavbarComponent,
     GroupByPipe,
-    GroupByPipeExampleComponent
+    GroupByPipeExampleComponent,
+    BehaviourSubjectExampleComponent
   ],
   imports: [
     BrowserModule,
