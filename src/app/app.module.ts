@@ -15,6 +15,7 @@ import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-
 import { DatepickerComponent } from './compoents/datepicker/datepicker.component';
 import { CustomComponent } from './compoents/custom/custom.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CustomDirective } from './directives/custom.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     BehaviourSubjectExampleComponent,
     DatepickerComponent,
     CustomComponent,
-    FilterPipe
+    FilterPipe,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
