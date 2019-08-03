@@ -14,6 +14,7 @@ import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/g
 import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-example/behaviour-subject-example.component';
 import { DatepickerComponent } from './compoents/datepicker/datepicker.component';
 import { CustomComponent } from './compoents/custom/custom.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CustomComponent } from './compoents/custom/custom.component';
     GroupByPipeExampleComponent,
     BehaviourSubjectExampleComponent,
     DatepickerComponent,
-    CustomComponent
+    CustomComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

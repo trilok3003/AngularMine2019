@@ -9,3 +9,17 @@
             </pre>
     </div>
 </div>
+
+<div class="card mt-2">
+    <div class="card-header">
+       Filter pipe
+    </div>
+    <div class="card-body">
+        <input [(ngModel)]="searchText" placeholder="search text goes here" class="form-control">
+        <ul class="list-group">
+          <li *ngFor="let c of characters | filter : searchText" class="list-group-item">
+            {{c}}
+          </li>
+        </ul>
+    </div>
+</div>

@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomComponent implements OnInit {
   date: string;
+  characters = [
+    'Finn the human',
+    'Jake the dog',
+    'Princess bubblegum',
+    'Lumpy Space Princess',
+    'Beemo1',
+    'Beemo2'
+  ]
   constructor() { }
 
   ngOnInit() {
