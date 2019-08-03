@@ -12,6 +12,8 @@ import { NavbarComponent } from './compoents/navbar/navbar.component';
 import { GroupByPipe } from './pipes/group-by.pipe';
 import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/group-by-pipe-example.component';
 import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-example/behaviour-subject-example.component';
+import { DatepickerComponent } from './compoents/datepicker/datepicker.component';
+import { CustomComponent } from './compoents/custom/custom.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-
     NavbarComponent,
     GroupByPipe,
     GroupByPipeExampleComponent,
-    BehaviourSubjectExampleComponent
+    BehaviourSubjectExampleComponent,
+    DatepickerComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
