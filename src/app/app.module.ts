@@ -16,6 +16,7 @@ import { DatepickerComponent } from './compoents/datepicker/datepicker.component
 import { CustomComponent } from './compoents/custom/custom.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CustomDirective } from './directives/custom.directive';
+import { TimeFormatPipe } from './pipes/time-format.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CustomDirective } from './directives/custom.directive';
     DatepickerComponent,
     CustomComponent,
     FilterPipe,
-    CustomDirective
+    CustomDirective,
+    TimeFormatPipe
   ],
   imports: [
     BrowserModule,
