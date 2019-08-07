@@ -43,3 +43,34 @@
     <p>Time Format From  24 to 12 : {{'23:11:00' | timeFormat}}</p>
   </div>
 </div>
+
+
+<div class="card mt-2">
+  <div class="card-header">
+     Filter key Pipe
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="4">Search :
+            <input type="text" [(ngModel)]="queryString">
+          </th>
+        </tr>
+        <tr>
+          <th style="width:40px;max-width:40px;">#</th>
+          <th style="width:60px;max-width:100px;">Name</th>
+          <th style="width:60px;max-width:50px;">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ex of  listofstudent| filterBykey: queryString : 'name' ; let i = index ">
+          <td>{{i+1}}</td>
+          <td>{{ex.name}}</td>
+          <td>{{ex.age}}</td>
+        </tr>
+      </tbody>
+     
+    </table>
+  </div>
+</div>
