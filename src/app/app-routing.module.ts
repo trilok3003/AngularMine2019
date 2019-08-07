@@ -5,6 +5,7 @@ import { DyanamicFormComponent } from './compoents/dyanamic-form/dyanamic-form.c
 import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/group-by-pipe-example.component';
 import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-example/behaviour-subject-example.component';
 import { CustomComponent } from './compoents/custom/custom.component';
+import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'dynamic_form',component:DyanamicFormComponent},
   {path: 'group_by_pipe',component: GroupByPipeExampleComponent},
   {path:'behaviour',component:BehaviourSubjectExampleComponent},
-  {path:'custom',component:CustomComponent}  
+  {path:'custom',component:CustomComponent},
+  {path:'search',component:SearchAutoCompleteComponent} 
 ];
 
 @NgModule({

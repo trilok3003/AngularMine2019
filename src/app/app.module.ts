@@ -17,6 +17,8 @@ import { CustomComponent } from './compoents/custom/custom.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CustomDirective } from './directives/custom.directive';
 import { TimeFormatPipe } from './pipes/time-format.pipe';
+import { SearchPipe } from './pipes/search.pipe';
+import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TimeFormatPipe } from './pipes/time-format.pipe';
     CustomComponent,
     FilterPipe,
     CustomDirective,
-    TimeFormatPipe
+    TimeFormatPipe,
+    SearchPipe,
+    SearchAutoCompleteComponent
   ],
   imports: [
     BrowserModule,
