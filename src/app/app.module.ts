@@ -20,6 +20,7 @@ import { TimeFormatPipe } from './pipes/time-format.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 import { FilterBykeyPipe } from './pipes/filter-bykey.pipe';
+import { TodoComponent } from './compoents/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FilterBykeyPipe } from './pipes/filter-bykey.pipe';
     TimeFormatPipe,
     SearchPipe,
     SearchAutoCompleteComponent,
-    FilterBykeyPipe
+    FilterBykeyPipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

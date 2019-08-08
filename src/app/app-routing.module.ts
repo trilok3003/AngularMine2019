@@ -6,6 +6,7 @@ import { GroupByPipeExampleComponent } from './compoents/group-by-pipe-example/g
 import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-example/behaviour-subject-example.component';
 import { CustomComponent } from './compoents/custom/custom.component';
 import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
+import { TodoComponent } from './compoents/todo/todo.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'group_by_pipe',component: GroupByPipeExampleComponent},
   {path:'behaviour',component:BehaviourSubjectExampleComponent},
   {path:'custom',component:CustomComponent},
-  {path:'search',component:SearchAutoCompleteComponent} 
+  {path:'search',component:SearchAutoCompleteComponent},
+  {path:'todo',component:TodoComponent}
 ];
 
 @NgModule({
