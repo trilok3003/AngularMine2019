@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, Subject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +16,9 @@ export class SharedService {
    add1(data) {
     this.bSubject1.next(data);
   }
+  getVehicles(){
+   // return Observable.interval(2200).map(i=> [{name: 'car 1'},{name: 'car 2'}])
+    return of([{name: 'car 1'},{name: 'car 2'}])
+}
 
 }

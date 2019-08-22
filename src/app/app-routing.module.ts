@@ -7,6 +7,7 @@ import { BehaviourSubjectExampleComponent } from './compoents/behaviour-subject-
 import { CustomComponent } from './compoents/custom/custom.component';
 import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 import { TodoComponent } from './compoents/todo/todo.component';
+import { TestComponent } from './compoents/test/test.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'behaviour',component:BehaviourSubjectExampleComponent},
   {path:'custom',component:CustomComponent},
   {path:'search',component:SearchAutoCompleteComponent},
-  {path:'todo',component:TodoComponent}
+  {path:'todo',component:TodoComponent},
+  {path:'test', component: TestComponent}
 ];
 
 @NgModule({

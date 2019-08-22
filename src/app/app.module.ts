@@ -21,6 +21,7 @@ import { SearchPipe } from './pipes/search.pipe';
 import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 import { FilterBykeyPipe } from './pipes/filter-bykey.pipe';
 import { TodoComponent } from './compoents/todo/todo.component';
+import { TestComponent } from './compoents/test/test.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { TodoComponent } from './compoents/todo/todo.component';
     SearchPipe,
     SearchAutoCompleteComponent,
     FilterBykeyPipe,
-    TodoComponent
+    TodoComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
