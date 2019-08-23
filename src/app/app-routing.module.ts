@@ -8,6 +8,7 @@ import { CustomComponent } from './compoents/custom/custom.component';
 import { SearchAutoCompleteComponent } from './compoents/search-auto-complete/search-auto-complete.component';
 import { TodoComponent } from './compoents/todo/todo.component';
 import { TestComponent } from './compoents/test/test.component';
+import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operators.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'custom',component:CustomComponent},
   {path:'search',component:SearchAutoCompleteComponent},
   {path:'todo',component:TodoComponent},
-  {path:'test', component: TestComponent}
+  {path:'test', component: TestComponent},
+  {path:'operators', component: RxjsOperatorsComponent}
 ];
 
 @NgModule({
