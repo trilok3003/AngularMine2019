@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        Todo 
+    </div>
+    <div class="card-body">
+            <form (submit)="addTodo($event)">
+        <div class="form-group">
+
+                <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="form-control" name="newTodo">
+                </div>
+                <button type="submit" [disabled]="newTodo===''" class="btn btn-primary btn-sm">Add Todo</button>
+            </form>
+            <div [hidden]="newTodo">
+                    Type in a new todo...
+                </div>
+            
+                <div [hidden]="!newTodo">
+                    <!-- Another two-way binding example -->
+                    Typing: {{ newTodo }}
+                </div>
+                <ul class="list-group">
+                        <li *ngFor="let todo of todos; let i=index" class="list-group-item">
+                            <input type="checkbox" class="checkbox mr-4" [(ngModel)]="todo.completed" />
+                            <span [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
+                                <span (click)="deleteTodo(i)" class="btn btn-danger btn-sm ml-4">[X]</span>
+                        </li>
+                    </ul>
+        <button (click)="deleteSelectedTodos()" class="btn btn-danger btn-sm mt-4">Delete Selected</button>
+
+       
+    </div>
+</div>
+

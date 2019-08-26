@@ -1,0 +1,101 @@
+<h2>Rxjs Oprators:</h2>
+<div class="card">
+    <div class="card-header">
+ Using of
+    </div>
+    <div class="card-body">
+        <p *ngFor="let num of ofNumbers">{{num}}</p>  
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+Using async
+    </div>
+    <div class="card-body">
+        <p *ngFor="let student of getStudentNames() | async">{{student}}</p>  
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using map 
+    </div>
+    <div class="card-body">
+        <ul>
+            <li *ngFor="let name of stdNames$ | async" >
+              {{name}}
+            </li>
+          </ul>  
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using map without async
+    </div>
+    <div class="card-body">
+        <ul>
+            <li *ngFor="let name of names" >
+              {{name}}
+            </li>
+          </ul>  
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using filter, map and scan
+    </div>
+    <div class="card-body">
+        {{result}} 
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using map and catchError
+    </div>
+    <div class="card-body">
+        <b>Country Name</b>
+        <div *ngIf="countryName$ | async as myCountryName">
+          {{myCountryName}} 
+        </div>
+        
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using retry, map and catchError
+    </div>
+    <div class="card-body">
+        <b>Country States</b>
+        <ul>
+          <li *ngFor="let state of countryStates" >
+            {{state}}
+          </li>
+        </ul>
+        
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Using Map
+    </div>
+    <div class="card-body">
+       <b>Update City</b>
+{{updateCities}}
+    </div>
+</div>
+<div class="card">
+    <div class="card-header" id="my-element">
+        Using from Event
+    </div>
+    <div class="card-body">
+      
+    </div>
+</div>
+<div class="card">
+    <div class="card-header" id="my-element">
+        Using map, filter, debounceTime, distinctUntilChanged, switchMap using ajax,fromEvent
+    </div>
+    <div class="card-body">
+       <input class="form-control" id="search-box">
+    </div>
+</div>
+

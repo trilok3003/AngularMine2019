@@ -1,0 +1,76 @@
+<div class="card">
+    <div class="card-header">
+        Date Picker
+    </div>
+    <div class="card-body">
+            <app-datepicker  value="2019-08-03" label="Estimated Date" (update)="onDateUpdate($event)"></app-datepicker>
+            <pre>
+              Selected date {{ date }}
+            </pre>
+    </div>
+</div>
+
+<div class="card mt-2">
+    <div class="card-header">
+       Filter pipe
+    </div>
+    <div class="card-body">
+        <input [(ngModel)]="searchText" placeholder="search text goes here" class="form-control">
+        <ul class="list-group">
+          <li *ngFor="let c of characters | filter : searchText" class="list-group-item">
+            {{c}}
+          </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card mt-2">
+    <div class="card-header">
+       Custom Directive
+    </div>
+    <div class="card-body">
+        <h3 [appCustom]="'red'" [color]="'white'">Hello</h3>
+    </div>
+</div>
+
+
+<div class="card mt-2">
+  <div class="card-header">
+     Time Format Pipe
+  </div>
+  <div class="card-body">
+    <p>Time Format From  24 to 12 : {{'23:11:00' | timeFormat}}</p>
+  </div>
+</div>
+
+
+<div class="card mt-2">
+  <div class="card-header">
+     Filter key Pipe
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="4">Search :
+            <input type="text" [(ngModel)]="queryString">
+          </th>
+        </tr>
+        <tr>
+          <th style="width:40px;max-width:40px;">#</th>
+          <th style="width:60px;max-width:100px;">Name</th>
+          <th style="width:60px;max-width:50px;">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ex of  listofstudent| filterBykey: queryString : 'name' ; let i = index ">
+          <td>{{i+1}}</td>
+          <td>{{ex.name}}</td>
+          <td>{{ex.age}}</td>
+        </tr>
+      </tbody>
+     
+    </table>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">
+        With Out Group By
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li *ngFor="let object of myArray" class="list-group-item">
+                {{object.name}}
+                {{object.color}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="card mt-4">
+    <div class="card-header">
+        Group By
+    </div>
+    <div class="card-body">
+
+        <ul class="list-group">
+            <li *ngFor="let object of myArray | groupBy:'color'" class="list-group-item"> {{ object.key }}
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let val of object.value">
+                        {{val.name}}
+                        {{val.color}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

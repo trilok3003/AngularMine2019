@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">
+        With out Group Data
+    </div>
+    <div class="card-body">
+        <table class="table table-sm">
+            <tr>
+                <th>State</th>
+                <th>County</th>
+                <th>Item</th>
+            </tr>
+            <ng-container *ngFor="let dataitem of data">
+                <tr>
+                    <td>{{dataitem.state}}</td>
+                    <td>{{dataitem.county}}</td>
+                    <td>{{dataitem.item}}</td>
+                </tr>
+            </ng-container>
+        </table>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header">
+        With Group Data
+    </div>
+    <div class="card-body">
+        <table class="table table-sm">
+            <tr>
+                <th>State</th>
+                <th>County</th>
+                <th>Item</th>
+            </tr>
+            <ng-container *ngFor="let dataitem of data;let i=index">
+                <tr>
+                    <td>{{i>0 && data[i-1].state==dataitem.state?'':dataitem.state}}</td>
+                    <td>{{i>0 && data[i-1].county==dataitem.county?'':dataitem.county}}</td>
+                    <td>{{dataitem.item}}</td>
+                </tr>
+            </ng-container>
+        </table>
+    </div>
+</div>
