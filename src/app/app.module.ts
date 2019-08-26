@@ -26,6 +26,8 @@ import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operator
 import { CompoentsComponent } from './compoents/compoents.component';
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,12 +52,14 @@ import { DialogComponent } from './dialog/dialog.component';
     CompoentsComponent,
     RxjsOperators2Component,
     DialogComponent,
+    SubjectExampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject, Observable } from 'rxjs';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-custom',
@@ -23,12 +25,38 @@ listofstudent = [
   {id:"5", name:"jeniffer",age:"30"},
   {id:"6", name:"limbuk",age:"22"}];
   queryString;
-  constructor() { }
+   customer = {
+    "id": 1,
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "name@email.com",
+    "phone": "(387) 592-6773",
+    "city": "City",
+    "country": "Country",
+    "title": "Title"
+  }
+  constructor(public api:ApiService) { }
 
   ngOnInit() {
+      this.api.getCustomers().subscribe((res)=>{
+        console.log(res);
+      }); 
+      this.api.getCustomerById(1).subscribe((res)=>{
+        console.log(res);
+      }); 
+//     this.api.createCustomer(this.customer).subscribe((res)=>{
+//       console.log("Created a customer");
+// }, err=> console.log(err));
+// this.api.updateCustomer(this.customer).subscribe((res)=>{
+//   console.log("Updated the customer");
+// });
+// this.api.deleteContact(1).subscribe((res)=>{
+//   console.log("Deleted a customer");
+// });
   }
   onDateUpdate(date: string): void {
     this.date = date;
   }
+ 
 
 }

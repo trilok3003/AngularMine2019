@@ -30,5 +30,16 @@ getStdNames(): Observable<string> {
 getCountry(): Observable<Country> {
   return of(new Country());
 }
+// subject example
+private subject = new Subject();
+sendMessage(msg: string) {
+  this.subject.next({text:msg});
+}
+clearMessage() {
+  this.subject.next();
+}
+getMessage(): Observable<any> {
+  return this.subject.asObservable();
+}
 
 }

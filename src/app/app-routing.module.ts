@@ -10,6 +10,7 @@ import { TodoComponent } from './compoents/todo/todo.component';
 import { TestComponent } from './compoents/test/test.component';
 import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operators.component';
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
+import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'todo',component:TodoComponent},
   {path:'test', component: TestComponent},
   {path:'operators', component: RxjsOperatorsComponent},
-  {path: 'rxjs', component: RxjsOperators2Component}
+  {path: 'rxjs', component: RxjsOperators2Component},
+  {path:'subject', component: SubjectExampleComponent}
 ];
 
 @NgModule({
