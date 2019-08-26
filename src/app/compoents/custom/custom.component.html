@@ -74,3 +74,17 @@
     </table>
   </div>
 </div>
+
+<div class="card mt-2">
+  <div class="card-header">
+     Pop Dialog
+  </div>
+  <div class="card-body">
+    <button (click)="showDialog = !showDialog" class="btn">Open</button>
+
+    <app-dialog [(visible)]="showDialog">
+      <h1>Hello World</h1>
+      <button (click)="showDialog = !showDialog" class="btn">Close</button>
+    </app-dialog>
+  </div>
+</div>

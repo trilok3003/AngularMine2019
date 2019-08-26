@@ -23,6 +23,9 @@ import { FilterBykeyPipe } from './pipes/filter-bykey.pipe';
 import { TodoComponent } from './compoents/todo/todo.component';
 import { TestComponent } from './compoents/test/test.component';
 import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operators.component';
+import { CompoentsComponent } from './compoents/compoents.component';
+import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operator
     TodoComponent,
     TestComponent,
     RxjsOperatorsComponent,
+    CompoentsComponent,
+    RxjsOperators2Component,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-header">Rxjs operators examples</div>
+    <div class="card-body">
+          <div class="row">
+                <div class="col-md-6">
+                        <h3>Search Dog</h3>
+                    <form [formGroup]="dogsForm">
+                      ID: <input formControlName="dogId">
+                    </form>
+                    <br/>
+                    <div *ngIf="dog">
+                      Id: {{dog.id}}, Name: {{dog.name}}
+                    </div>
+                <h3>Total Dogs : {{ this.dogCount | async }}</h3>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let dog of dogs1 |async" (click)="changeDog(dog)">
+                        {{dog.name}}
+                        <img src="../../../assets/{{dog.url}}" width="100px" height="100px">
+                    </li>
+                </ul>
+                   </div>
+                   <div class="col-md-6">
+                       <h2>Current Dog</h2>
+                       <div *ngIf="currentDog |async">
+                           {{(currentDog | async)?.name}}
+                        <img src="../../../assets/{{(currentDog | async)?.url}}" width="100px" height="100px">
+        
+                       </div>
+                   </div>
+          </div>
+        <h3>Total Cats : {{ this.catCount | async }}</h3>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let cat of cats1 ">
+                {{cat.name}}
+                <img src="../../../assets/{{cat.url}}" width="100px" height="100px">
+            </li>
+        </ul>
+    </div>
+</div>
