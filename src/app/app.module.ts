@@ -28,6 +28,8 @@ import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operat
 import { DialogComponent } from './dialog/dialog.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
+
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import {HttpClientModule} from '@angular/common/http';
     RxjsOperators2Component,
     DialogComponent,
     SubjectExampleComponent,
+    AsyncPipeComponent,
   ],
   imports: [
     BrowserModule,

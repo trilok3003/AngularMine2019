@@ -1,0 +1,18 @@
+<div class="jumbotron">
+    <div>
+        <code>promise|async</code>: 
+        <button (click)="clicked()">{{ arrived ? 'Reset' : 'Resolve' }}</button>
+        <span>Wait for it... {{ greeting | async }}</span>
+      </div>
+</div>
+<div class="jumbotron">
+    <div><code>observable|async</code>: Time: {{ time | async }}</div>
+</div>
+<div class="jumbotron">
+    <div><code>observable|async</code>: Square: {{ observableData | async }}</div>
+</div>
+<div class="jumbotron">
+ <code>observable|async</code>: 
+ <h2 *ngIf="!countCompleted">{{ count$ | async }}</h2>
+<h2 *ngIf="countCompleted">{{ message }}</h2>   
+</div>

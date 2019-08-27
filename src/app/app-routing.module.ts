@@ -11,6 +11,7 @@ import { TestComponent } from './compoents/test/test.component';
 import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operators.component';
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
+import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'test', component: TestComponent},
   {path:'operators', component: RxjsOperatorsComponent},
   {path: 'rxjs', component: RxjsOperators2Component},
-  {path:'subject', component: SubjectExampleComponent}
+  {path:'subject', component: SubjectExampleComponent},
+  {path: 'async', component: AsyncPipeComponent}
 ];
 
 @NgModule({
