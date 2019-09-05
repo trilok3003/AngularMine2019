@@ -12,6 +12,7 @@ import { RxjsOperatorsComponent } from './compoents/rxjs-operators/rxjs-operator
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
+import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'operators', component: RxjsOperatorsComponent},
   {path: 'rxjs', component: RxjsOperators2Component},
   {path:'subject', component: SubjectExampleComponent},
-  {path: 'async', component: AsyncPipeComponent}
+  {path: 'async', component: AsyncPipeComponent},
+  {path: 'sidebar', component: StickySidebarComponent}
 ];
 
 @NgModule({

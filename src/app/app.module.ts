@@ -29,6 +29,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
+import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
     DialogComponent,
     SubjectExampleComponent,
     AsyncPipeComponent,
+    StickySidebarComponent,
   ],
   imports: [
     BrowserModule,
