@@ -31,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PopUpDialogComponent } from './pop-up-dialog/pop-up-dialog.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AsyncPipeComponent,
     StickySidebarComponent,
     SidebarComponent,
+    PopUpDialogComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+<section class="mark-issue-reopen-wrapper">
+    <div class="overlay" (click)="closeModal()">
+    </div>
+    <div class="mark-issue-reopen-body-wrapper">
+      <div class="mark-issue-reopen-header">
+        <h4 class="mb-1 font-weight-bold">
+          {{getTitle()}}
+        </h4>
+      </div>
+      <hr>
+      <div class="container">
+        <form [formGroup]="markServiceForm">
+          <div class="row">
+            <div class="col-12">
+              <fieldset class="form-group">
+                <select class="form-control" formControlName="reopenedReason">
+                  <option value="">Select Type</option>
+                  <option value="NOT_RESOLVED">Not Resolved</option>
+                  <option value="REOCCURRED">Seems resolved but Reoccurred</option>
+                  <option value="UPDATE_TRANSACTIONS">Update Transactions</option>
+                  <option value="RESOLVED_BY_MISTAKE">Marked resolved by Mistake</option>
+                  <!--<option>Resolved</option>-->
+                  <!--<option>Redundant</option>-->
+                </select>
+              </fieldset>
+            </div>
+            <div class="col-12">
+              <fieldset class="form-group">
+                <label>Remarks</label>
+                <textarea style="resize: none" class="form-control" placeholder="Remarks" formControlName="remarks"></textarea>
+              </fieldset>
+            </div>
+            <div class="col-12 p-2">
+              <button type="button" class="btn btn-outline-primary m-0 border-0 p-0" (click)="onSubmit()">
+                Report
+              </button>
+              <button type="button" class="btn btn-outline-danger m-0 border-0 p-0 ml-2" (click)="closeModal()">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  

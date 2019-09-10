@@ -1,0 +1,61 @@
+.mark-issue-reopen-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+    .mark-issue-reopen-wrapper  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .mark-issue-reopen-wrapper  .mark-issue-reopen-body-wrapper {
+      width: 400px;
+      max-width: 100%;
+      margin: auto;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 50px;
+      background: white;
+      -webkit-animation-name: slideUpModal; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+      animation-name: slideUpModal;
+      animation-duration: 0.4s;
+    }
+      /* .mark-issue-reopen-wrapper  .mark-issue-reopen-body-wrapper  .mark-issue-reopen-body {
+  
+      } */
+    
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes slideUpModal {
+    from {
+      margin-top: 60px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 50px;
+      opacity: 1;
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes slideUpModal {
+    from {
+      margin-top: 60px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 50px;
+      opacity: 1;
+    }
+  }
+  
