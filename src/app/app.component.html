@@ -1,11 +1,13 @@
 <app-navbar></app-navbar>
-<button type="button" class="btn btn-outline-danger m-0 border-0 p-0" (click)="callMarkServiceReopen()">
-  Pop-Up Dialog
-</button>
+
 <app-pop-up-dialog *ngIf="getMarkServiceReopenPopup"></app-pop-up-dialog>
-{{time}}
-{{ctoV}}
-<!-- <app-sidebar></app-sidebar> -->
-<div class="container mt-4">
-  <router-outlet></router-outlet>
+<div class="row">
+    <app-sidebar></app-sidebar>
+    <div class="container mt-4">
+        {{time}}
+        <button type="button" class="btn btn-outline-danger m-0 border-0 p-0" (click)="callMarkServiceReopen()">
+            Pop-Up Dialog
+          </button>
+      <router-outlet></router-outlet>
+    </div>
 </div>
