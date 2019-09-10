@@ -30,6 +30,7 @@ import { SubjectExampleComponent } from './compoents/subject-example/subject-exa
 import {HttpClientModule} from '@angular/common/http';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sideb
     SubjectExampleComponent,
     AsyncPipeComponent,
     StickySidebarComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
