@@ -32,6 +32,8 @@ import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PopUpDialogComponent } from './pop-up-dialog/pop-up-dialog.component';
+import { CollapseComponent } from './collapse/collapse.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { PopUpDialogComponent } from './pop-up-dialog/pop-up-dialog.component';
     StickySidebarComponent,
     SidebarComponent,
     PopUpDialogComponent,
+    CollapseComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

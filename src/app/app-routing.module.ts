@@ -13,6 +13,8 @@ import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operat
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
+import { CollapseComponent } from './collapse/collapse.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 
 const routes: Routes = [
@@ -28,7 +30,9 @@ const routes: Routes = [
   {path: 'rxjs', component: RxjsOperators2Component},
   {path:'subject', component: SubjectExampleComponent},
   {path: 'async', component: AsyncPipeComponent},
-  {path: 'sidebar', component: StickySidebarComponent}
+  {path: 'sidebar', component: StickySidebarComponent},
+  {path: 'collapse', component: CollapseComponent},
+  {path: 'dropdown', component: DropdownComponent}
 ];
 
 @NgModule({

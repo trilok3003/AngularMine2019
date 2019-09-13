@@ -20,7 +20,9 @@ export class SidebarComponent implements OnInit {
     {path: 'rxjs', name: 'rxjs'},
     {path:'subject', name: 'subject'},
     {path: 'async', name: 'async'},
-    {path: 'sidebar', name: 'sidebar'}
+    {path: 'sidebar', name: 'sidebar'},
+    {path:'collapse', name:'collapse'},
+    {path: 'dropdown', name: 'dropdown'}
   ]
   constructor() { }
 
