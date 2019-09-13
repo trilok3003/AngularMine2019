@@ -22,7 +22,11 @@ export class SidebarComponent implements OnInit {
     {path: 'async', name: 'async'},
     {path: 'sidebar', name: 'sidebar'},
     {path:'collapse', name:'collapse'},
-    {path: 'dropdown', name: 'dropdown'}
+    {path: 'dropdown', name: 'dropdown'},
+    {path: 'badge', name: 'badge'},
+    {path: 'alert', name: 'alert'},
+    {path:'breadcrumb', name: 'breadcrumb'}
+
   ]
   constructor() { }
 

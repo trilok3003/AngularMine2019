@@ -1,10 +1,27 @@
-<div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" (click)="dropdown=!dropdown">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" [hidden]="dropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<div class="row">
+    <div class="col-md-6">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" (click)="dropdown=!dropdown">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" [ngClass]="{'show': dropdown}">
+              <a class="dropdown-item" (click)="dropdown=!dropdown">Action</a>
+              <a class="dropdown-item" (click)="dropdown=!dropdown">Another action</a>
+              <a class="dropdown-item" (click)="dropdown=!dropdown">Something else here</a>
+            </div>
+          </div>
+    </div>
+    
+        <div class="col-md-6">
+            <div class="dropdown dropup">
+                <button class="btn btn-secondary dropdown-toggle" type="button" (click)="dropdown=!dropdown">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" [ngClass]="{'show': dropdown}">
+                  <a class="dropdown-item" (click)="dropdown=!dropdown">Action</a>
+                  <a class="dropdown-item" (click)="dropdown=!dropdown">Another action</a>
+                  <a class="dropdown-item" (click)="dropdown=!dropdown">Something else here</a>
+                </div>
+              </div>
         </div>
-      </div>
+</div>

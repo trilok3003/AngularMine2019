@@ -15,6 +15,9 @@ import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { BadgeComponent } from './components/badge/badge.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 
 const routes: Routes = [
@@ -32,7 +35,10 @@ const routes: Routes = [
   {path: 'async', component: AsyncPipeComponent},
   {path: 'sidebar', component: StickySidebarComponent},
   {path: 'collapse', component: CollapseComponent},
-  {path: 'dropdown', component: DropdownComponent}
+  {path: 'dropdown', component: DropdownComponent},
+  {path:'badge', component: BadgeComponent},
+  {path:'alert', component: AlertComponent},
+  {path:'breadcrumb', component: BreadcrumbComponent}
 ];
 
 @NgModule({

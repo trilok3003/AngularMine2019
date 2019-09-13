@@ -34,6 +34,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PopUpDialogComponent } from './pop-up-dialog/pop-up-dialog.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { BadgeComponent } from './components/badge/badge.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 
 @NgModule({
@@ -66,6 +69,9 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     PopUpDialogComponent,
     CollapseComponent,
     DropdownComponent,
+    BadgeComponent,
+    AlertComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
