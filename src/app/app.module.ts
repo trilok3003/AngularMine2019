@@ -37,6 +37,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { BadgeComponent } from './components/badge/badge.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     BadgeComponent,
     AlertComponent,
     BreadcrumbComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

@@ -25,7 +25,8 @@ export class SidebarComponent implements OnInit {
     {path: 'dropdown', name: 'dropdown'},
     {path: 'badge', name: 'badge'},
     {path: 'alert', name: 'alert'},
-    {path:'breadcrumb', name: 'breadcrumb'}
+    {path:'breadcrumb', name: 'breadcrumb'},
+    {path: 'modal', name: 'modal'}
 
   ]
   constructor() { }

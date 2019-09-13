@@ -18,6 +18,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { BadgeComponent } from './components/badge/badge.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
   {path: 'dropdown', component: DropdownComponent},
   {path:'badge', component: BadgeComponent},
   {path:'alert', component: AlertComponent},
-  {path:'breadcrumb', component: BreadcrumbComponent}
+  {path:'breadcrumb', component: BreadcrumbComponent},
+  {path: 'modal', component: ModalComponent}
 ];
 
 @NgModule({
