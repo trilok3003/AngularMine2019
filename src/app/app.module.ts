@@ -40,6 +40,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { ModalComponent } from './components/modal/modal.component';
 import { TopicsComponent } from './topics/topics.component';
 import { OthersComponent } from './others/others.component';
+import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { OthersComponent } from './others/others.component';
     ModalComponent,
     TopicsComponent,
     OthersComponent,
+    TableDynamicComponent,
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { TopicsComponent } from './topics/topics.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { OthersComponent } from './others/others.component';
+import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 
 
 const routes: Routes = [
@@ -46,7 +47,8 @@ const routes: Routes = [
   {path: 'modal', component: ModalComponent},
   {path: 'home', component: TopicsComponent},
   {path: 'sidebar1', component: SidebarComponent},
-  {path: 'others',component: OthersComponent}
+  {path: 'others',component: OthersComponent},
+  {path: 'table', component: TableDynamicComponent}
 ];
 
 @NgModule({

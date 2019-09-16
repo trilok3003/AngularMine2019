@@ -28,7 +28,8 @@ export class TopicsComponent implements OnInit {
     {path:'breadcrumb', name: 'breadcrumb'},
     {path: 'modal', name: 'modal'},
     {path: 'sidebar1', name:'sidebar'},
-    {path: 'others', name: 'other example'}
+    {path: 'others', name: 'other example'},
+    {path: 'table', name: 'Dynamic table'}
 
   ]
   constructor(public router: Router) { }

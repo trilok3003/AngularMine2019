@@ -1,0 +1,26 @@
+<input class="form-control w-25 mb-2" placeholder="Search" [(ngModel)]="search"  [ngModelOptions]="{standalone: true}">
+<div class="card">
+        <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th *ngFor="let column of headers">
+                            {{column}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of rows | search :search | slice: 0:limit">
+                        <td *ngFor="let column of headers">
+                            {{row[column]}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+</div>
+<nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"  (click)="getLimit(activePage-1)"><a class="page-link">Previous</a></li>
+          <li class="page-item" [ngClass]="{'active': page === activePage}" *ngFor ="let item of [1,2,3]; let page = index" (click)="getLimit(page)"><a class="page-link">{{page+1}}</a></li>
+          <li class="page-item"  (click)="getLimit(activePage+1)"><a class="page-link">Next</a></li>
+        </ul>
+      </nav>
