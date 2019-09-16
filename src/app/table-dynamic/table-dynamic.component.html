@@ -1,16 +1,20 @@
-<input class="form-control w-25 mb-2" placeholder="Search" [(ngModel)]="search"  [ngModelOptions]="{standalone: true}">
+<div class="row mb-2">
+        <input class="form-control w-25" placeholder="Search" [(ngModel)]="search"  [ngModelOptions]="{standalone: true}">
+        <button class="btn btn-outline-primary  btn-sm ml-2" [ngClass]="{'active':querySearch===column}" *ngFor="let column of headers" (click)="querySearch=column">By {{column}}</button>
+</div>
 <div class="card">
         <table class="table">
                 <thead class="thead-light">
                     <tr>
-                        <th *ngFor="let column of headers">
-                            {{column}}
+                        <th *ngFor="let column of headers; let i = index">
+                                {{column}} <i class="fa fa-fw fa-sort" [ngClass]="{'fa-sort-down': sort[i],'fa-sort-up': !sort[i]}" (click)="sort[i]= !sort[i]"></i>
                         </th>
                     </tr>
                 </thead>
                 <ng-container *ngIf="noData">no Data..</ng-container>
                 <tbody>
-                    <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit">
+                        <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit | filterBykey: search : querySearch">
+                    <!-- <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit"> -->
                         <td *ngFor="let column of headers">
                             {{row[column]}}
                         </td>

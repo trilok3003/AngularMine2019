@@ -127,8 +127,13 @@ export class TableDynamicComponent implements OnInit {
   activePage:number = 0;
   totalPage: number;
   noData: boolean = false;
+  sort = [];
+  querySearch = '';
   constructor() { 
     this.totalPage = (this.rows.length)/4;
+    this.headers.forEach((ele,i) => {
+      this.sort[i]=false;
+    })
   }
 
   ngOnInit() {
