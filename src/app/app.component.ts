@@ -11,6 +11,8 @@ export class AppComponent {
   title = 'AngularMine2019';
   time = '';
   getMarkServiceReopenPopup = '';
+  navbarShow: boolean = true;
+  sidebarShow;
   constructor(public globalService: GlobalService, public momentService: MomentService) {
     this.globalService.getMarkServiceReopenPopup$.subscribe((value) => {
       this.getMarkServiceReopenPopup = value;

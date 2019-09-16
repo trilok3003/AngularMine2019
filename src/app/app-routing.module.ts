@@ -19,6 +19,9 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { TopicsComponent } from './topics/topics.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { OthersComponent } from './others/others.component';
 
 
 const routes: Routes = [
@@ -40,7 +43,10 @@ const routes: Routes = [
   {path:'badge', component: BadgeComponent},
   {path:'alert', component: AlertComponent},
   {path:'breadcrumb', component: BreadcrumbComponent},
-  {path: 'modal', component: ModalComponent}
+  {path: 'modal', component: ModalComponent},
+  {path: 'home', component: TopicsComponent},
+  {path: 'sidebar1', component: SidebarComponent},
+  {path: 'others',component: OthersComponent}
 ];
 
 @NgModule({

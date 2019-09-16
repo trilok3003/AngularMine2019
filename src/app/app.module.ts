@@ -38,6 +38,8 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { TopicsComponent } from './topics/topics.component';
+import { OthersComponent } from './others/others.component';
 
 
 @NgModule({
@@ -74,6 +76,8 @@ import { ModalComponent } from './components/modal/modal.component';
     AlertComponent,
     BreadcrumbComponent,
     ModalComponent,
+    TopicsComponent,
+    OthersComponent,
   ],
   imports: [
     BrowserModule,
