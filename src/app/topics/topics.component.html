@@ -1,11 +1,22 @@
 
    <div class="row">
        <div class="col-md-4 mt-2"  *ngFor="let topic of topics" (click)="toNavigate(topic.path)">
-        <div class="card border-warning mb-3 text-center">
+        <div class="card border-info mb-3 text-center">
             <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-    <a class="card-title">{{topic.name | titlecase}}</a>
+              <h5 class="card-title">{{topic.name | titlecase}}</h5>
+             <a  class="card-link text-danger">Read More</a>
             </div>
           </div>
        </div>
    </div>
+   <!-- <div class="card">
+    <img class="card-img-top" src="..." alt="Bologna">
+    <div class="card-body text-center">
+      <img class="avatar rounded-circle" src="..." alt="Bologna">
+      <h4 class="card-title">Robert Downey Jr.</h4>
+      <h6 class="card-subtitle mb-2 text-muted">Famous Actor</h6>
+      <p class="card-text">... </p>
+      <a href="#" class="btn btn-info">Follow</a>
+      <a href="#" class="btn btn-outline-info">Message</a>
+    </div>
+  </div> -->
