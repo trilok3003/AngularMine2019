@@ -8,8 +8,9 @@
                         </th>
                     </tr>
                 </thead>
+                <ng-container *ngIf="noData">no Data..</ng-container>
                 <tbody>
-                    <tr *ngFor="let row of rows | search :search | slice: 0:limit">
+                    <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit">
                         <td *ngFor="let column of headers">
                             {{row[column]}}
                         </td>
@@ -20,7 +21,7 @@
 <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item"  (click)="getLimit(activePage-1)"><a class="page-link">Previous</a></li>
-          <li class="page-item" [ngClass]="{'active': page === activePage}" *ngFor ="let item of [1,2,3]; let page = index" (click)="getLimit(page)"><a class="page-link">{{page+1}}</a></li>
+          <li class="page-item" [ngClass]="{'active': page === activePage}" *ngFor ="let item of getPages(totalPage); let page = index" (click)="getLimit(page)"><a class="page-link">{{page+1}}</a></li>
           <li class="page-item"  (click)="getLimit(activePage+1)"><a class="page-link">Next</a></li>
         </ul>
       </nav>

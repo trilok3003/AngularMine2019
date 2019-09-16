@@ -63,30 +63,93 @@ export class TableDynamicComponent implements OnInit {
       "Age" : "21",
       "Gender" : "Female",
       "Country" : "India"
+    },
+    {
+      "ID" : "9",
+      "Name" : "Rahul",
+      "Age" : "21",
+      "Gender" : "Male",
+      "Country" : "India"
+    },
+    {
+      "ID" : "10",
+      "Name" : "Ajay",
+      "Age" : "25",
+      "Gender" : "Male",
+      "Country" : "India"
+    },
+    {
+      "ID" : "11",
+      "Name" : "Vikram",
+      "Age" : "31",
+      "Gender" : "Male",
+      "Country" : "Australia"
+    },
+    {
+      "ID" : "12",
+      "Name" : "Riya",
+      "Age" : "20",
+      "Gender" : "Female",
+      "Country" : "India"
+    },
+    {
+      "ID" : "13",
+      "Name" : "John",
+      "Age" : "23",
+      "Gender" : "Male",
+      "Country" : "USA"
+    },
+    {
+      "ID" : "14",
+      "Name" : "Raman",
+      "Age" : "27",
+      "Gender" : "Male",
+      "Country" : "India"
+    },
+    {
+      "ID" : "15",
+      "Name" : "Mohan",
+      "Age" : "39",
+      "Gender" : "Male",
+      "Country" : "India"
+    },
+    {
+      "ID" : "16",
+      "Name" : "Shreya",
+      "Age" : "21",
+      "Gender" : "Female",
+      "Country" : "India"
     }
   ]
   search = '';
-  limit: number = 3;
+  minLimit: number = 0;
+  maxLimit: number = 4;
   activePage:number = 0;
-  constructor() { }
+  totalPage: number;
+  noData: boolean = false;
+  constructor() { 
+    this.totalPage = (this.rows.length)/4;
+  }
 
   ngOnInit() {
   }
   getLimit(page) {
-    if(page === 0) {
-     this.limit = 3;
-     this.activePage=0;
+    if(page < this.totalPage) {
+      this.minLimit = (this.totalPage * page);
+      this.maxLimit = (this.totalPage * page) + 4;
+      this.activePage=page;
+      this.noData = false;
     }
-
-    if(page === 1) {
-     this.limit = 6;
-     this.activePage=1;
+    else {
+      this.minLimit = 0;
+      this.maxLimit = 0;
+      this.activePage=this.totalPage;
+      this.noData = true;
     }
-
-    if(page === 2) {
-      this.limit = 9   ;
-     this.activePage=2;
-    }
+   
+  }
+  getPages(length) {
+    return new Array(length);
   }
 
 }
