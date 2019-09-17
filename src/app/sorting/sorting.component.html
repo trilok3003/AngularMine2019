@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-header">Sorting in assending order examples using assending method</div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor="let product of orderedInAssendingProducts">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Sorting in dessending order examples using Dessending method</div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor="let product of orderedInDessendingProducts">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Sorting in assending order examples using assending pipe</div>
+    <div class="card-body"> by price
+        <ul class="list-group" *ngFor="let product of originalProducts | assendingSort : 'price'">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Sorting in Dessending order by price examples using Dessending pipe</div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor="let product of originalProducts | dessendingSort : 'price'">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Sorting in assending order by name examples using assending pipe</div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor="let product of originalProducts | assendingSort : 'name'">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Sorting in Dessending order by name examples using Dessending pipe</div>
+    <div class="card-body">
+        <ul class="list-group" *ngFor="let product of originalProducts | dessendingSort : 'name'">
+            <li class="list-group-item">{{product.name}} | {{product.price}}</li>
+        </ul>
+    </div>
+</div>

@@ -41,6 +41,9 @@ import { ModalComponent } from './components/modal/modal.component';
 import { TopicsComponent } from './topics/topics.component';
 import { OthersComponent } from './others/others.component';
 import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
+import { SortingComponent } from './sorting/sorting.component';
+import { AssendingSortPipe } from './pipes/assending-sort.pipe';
+import { DessendingSortPipe } from './pipes/dessending-sort.pipe';
 
 
 @NgModule({
@@ -80,6 +83,9 @@ import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
     TopicsComponent,
     OthersComponent,
     TableDynamicComponent,
+    SortingComponent,
+    AssendingSortPipe,
+    DessendingSortPipe,
   ],
   imports: [
     BrowserModule,

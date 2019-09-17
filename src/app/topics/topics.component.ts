@@ -29,7 +29,8 @@ export class TopicsComponent implements OnInit {
     {path: 'modal', name: 'modal'},
     {path: 'sidebar1', name:'sidebar'},
     {path: 'others', name: 'other example'},
-    {path: 'table', name: 'Dynamic table'}
+    {path: 'table', name: 'Dynamic table'},
+    {path: 'sorting', name: 'Sorting'}
 
   ]
   constructor(public router: Router) { }
