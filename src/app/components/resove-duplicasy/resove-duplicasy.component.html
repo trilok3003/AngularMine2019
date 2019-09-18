@@ -1,0 +1,110 @@
+<div class="card">
+    <div class="card-header"> duplicacy in Array Item</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">before duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of original">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">After Remove duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of filtered">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header"> duplicacy in Array of object</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">before duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of arrObjectOriginal">{{item.id}} | {{item.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">After Remove duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of arrObjectFilter">{{item.id}} | {{item.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"> duplicacy in Array Item using pipe</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">before duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of original">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">After Remove duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of original | uniqueInArray">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"> duplicacy in Array of object using pipe</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">before duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of arrObjectOriginal">{{item.id}} | {{item.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">After Remove duplicacy in Array</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of arrObjectOriginal | uniqueObjectInArray:'id'">{{item.id}} | {{item.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

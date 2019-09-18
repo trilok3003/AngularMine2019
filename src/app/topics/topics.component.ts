@@ -30,7 +30,8 @@ export class TopicsComponent implements OnInit {
     {path: 'sidebar1', name:'sidebar'},
     {path: 'others', name: 'other example'},
     {path: 'table', name: 'Dynamic table'},
-    {path: 'sorting', name: 'Sorting'}
+    {path: 'sorting', name: 'Sorting'},
+    {path: 'array_duplicasy', name: 'array Duplicate'}
 
   ]
   constructor(public router: Router) { }

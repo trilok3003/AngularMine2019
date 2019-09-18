@@ -24,6 +24,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { OthersComponent } from './others/others.component';
 import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 import { SortingComponent } from './sorting/sorting.component';
+import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
 
 
 const routes: Routes = [
@@ -50,7 +51,8 @@ const routes: Routes = [
   {path: 'sidebar1', component: SidebarComponent},
   {path: 'others',component: OthersComponent},
   {path: 'table', component: TableDynamicComponent},
-  {path: 'sorting', component: SortingComponent}
+  {path: 'sorting', component: SortingComponent},
+  {path: 'array_duplicasy', component: ResoveDuplicasyComponent}
 ];
 
 @NgModule({

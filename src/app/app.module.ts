@@ -44,6 +44,9 @@ import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 import { SortingComponent } from './sorting/sorting.component';
 import { AssendingSortPipe } from './pipes/assending-sort.pipe';
 import { DessendingSortPipe } from './pipes/dessending-sort.pipe';
+import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
+import { UniqueInArrayPipe } from './pipes/unique-in-array.pipe';
+import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
 
 
 @NgModule({
@@ -86,6 +89,9 @@ import { DessendingSortPipe } from './pipes/dessending-sort.pipe';
     SortingComponent,
     AssendingSortPipe,
     DessendingSortPipe,
+    ResoveDuplicasyComponent,
+    UniqueInArrayPipe,
+    UniqueObjectInArrayPipe,
   ],
   imports: [
     BrowserModule,
