@@ -129,6 +129,8 @@ export class TableDynamicComponent implements OnInit {
   noData: boolean = false;
   sort = [];
   querySearch = '';
+  assendingOrder = '';
+  dessendingOrder= '';
   constructor() { 
     this.totalPage = (this.rows.length)/4;
     this.headers.forEach((ele,i) => {
@@ -155,6 +157,16 @@ export class TableDynamicComponent implements OnInit {
   }
   getPages(length) {
     return new Array(length);
+  }
+  getSort(order,key) {
+    if(order) {
+      this.assendingOrder = key;
+      this.dessendingOrder = '';
+    }
+    else {
+      this.dessendingOrder = key;
+      this.assendingOrder = '';
+    }
   }
 
 }

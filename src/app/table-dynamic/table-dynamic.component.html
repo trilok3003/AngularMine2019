@@ -7,13 +7,13 @@
                 <thead class="thead-light">
                     <tr>
                         <th *ngFor="let column of headers; let i = index">
-                                {{column}} <i class="fa fa-fw fa-sort" [ngClass]="{'fa-sort-down': sort[i],'fa-sort-up': !sort[i]}" (click)="sort[i]= !sort[i]"></i>
+                                {{column}} <i class="fa fa-fw fa-sort" [ngClass]="{'fa-sort-down': sort[i],'fa-sort-up': !sort[i]}" (click)="sort[i]= !sort[i];getSort(sort[i],column)"></i>
                         </th>
                     </tr>
                 </thead>
                 <ng-container *ngIf="noData">no Data..</ng-container>
                 <tbody>
-                        <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit | filterBykey: search : querySearch">
+                        <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit | filterBykey: search : querySearch | dessendingSort:dessendingOrder | assendingSort: assendingOrder">
                     <!-- <tr *ngFor="let row of rows | search :search | slice: minLimit: maxLimit"> -->
                         <td *ngFor="let column of headers">
                             {{row[column]}}
