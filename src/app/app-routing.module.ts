@@ -25,6 +25,7 @@ import { OthersComponent } from './others/others.component';
 import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 import { SortingComponent } from './sorting/sorting.component';
 import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 
 const routes: Routes = [
@@ -52,7 +53,8 @@ const routes: Routes = [
   {path: 'others',component: OthersComponent},
   {path: 'table', component: TableDynamicComponent},
   {path: 'sorting', component: SortingComponent},
-  {path: 'array_duplicasy', component: ResoveDuplicasyComponent}
+  {path: 'array_duplicasy', component: ResoveDuplicasyComponent},
+  {path: 'notifications', component: NotificationsComponent }
 ];
 
 @NgModule({

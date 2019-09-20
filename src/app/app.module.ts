@@ -47,6 +47,7 @@ import { DessendingSortPipe } from './pipes/dessending-sort.pipe';
 import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
 import { UniqueInArrayPipe } from './pipes/unique-in-array.pipe';
 import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 
 @NgModule({
@@ -92,6 +93,7 @@ import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
     ResoveDuplicasyComponent,
     UniqueInArrayPipe,
     UniqueObjectInArrayPipe,
+    NotificationsComponent,
   ],
   imports: [
     BrowserModule,
