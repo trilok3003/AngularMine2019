@@ -49,6 +49,7 @@ import { UniqueInArrayPipe } from './pipes/unique-in-array.pipe';
 import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
+import { EmojiDirective } from './directives/emoji.directive';
 
 
 @NgModule({
@@ -96,6 +97,7 @@ import { TemplateFormHandlingComponent } from './components/template-form-handli
     UniqueObjectInArrayPipe,
     NotificationsComponent,
     TemplateFormHandlingComponent,
+    EmojiDirective,
   ],
   imports: [
     BrowserModule,
