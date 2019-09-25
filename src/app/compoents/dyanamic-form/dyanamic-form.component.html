@@ -15,7 +15,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let row of addForm.controls.rows.controls; let i = index" [formGroupName]="i">
+                <tr *ngFor="let row of addForm['controls']['rows']['controls']; let i = index" [formGroupName]="i">
                   <td>          
                     <div class="form-group row">
                       <div class="col-sm-12">
@@ -45,7 +45,7 @@
                     </div>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-square btn-danger btn-sm waves-effect waves-light"  (click)="onDeleteRow(i)" [disabled]="addForm.controls.rows.controls.length === 1"> <i class="icofont icofont-ui-delete"></i> Remove</button>
+                    <button type="button" class="btn btn-square btn-danger btn-sm waves-effect waves-light"  (click)="onDeleteRow(i)" [disabled]="addForm['controls']['rows']['controls'].length === 1"> <i class="icofont icofont-ui-delete"></i> Remove</button>
                   </td>
                 </tr>
               </tbody>

@@ -113,8 +113,13 @@
               "devServerTarget": "AngularMine2019:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "AngularMine2019"
 }

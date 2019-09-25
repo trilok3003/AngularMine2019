@@ -48,6 +48,7 @@ import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-d
 import { UniqueInArrayPipe } from './pipes/unique-in-array.pipe';
 import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
 import { NotificationsComponent } from './components/notifications/notifications.component';
+import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 
 
 @NgModule({
@@ -94,6 +95,7 @@ import { NotificationsComponent } from './components/notifications/notifications
     UniqueInArrayPipe,
     UniqueObjectInArrayPipe,
     NotificationsComponent,
+    TemplateFormHandlingComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,62 @@
+<form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input [(ngModel)]="name" placeholder="Name" name="name"
+      id="name" type="text" class="form-control"/>
+    </div>
+    <div class="form-check">
+        <input [(ngModel)]="gender" name="gender" id="male"
+        type="radio" value="Male"  class="form-check-input"/> 
+        <label for="male" class="form-check-label">Male</label>
+      </div>
+      <div class="form-check">
+        <input [(ngModel)]="gender" name="gender" id="female"
+        type="radio" value="Female" class="form-check-input" />
+        <label for="female" class="form-check-label">Female</label>
+      </div>
+      <p>Gender: {{gender}}</p>
+      <div class="form-check">
+        <input name="newsletter" type="checkbox" id="newsletter"
+        [(ngModel)]="subscribe" value="newsletter" class="form-check-input"  />
+        <label for="newsletter" class="form-check-label">Subscribe to newsletter</label>
+      </div>
+
+      <h3>Choose your favorite games</h3>
+      <div class="form-check">
+        <input name="cricket" type="checkbox" id="cricket"
+        [(ngModel)]="games.cricket" value="cricket" class="form-check-input" />
+        <label for="cricket" class="form-check-label">Cricket</label>
+      </div>
+      <div class="form-check">
+        <input name="football" type="checkbox" id="football"
+        [(ngModel)]="games.football" value="football" class="form-check-input" />
+        <label for="football" class="form-check-label">Football</label>
+      </div>
+    
+      <!-- output -->
+      <p>Cricket :{{games.cricket}}</p>
+      <p>Football: {{games.football}}</p>
+
+      <div>
+        <textarea [(ngModel)]="feedback" name="feedback"
+         placeholder="Enter your feedback" class="form-control">
+        </textarea>
+      </div>
+    
+      <!-- output -->
+      <p>Feedback: {{feedback}}</p>
+      <div class="form-group">
+        <select name="country" id="country" [(ngModel)]="country" class="form-control">
+          <option value="" disabled>Select your country</option>
+          <option value="India">India</option>
+          <option value="Usa">Usa</option>
+          <option value="Uk">Uk</option>
+          <option value="Germany">Germany</option>
+        </select>
+      </div>
+    
+      <!-- output -->
+      <p>Selected country is - {{country}}</p>
+      <!-- your form elements goes here -->
+  <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+  </form>

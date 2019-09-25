@@ -35,6 +35,8 @@ listofstudent = [
     "country": "Country",
     "title": "Title"
   }
+  searchText = '';
+  showDialog;
   constructor(public api:ApiService) { }
 
   ngOnInit() {

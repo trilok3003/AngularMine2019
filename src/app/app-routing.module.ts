@@ -26,6 +26,7 @@ import { TableDynamicComponent } from './table-dynamic/table-dynamic.component';
 import { SortingComponent } from './sorting/sorting.component';
 import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
+import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 
 
 const routes: Routes = [
@@ -54,7 +55,8 @@ const routes: Routes = [
   {path: 'table', component: TableDynamicComponent},
   {path: 'sorting', component: SortingComponent},
   {path: 'array_duplicasy', component: ResoveDuplicasyComponent},
-  {path: 'notifications', component: NotificationsComponent }
+  {path: 'notifications', component: NotificationsComponent },
+  {path: 'templateForm', component: TemplateFormHandlingComponent}
 ];
 
 @NgModule({

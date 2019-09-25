@@ -24,4 +24,5 @@ export class PopUpDialogComponent implements OnInit {
   closeModal() {
     this.globalService.setMarkServiceReopenPopup(undefined);
   }
+  onSubmit() {}
 }

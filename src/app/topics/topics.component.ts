@@ -32,7 +32,8 @@ export class TopicsComponent implements OnInit {
     {path: 'table', name: 'Dynamic table'},
     {path: 'sorting', name: 'Sorting'},
     {path: 'array_duplicasy', name: 'array Duplicate'},
-    {path: 'notifications', name: 'notifications'}
+    {path: 'notifications', name: 'notifications'},
+    {path: 'templateForm', name: 'Template form Handling'}
 
   ]
   constructor(public router: Router) { }

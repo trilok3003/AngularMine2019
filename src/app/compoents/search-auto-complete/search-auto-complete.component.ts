@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SearchAutoCompleteComponent implements OnInit {
   public search:any = '';
   locked: any[] = [];
+  query = '';
   constructor() { }
 
   ngOnInit() {
