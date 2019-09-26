@@ -51,6 +51,7 @@ import { NotificationsComponent } from './components/notifications/notifications
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 import { EmojiDirective } from './directives/emoji.directive';
 import { DomManupulationComponent, Pane } from './dom-manupulation/dom-manupulation.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
 
 
 @NgModule({
@@ -100,7 +101,8 @@ import { DomManupulationComponent, Pane } from './dom-manupulation/dom-manupulat
     TemplateFormHandlingComponent,
     EmojiDirective,
     DomManupulationComponent,
-    Pane
+    Pane,
+    ContentProjectionComponent
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,7 @@ import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-d
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 import { DomManupulationComponent } from './dom-manupulation/dom-manupulation.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
 
 
 const routes: Routes = [
@@ -58,7 +59,8 @@ const routes: Routes = [
   {path: 'array_duplicasy', component: ResoveDuplicasyComponent},
   {path: 'notifications', component: NotificationsComponent },
   {path: 'templateForm', component: TemplateFormHandlingComponent},
-  {path: 'dom', component: DomManupulationComponent}
+  {path: 'dom', component: DomManupulationComponent},
+  {path: 'ngContent', component: ContentProjectionComponent}
 ];
 
 @NgModule({

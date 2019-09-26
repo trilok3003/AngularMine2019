@@ -34,9 +34,8 @@ export class TopicsComponent implements OnInit {
     {path: 'array_duplicasy', name: 'array Duplicate'},
     {path: 'notifications', name: 'notifications'},
     {path: 'templateForm', name: 'Template form Handling'},
-    {path: 'dom', name: 'Dom Manupulation'}
-
-
+    {path: 'dom', name: 'Dom Manupulation'},
+    {path: 'ngContent', name: 'Content Projection'}
   ]
   constructor(public router: Router) { }
 

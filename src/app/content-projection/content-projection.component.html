@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Angular content projection using ngContent directive</h3>
+    </div>
+    <div class="card-body">
+        <div>
+            <h1>This component uses ngContent</h1>
+            <ng-content></ng-content>
+            <ng-content select=".post-title"></ng-content>
+            <ng-content select=".post-body"></ng-content>
+        </div>
+    </div>
+</div>
