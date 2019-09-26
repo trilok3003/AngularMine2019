@@ -50,6 +50,7 @@ import { UniqueObjectInArrayPipe } from './pipes/unique-object-in-array.pipe';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 import { EmojiDirective } from './directives/emoji.directive';
+import { DomManupulationComponent, Pane } from './dom-manupulation/dom-manupulation.component';
 
 
 @NgModule({
@@ -98,6 +99,8 @@ import { EmojiDirective } from './directives/emoji.directive';
     NotificationsComponent,
     TemplateFormHandlingComponent,
     EmojiDirective,
+    DomManupulationComponent,
+    Pane
   ],
   imports: [
     BrowserModule,

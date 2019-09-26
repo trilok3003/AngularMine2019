@@ -27,6 +27,7 @@ import { SortingComponent } from './sorting/sorting.component';
 import { ResoveDuplicasyComponent } from './components/resove-duplicasy/resove-duplicasy.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
+import { DomManupulationComponent } from './dom-manupulation/dom-manupulation.component';
 
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
   {path: 'sorting', component: SortingComponent},
   {path: 'array_duplicasy', component: ResoveDuplicasyComponent},
   {path: 'notifications', component: NotificationsComponent },
-  {path: 'templateForm', component: TemplateFormHandlingComponent}
+  {path: 'templateForm', component: TemplateFormHandlingComponent},
+  {path: 'dom', component: DomManupulationComponent}
 ];
 
 @NgModule({

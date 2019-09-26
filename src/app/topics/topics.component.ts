@@ -33,7 +33,9 @@ export class TopicsComponent implements OnInit {
     {path: 'sorting', name: 'Sorting'},
     {path: 'array_duplicasy', name: 'array Duplicate'},
     {path: 'notifications', name: 'notifications'},
-    {path: 'templateForm', name: 'Template form Handling'}
+    {path: 'templateForm', name: 'Template form Handling'},
+    {path: 'dom', name: 'Dom Manupulation'}
+
 
   ]
   constructor(public router: Router) { }

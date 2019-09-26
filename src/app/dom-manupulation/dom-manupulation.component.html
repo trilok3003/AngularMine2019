@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">How to access the dom nodes in angular (example 1)</h3>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <input placeholder="Name" #myname class="form-control" />
+            <button (click)="handleFocus()" class="btn btn-primary btn-sm mt-2">Focus</button>
+            <button (click)="resetName()" class="btn btn-danger btn-sm ml-2 mt-2">Reset name</button>
+         </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">How to access the dom nodes in angular (example 2)</h3>
+    </div>
+    <div class="card-body">
+        <pane id="1" *ngIf="shouldShow"></pane>
+        <pane id="2" *ngIf="!shouldShow"></pane>
+    
+        <button (click)="toggle()" class="btn btn-danger btn-sm ml-2 mt-2">Toggle</button>
+    
+        <div>Selected: {{selectedPane}}</div>
+    </div>
+</div>
+
