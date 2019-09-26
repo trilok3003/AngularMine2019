@@ -36,7 +36,8 @@ export class TopicsComponent implements OnInit {
     {path: 'templateForm', name: 'Template form Handling'},
     {path: 'dom', name: 'Dom Manupulation'},
     {path: 'ngContent', name: 'Content Projection'},
-    {path: 'dataToRoutes', name: 'Accessing data to routes'}
+    {path: 'dataToRoutes', name: 'Accessing data to routes'},
+    {path: 'observal_tuts', name: 'Observal Tutorials'}
 
   ]
   constructor(public router: Router) { }

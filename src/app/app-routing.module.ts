@@ -30,6 +30,7 @@ import { TemplateFormHandlingComponent } from './components/template-form-handli
 import { DomManupulationComponent } from './dom-manupulation/dom-manupulation.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component';
+import { ObservableTutsComponent } from './observable-tuts/observable-tuts.component';
 
 
 const routes: Routes = [
@@ -62,7 +63,8 @@ const routes: Routes = [
   {path: 'templateForm', component: TemplateFormHandlingComponent},
   {path: 'dom', component: DomManupulationComponent},
   {path: 'ngContent', component: ContentProjectionComponent},
-  {path: 'dataToRoutes', component: DataToRoutesComponent, data: {msg: "Welcome Message from routes"}}
+  {path: 'dataToRoutes', component: DataToRoutesComponent, data: {msg: "Welcome Message from routes"}},
+  {path: 'observal_tuts', component: ObservableTutsComponent}
 ];
 
 @NgModule({
