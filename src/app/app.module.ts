@@ -52,6 +52,7 @@ import { TemplateFormHandlingComponent } from './components/template-form-handli
 import { EmojiDirective } from './directives/emoji.directive';
 import { DomManupulationComponent, Pane } from './dom-manupulation/dom-manupulation.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component';
 
 
 @NgModule({
@@ -102,7 +103,8 @@ import { ContentProjectionComponent } from './content-projection/content-project
     EmojiDirective,
     DomManupulationComponent,
     Pane,
-    ContentProjectionComponent
+    ContentProjectionComponent,
+    DataToRoutesComponent
   ],
   imports: [
     BrowserModule,

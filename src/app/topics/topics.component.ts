@@ -35,7 +35,9 @@ export class TopicsComponent implements OnInit {
     {path: 'notifications', name: 'notifications'},
     {path: 'templateForm', name: 'Template form Handling'},
     {path: 'dom', name: 'Dom Manupulation'},
-    {path: 'ngContent', name: 'Content Projection'}
+    {path: 'ngContent', name: 'Content Projection'},
+    {path: 'dataToRoutes', name: 'Accessing data to routes'}
+
   ]
   constructor(public router: Router) { }
 

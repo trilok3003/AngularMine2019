@@ -29,6 +29,7 @@ import { NotificationsComponent } from './components/notifications/notifications
 import { TemplateFormHandlingComponent } from './components/template-form-handling/template-form-handling.component';
 import { DomManupulationComponent } from './dom-manupulation/dom-manupulation.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component';
 
 
 const routes: Routes = [
@@ -60,7 +61,8 @@ const routes: Routes = [
   {path: 'notifications', component: NotificationsComponent },
   {path: 'templateForm', component: TemplateFormHandlingComponent},
   {path: 'dom', component: DomManupulationComponent},
-  {path: 'ngContent', component: ContentProjectionComponent}
+  {path: 'ngContent', component: ContentProjectionComponent},
+  {path: 'dataToRoutes', component: DataToRoutesComponent, data: {msg: "Welcome Message from routes"}}
 ];
 
 @NgModule({
