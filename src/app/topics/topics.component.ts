@@ -37,7 +37,9 @@ export class TopicsComponent implements OnInit {
     {path: 'dom', name: 'Dom Manupulation'},
     {path: 'ngContent', name: 'Content Projection'},
     {path: 'dataToRoutes', name: 'Accessing data to routes'},
-    {path: 'observal_tuts', name: 'Observal Tutorials'}
+    {path: 'observal_tuts', name: 'Observal Tutorials'},
+    {path: 'custom', name: 'Reusable Header'}
+
 
   ]
   constructor(public router: Router) { }

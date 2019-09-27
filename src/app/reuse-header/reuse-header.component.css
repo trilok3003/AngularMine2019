@@ -1,0 +1,23 @@
+.header-form-builder-wrapper  .inner-wrapper {
+      padding-bottom: 0 !important;
+      background: rgb(32, 57, 44);
+      color: white;
+}
+.header-form-builder-wrapper   .receiving {
+        background: rgb(32, 57, 44);
+        color: white;
+      }
+  
+      .header-form-builder-wrapper  .issuing {
+        background: rgb(107, 169, 252);
+        color: white;
+      }
+  
+      .header-form-builder-wrapper  .inner-wrapper   .chips-wrapper 
+        .vertical-separator {
+          color: white;
+          display: initial;
+          margin-right: 10px;
+        }
+  
+  

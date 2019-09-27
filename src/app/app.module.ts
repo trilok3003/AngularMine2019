@@ -54,6 +54,7 @@ import { DomManupulationComponent, Pane } from './dom-manupulation/dom-manupulat
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component';
 import { ObservableTutsComponent } from './observable-tuts/observable-tuts.component';
+import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { ObservableTutsComponent } from './observable-tuts/observable-tuts.compo
     Pane,
     ContentProjectionComponent,
     DataToRoutesComponent,
-    ObservableTutsComponent
+    ObservableTutsComponent,
+    ReuseHeaderComponent
   ],
   imports: [
     BrowserModule,

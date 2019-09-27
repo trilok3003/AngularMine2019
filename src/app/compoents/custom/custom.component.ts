@@ -37,7 +37,129 @@ listofstudent = [
   }
   searchText = '';
   showDialog;
-  constructor(public api:ApiService) { }
+  formObject: any;
+  constructor(public api:ApiService) { 
+    this.formObject = [
+      {
+        label: 'Receiving',
+        key: 'RECEIVING_TYPE',
+        disabled: false,
+        selectedIndex: 0,
+        values: [
+          {
+            label: 'Aggregate',
+            key: 'AGGREGATE',
+            disabled: false,
+            children: []
+          }, {
+            label: 'Fuel',
+            key: 'FUEL',
+            disabled: false,
+            children: []
+          }, {
+            label: 'General',
+            key: 'GENERAL',
+            disabled: false,
+            children: [
+              {
+                label: 'Type',
+                key: 'TYPE',
+                disabled: false,
+                selectedIndex: 0,
+                values: [
+                  {
+                    label: 'Purchase',
+                    key: 'PURCHASE',
+                    disabled: false,
+                    children: []
+                  },
+                  {
+                    label: 'Rent',
+                    key: 'RENT',
+                    disabled: false,
+                    children: []
+                  },
+                  {
+                    label: 'Returned',
+                    key: 'RETURNED',
+                    disabled: false,
+                    children: []
+                  },
+                  {
+                    label: 'Transferred',
+                    key: 'TRANSFERRED',
+                    disabled: false,
+                    children: [
+                      {
+                        label: 'Transfer In',
+                        key: 'TRANSFER_IN',
+                        selectedIndex: 1,
+                        disabled: false,
+                        values: [
+                          {
+                            label: 'Same Environment',
+                            key: 'SAME_ENVIRONMENT',
+                            disabled: false,
+                          }, {
+                            label: 'Different Environment',
+                            key: 'DIFFERENT_ENVIRONMENT',
+                            disabled: false,
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    label: 'F.O.C.',
+                    key: 'FOC',
+                    disabled: false,
+                    children: []
+                  }
+                ]
+              }, {
+                label: 'Transportation',
+                key: 'TRANSPORTATION',
+                disabled: false,
+                selectedIndex: 0,
+                values: [
+                  {
+                    label: 'Included',
+                    key: 'INCLUDED',
+                    disabled: false,
+                    children: []
+                  }, {
+                    label: 'Separate',
+                    key: 'SEPARATE',
+                    disabled: false,
+                    children: []
+                  }
+                ]
+              }, {
+                label: 'Weight Required',
+                key: 'WEIGHT_REQUIRED',
+                disabled: false,
+                selectedIndex: 0,
+                values: [
+                  {
+                    label: 'Yes',
+                    key: 'YES',
+                    disabled: false,
+                    children: []
+                  }, {
+                    label: 'No',
+                    key: 'NO',
+                    disabled: false,
+                    children: []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ];
+
+  }
 
   ngOnInit() {
       this.api.getCustomers().subscribe((res)=>{

@@ -1,0 +1,19 @@
+<section class="header-form-builder-wrapper" *ngIf="formObject">
+    <div class="col-sm-12 p-0">
+      <div class="card inner-wrapper" [ngClass]="theme">
+        <div class="card-body">
+          <div class="card-block px-2 pt-1 pb-0 chips-wrapper">
+            <ng-container *ngFor="let item of formObject; let index = index">
+            <span>{{item.label}}</span>
+            <span class="vertical-separator" *ngIf="index <= formObject.length-1">|</span>
+            <ng-container *ngFor="let value of item.values; let inner = index">
+                    <span>{{value.label}}</span>
+                    <span class="vertical-separator" *ngIf="inner < item.values.length-1">|</span>
+                    </ng-container>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
