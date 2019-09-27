@@ -181,6 +181,8 @@ listofstudent = [
   onDateUpdate(date: string): void {
     this.date = date;
   }
- 
+  formObjectUpdated(e) {
+    console.log(e);
+  } 
 
 }
