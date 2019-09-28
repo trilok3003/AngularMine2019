@@ -55,6 +55,7 @@ import { ContentProjectionComponent } from './content-projection/content-project
 import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component';
 import { ObservableTutsComponent } from './observable-tuts/observable-tuts.component';
 import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
+import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 
 
 @NgModule({
@@ -108,7 +109,8 @@ import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
     ContentProjectionComponent,
     DataToRoutesComponent,
     ObservableTutsComponent,
-    ReuseHeaderComponent
+    ReuseHeaderComponent,
+    AutoCompleteComponent
   ],
   imports: [
     BrowserModule,

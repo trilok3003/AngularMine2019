@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Auto Complete</h3>
+    </div>
+    <div class="card-body">
+        <form>
+                <div class="form-group">
+                        <input class="form-control" placeholder="search state" [formControl]="stateCtrl">
+                        <ul class="list-group">
+                                <li class="list-group-item" *ngFor="let state of filterStates | async">
+                                       {{state.name}} | {{state.population}}
+                                </li>
+                            </ul>
+                     </div>
+             <div class="form-group">
+                 <!-- <select class="form-control">
+                     <option *ngFor="let state of filterStates | async" [value]="state.name">{{state.name}} | {{state.population}}</option>
+                 </select> -->
+             </div>
+        </form>         
+    </div>
+</div>
+
+<!-- <div class="card">
+        <div class="card-header">
+            <h3>Auto search Complete using ngModel</h3>
+        </div>
+        <div class="card-body">
+    
+                 <div class="form-group">
+                        <textarea [(ngModel)]="textValue" (ngModelChange)="textAreaEmpty()" class="form-control"></textarea>
+                        <ul class="list-group">
+                                <li class="list-group-item" *ngFor="let state of filterStates | async">
+                                       {{state.name}} | {{state.population}}
+                                </li>
+                            </ul>
+                 </div>
+             
+        </div>
+    </div> -->
