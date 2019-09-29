@@ -56,6 +56,7 @@ import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component
 import { ObservableTutsComponent } from './observable-tuts/observable-tuts.component';
 import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { StateCityComponent } from './state-city/state-city.component';
 
 
 @NgModule({
@@ -110,7 +111,8 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     DataToRoutesComponent,
     ObservableTutsComponent,
     ReuseHeaderComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    StateCityComponent
   ],
   imports: [
     BrowserModule,

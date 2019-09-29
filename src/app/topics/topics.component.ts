@@ -39,7 +39,9 @@ export class TopicsComponent implements OnInit {
     {path: 'dataToRoutes', name: 'Accessing data to routes'},
     {path: 'observal_tuts', name: 'Observal Tutorials'},
     {path: 'custom', name: 'Reusable Header'},
-    {path: 'auto_complete', name: 'Auto complete'}
+    {path: 'auto_complete', name: 'Auto complete'},
+    {path: 'state_districts', name: 'State And Cities'}
+
   ]
   constructor(public router: Router) { }
 

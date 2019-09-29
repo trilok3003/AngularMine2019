@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">State group city search</h3>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="stateForm">
+            <div class="form-group">
+             <input class="form-control" placeholder="State Group" formControlName="stateGroup" >
+                 <optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.state">
+                     <option *ngFor="let name of group.districts" [value]="name">
+                            {{name}}
+                     </option>
+                 </optgroup>
+            </div>
+        </form>
+    </div>
+</div>

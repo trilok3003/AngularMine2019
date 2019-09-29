@@ -33,6 +33,7 @@ import { DataToRoutesComponent } from './data-to-routes/data-to-routes.component
 import { ObservableTutsComponent } from './observable-tuts/observable-tuts.component';
 import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { StateCityComponent } from './state-city/state-city.component';
 
 
 const routes: Routes = [
@@ -68,7 +69,9 @@ const routes: Routes = [
   {path: 'dataToRoutes', component: DataToRoutesComponent, data: {msg: "Welcome Message from routes"}},
   {path: 'observal_tuts', component: ObservableTutsComponent},
   {path: 'reuse_header', component: ReuseHeaderComponent},
-  {path: 'auto_complete', component: AutoCompleteComponent}
+  {path: 'auto_complete', component: AutoCompleteComponent},
+  {path: 'state_districts', component: StateCityComponent}
+
 ];
 
 @NgModule({
