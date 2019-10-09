@@ -41,8 +41,8 @@ export class TopicsComponent implements OnInit {
     {path: 'custom', name: 'Reusable Header'},
     {path: 'auto_complete', name: 'Auto complete'},
     {path: 'state_districts', name: 'State And Cities'},
-    {path: 'custom', name: 'Recursive components'}
-
+    {path: 'custom', name: 'Recursive examples'},
+    {path: 'custom', name: 'Loader Examples'}
   ]
   constructor(public router: Router) { }
 

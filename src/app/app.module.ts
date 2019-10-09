@@ -58,6 +58,7 @@ import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { StateCityComponent } from './state-city/state-city.component';
 import { RecursiveComponent } from './recursive/recursive.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -114,7 +115,8 @@ import { RecursiveComponent } from './recursive/recursive.component';
     ReuseHeaderComponent,
     AutoCompleteComponent,
     StateCityComponent,
-    RecursiveComponent
+    RecursiveComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
