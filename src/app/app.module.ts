@@ -57,6 +57,7 @@ import { ObservableTutsComponent } from './observable-tuts/observable-tuts.compo
 import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { StateCityComponent } from './state-city/state-city.component';
+import { RecursiveComponent } from './recursive/recursive.component';
 
 
 @NgModule({
@@ -112,7 +113,8 @@ import { StateCityComponent } from './state-city/state-city.component';
     ObservableTutsComponent,
     ReuseHeaderComponent,
     AutoCompleteComponent,
-    StateCityComponent
+    StateCityComponent,
+    RecursiveComponent
   ],
   imports: [
     BrowserModule,

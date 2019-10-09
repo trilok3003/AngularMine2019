@@ -34,6 +34,7 @@ import { ObservableTutsComponent } from './observable-tuts/observable-tuts.compo
 import { ReuseHeaderComponent } from './reuse-header/reuse-header.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { StateCityComponent } from './state-city/state-city.component';
+import { RecursiveComponent } from './recursive/recursive.component';
 
 
 const routes: Routes = [
@@ -70,7 +71,8 @@ const routes: Routes = [
   {path: 'observal_tuts', component: ObservableTutsComponent},
   {path: 'reuse_header', component: ReuseHeaderComponent},
   {path: 'auto_complete', component: AutoCompleteComponent},
-  {path: 'state_districts', component: StateCityComponent}
+  {path: 'state_districts', component: StateCityComponent},
+  {path: 'recursive', component: RecursiveComponent}
 
 ];
 

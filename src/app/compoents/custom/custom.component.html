@@ -1,4 +1,12 @@
 <div class="card">
+  <div class="card-header">
+      Recursive component Example
+  </div>
+  <div class="card-body">
+    <app-recursive [comments]="postComments" *ngIf="postComments"></app-recursive>     
+    </div> 
+  </div>
+<div class="card">
     <div class="card-header">
         Reusable header
     </div>

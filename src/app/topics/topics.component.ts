@@ -40,7 +40,8 @@ export class TopicsComponent implements OnInit {
     {path: 'observal_tuts', name: 'Observal Tutorials'},
     {path: 'custom', name: 'Reusable Header'},
     {path: 'auto_complete', name: 'Auto complete'},
-    {path: 'state_districts', name: 'State And Cities'}
+    {path: 'state_districts', name: 'State And Cities'},
+    {path: 'custom', name: 'Recursive components'}
 
   ]
   constructor(public router: Router) { }
