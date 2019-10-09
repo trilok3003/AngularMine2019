@@ -42,7 +42,9 @@ export class TopicsComponent implements OnInit {
     {path: 'auto_complete', name: 'Auto complete'},
     {path: 'state_districts', name: 'State And Cities'},
     {path: 'custom', name: 'Recursive examples'},
-    {path: 'custom', name: 'Loader Examples'}
+    {path: 'custom', name: 'Loader Examples'},
+    {path: 'decorators', name: 'Decorators Examples'}
+
   ]
   constructor(public router: Router) { }
 

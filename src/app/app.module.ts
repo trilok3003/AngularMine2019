@@ -59,6 +59,7 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { StateCityComponent } from './state-city/state-city.component';
 import { RecursiveComponent } from './recursive/recursive.component';
 import { LoaderComponent } from './loader/loader.component';
+import { DecoratorsExamplesComponent, Alert1Component, TabComponent, TabsComponent, HostBindingDirective, HostListenerDirective } from './decorators-examples/decorators-examples.component';
 
 
 @NgModule({
@@ -116,7 +117,13 @@ import { LoaderComponent } from './loader/loader.component';
     AutoCompleteComponent,
     StateCityComponent,
     RecursiveComponent,
-    LoaderComponent
+    LoaderComponent,
+    DecoratorsExamplesComponent,
+    Alert1Component,
+    TabComponent,
+    TabsComponent,
+    HostBindingDirective,
+    HostListenerDirective
   ],
   imports: [
     BrowserModule,

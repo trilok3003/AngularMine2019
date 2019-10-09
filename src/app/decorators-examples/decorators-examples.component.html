@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header">
+        <h3>@ViewChildren — or @ViewChild</h3>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <select class="form-control" [(ngModel)]="type">
+                <option disabled value="0">Select Type</option>
+                <option value="success">Success</option>
+                <option value="danger">Danger</option>
+                <option value="info">Info</option>
+            </select>
+        </div>
+        <alert [type]="type"></alert>
+        <div #divElement>Dada!</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3> @ContentChildren — or @ContentChild </h3>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <tabs>
+                <tab title="One"></tab>
+                <tab title="Two"></tab>
+            </tabs>
+            <tabs>
+                    <div #divElement>Tada!</div>
+            </tabs>
+        </div>
+    </div>
+    <div class="card">
+            <div class="card-header">
+                <h3> @HostBinding — </h3>
+            </div>
+            <div class="card-body">
+                    <div class="form-group">
+                            <input   host-binding>
+                    </div>
+            </div>
+    </div>
+
+    <div class="card">
+            <div class="card-header">
+                <h3> @HostListener  — </h3>
+            </div>
+            <div class="card-body">
+                    <div class="form-group">
+                            <input type="button" count value="+">
+                    </div>
+            </div>
+    </div>
