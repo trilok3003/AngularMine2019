@@ -37,6 +37,7 @@ import { StateCityComponent } from './state-city/state-city.component';
 import { RecursiveComponent } from './recursive/recursive.component';
 import { LoaderComponent } from './loader/loader.component';
 import { DecoratorsExamplesComponent } from './decorators-examples/decorators-examples.component';
+import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 
 
 const routes: Routes = [
@@ -76,7 +77,8 @@ const routes: Routes = [
   {path: 'state_districts', component: StateCityComponent},
   {path: 'recursive', component: RecursiveComponent},
   {path: 'loader', component: LoaderComponent},
-  {path: 'decorators', component: DecoratorsExamplesComponent}
+  {path: 'decorators', component: DecoratorsExamplesComponent},
+  {path: 'treeMap', component: TreeMapComponent}
 
 ];
 

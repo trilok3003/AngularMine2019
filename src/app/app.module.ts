@@ -60,6 +60,7 @@ import { StateCityComponent } from './state-city/state-city.component';
 import { RecursiveComponent } from './recursive/recursive.component';
 import { LoaderComponent } from './loader/loader.component';
 import { DecoratorsExamplesComponent, Alert1Component, TabComponent, TabsComponent, HostBindingDirective, HostListenerDirective } from './decorators-examples/decorators-examples.component';
+import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 
 
 @NgModule({
@@ -123,7 +124,8 @@ import { DecoratorsExamplesComponent, Alert1Component, TabComponent, TabsCompone
     TabComponent,
     TabsComponent,
     HostBindingDirective,
-    HostListenerDirective
+    HostListenerDirective,
+    TreeMapComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RecursiveComponent implements OnInit {
   @Input() comments;
+  @Input() items;
 constructor() { }
 
   ngOnInit() {
