@@ -11,9 +11,10 @@ export class DateTimePickerExamplesComponent implements OnInit {
   settings = {
       bigBanner: true,
       timePicker: true,
-      format: 'dd-MM-yyyy',
+      format: 'shortTime',
       defaultOpen: false,
-      closeOnSelect: false
+      closeOnSelect: false,
+      rangepicker: false
   }
   constructor(){}
   ngOnInit(){

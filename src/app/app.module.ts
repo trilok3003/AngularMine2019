@@ -64,6 +64,7 @@ import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 import { MapSetComponent } from './logic/map-set/map-set.component';
 import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
+import { AngularNewDateTimePickerModule } from './angular-datetimepicker/datepicker.module';
 
 @NgModule({
   declarations: [
@@ -137,7 +138,8 @@ import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AngularDateTimePickerModule
+    AngularDateTimePickerModule,
+    AngularNewDateTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

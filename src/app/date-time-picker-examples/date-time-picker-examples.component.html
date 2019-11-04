@@ -1,1 +1,31 @@
-<angular2-date-picker (onDateSelect)="onDateSelect($event)" [(ngModel)]="date" [settings]="settings" ></angular2-date-picker>
+<div class="row">
+    <div class="col-md-3 left-sidebar">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action disabled">
+    Examples
+  </a>
+        <a   class="list-group-item list-group-item-action">Date picker</a>
+        <a   class="list-group-item list-group-item-action active">Date Time picker</a>
+        <a  class="list-group-item list-group-item-action">Range picker</a>
+        <a   class="list-group-item list-group-item-action">Simple</a>
+        <a  class="list-group-item list-group-item-action">Using with forms</a>
+      </div>
+    </div>
+    <div class="col center-content">
+
+<!-- <angular2-date-picker (onDateSelect)="onDateSelect($event)" [(ngModel)]="date" [settings]="settings" ></angular2-date-picker> -->
+
+<h2 class="example-title">{{title}}</h2>
+<div class="col-md-6 mr-auto ml-auto dropdown-container">
+    <angular-date-picker [(ngModel)]="date" [settings]="settings" (onDateSelect)="onDateSelect($event)"></angular-date-picker>
+
+</div>
+    </div>
+</div>
+
+
+
+
+
+
+
