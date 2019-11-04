@@ -39,6 +39,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { DecoratorsExamplesComponent } from './decorators-examples/decorators-examples.component';
 import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 import { MapSetComponent } from './logic/map-set/map-set.component';
+import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
 
 
 const routes: Routes = [
@@ -80,7 +81,9 @@ const routes: Routes = [
   {path: 'loader', component: LoaderComponent},
   {path: 'decorators', component: DecoratorsExamplesComponent},
   {path: 'treeMap', component: TreeMapComponent},
-  {path: 'map-set', component: MapSetComponent}
+  {path: 'map-set', component: MapSetComponent},
+  {path: 'date_time_picker', component: DateTimePickerExamplesComponent}
+
 
 ];
 

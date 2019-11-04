@@ -62,7 +62,8 @@ import { LoaderComponent } from './loader/loader.component';
 import { DecoratorsExamplesComponent, Alert1Component, TabComponent, TabsComponent, HostBindingDirective, HostListenerDirective } from './decorators-examples/decorators-examples.component';
 import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 import { MapSetComponent } from './logic/map-set/map-set.component';
-
+import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
+import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 
 @NgModule({
   declarations: [
@@ -127,14 +128,16 @@ import { MapSetComponent } from './logic/map-set/map-set.component';
     HostBindingDirective,
     HostListenerDirective,
     TreeMapComponent,
-    MapSetComponent
+    MapSetComponent,
+    DateTimePickerExamplesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularDateTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
