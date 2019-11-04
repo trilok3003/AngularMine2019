@@ -61,6 +61,7 @@ import { RecursiveComponent } from './recursive/recursive.component';
 import { LoaderComponent } from './loader/loader.component';
 import { DecoratorsExamplesComponent, Alert1Component, TabComponent, TabsComponent, HostBindingDirective, HostListenerDirective } from './decorators-examples/decorators-examples.component';
 import { TreeMapComponent } from './logic/tree-map/tree-map.component';
+import { MapSetComponent } from './logic/map-set/map-set.component';
 
 
 @NgModule({
@@ -125,7 +126,8 @@ import { TreeMapComponent } from './logic/tree-map/tree-map.component';
     TabsComponent,
     HostBindingDirective,
     HostListenerDirective,
-    TreeMapComponent
+    TreeMapComponent,
+    MapSetComponent
   ],
   imports: [
     BrowserModule,

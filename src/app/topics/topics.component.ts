@@ -44,7 +44,9 @@ export class TopicsComponent implements OnInit {
     {path: 'custom', name: 'Recursive examples'},
     {path: 'custom', name: 'Loader Examples'},
     {path: 'decorators', name: 'Decorators Examples'},
-    {path: 'treeMap', name: 'Tree Map (using Recursive method)'}
+    {path: 'treeMap', name: 'Tree Map (using Recursive method)'},
+    {path: 'map-set', name: 'Map And Set'}
+
   ]
   constructor(public router: Router) { }
 
