@@ -65,6 +65,7 @@ import { MapSetComponent } from './logic/map-set/map-set.component';
 import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { AngularNewDateTimePickerModule } from './angular-datetimepicker/datepicker.module';
+import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -130,7 +131,8 @@ import { AngularNewDateTimePickerModule } from './angular-datetimepicker/datepic
     HostListenerDirective,
     TreeMapComponent,
     MapSetComponent,
-    DateTimePickerExamplesComponent
+    DateTimePickerExamplesComponent,
+    NavbarSidebarComponent
   ],
   imports: [
     BrowserModule,

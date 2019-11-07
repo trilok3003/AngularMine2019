@@ -9,5 +9,5 @@ import { ClickOutsideDirective } from './clickOutside';
     exports: [DatePicker,FormsModule, ClickOutsideDirective]
 })
 export class AngularNewDateTimePickerModule{
-
+   
 }

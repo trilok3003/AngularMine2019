@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date-time-picker-examples.component.css']
 })
 export class DateTimePickerExamplesComponent implements OnInit {
-
+  title;
   date: Date = new Date();
   settings = {
       bigBanner: true,
