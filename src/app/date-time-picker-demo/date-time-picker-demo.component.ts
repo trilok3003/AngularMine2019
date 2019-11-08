@@ -17,6 +17,7 @@ export class DateTimePickerDemoComponent implements OnInit {
     // Prevent Saturday and Sunday from being selected.
     return day !== 0 && day !== 6;
 }
+selectedMoment;
   constructor() { }
 
   ngOnInit() {
