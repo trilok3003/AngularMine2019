@@ -46,7 +46,9 @@ export class TopicsComponent implements OnInit {
     {path: 'decorators', name: 'Decorators Examples'},
     {path: 'treeMap', name: 'Tree Map (using Recursive method)'},
     {path: 'map-set', name: 'Map And Set'},
-    {path: 'date_time_picker', name: 'Date Time Picker'}
+    {path: 'date_time_picker', name: 'Date Time Picker'},
+    {path: 'time_picker', name: 'Time Picker'}
+
 
 
   ]

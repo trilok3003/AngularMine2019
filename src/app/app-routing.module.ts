@@ -40,6 +40,7 @@ import { DecoratorsExamplesComponent } from './decorators-examples/decorators-ex
 import { TreeMapComponent } from './logic/tree-map/tree-map.component';
 import { MapSetComponent } from './logic/map-set/map-set.component';
 import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
+import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-examples.component';
 
 
 const routes: Routes = [
@@ -82,7 +83,8 @@ const routes: Routes = [
   {path: 'decorators', component: DecoratorsExamplesComponent},
   {path: 'treeMap', component: TreeMapComponent},
   {path: 'map-set', component: MapSetComponent},
-  {path: 'date_time_picker', component: DateTimePickerExamplesComponent}
+  {path: 'date_time_picker', component: DateTimePickerExamplesComponent},
+  {path: 'time_picker', component: TimePickerExamplesComponent}
 
 
 ];

@@ -67,6 +67,11 @@ import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { AngularNewDateTimePickerModule } from './angular-datetimepicker/datepicker.module';
 import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.component';
 
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-examples.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ExampleSourceCodeComponent } from './example-source-code/example-source-code.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -132,7 +137,9 @@ import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.componen
     TreeMapComponent,
     MapSetComponent,
     DateTimePickerExamplesComponent,
-    NavbarSidebarComponent
+    NavbarSidebarComponent,
+    TimePickerExamplesComponent,
+    ExampleSourceCodeComponent
   ],
   imports: [
     BrowserModule,
@@ -141,7 +148,10 @@ import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.componen
     ReactiveFormsModule,
     HttpClientModule,
     AngularDateTimePickerModule,
-    AngularNewDateTimePickerModule
+    AngularNewDateTimePickerModule,
+    NgxMaterialTimepickerModule,
+    // NgxMaterialTimepickerModule.setLocale('ar-AE'),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
