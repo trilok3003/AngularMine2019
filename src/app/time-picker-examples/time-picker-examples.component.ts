@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxMaterialTimepickerTheme } from '../material-timepicker/models/ngx-material-timepicker-theme.interface';
 
 @Component({
   selector: 'app-time-picker-examples',
@@ -140,20 +141,20 @@ customSettings = `
    </div>
 `;
 
-// darkTheme: NgxMaterialTimepickerTheme = {
-//    container: {
-//        bodyBackgroundColor: '#424242',
-//        buttonColor: '#fff'
-//    },
-//    dial: {
-//        dialBackgroundColor: '#555',
-//    },
-//    clockFace: {
-//        clockFaceBackgroundColor: '#555',
-//        clockHandColor: '#9fbd90',
-//        clockFaceTimeInactiveColor: '#fff'
-//    }
-// };
+darkTheme: NgxMaterialTimepickerTheme = {
+   container: {
+       bodyBackgroundColor: '#424242',
+       buttonColor: '#fff'
+   },
+   dial: {
+       dialBackgroundColor: '#555',
+   },
+   clockFace: {
+       clockFaceBackgroundColor: '#555',
+       clockHandColor: '#9fbd90',
+       clockFaceTimeInactiveColor: '#fff'
+   }
+};
 
 controlSimpleSettings = `
    <div class="ngx-timepicker-field-example">
