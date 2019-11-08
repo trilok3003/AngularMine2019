@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TimePickerExamplesComponent implements OnInit {
 // ngx-material-timepicker 
 // ngx-timepicker-field
+examples = ['simpleExamples', 'minMaxExamples', 'toggleExamples', 'editableDial', 'minutesGapCode', 'customSettings', 'controlSimpleSettings', 'toggleSettings', 'appendToInput']
   constructor() { }
 
   ngOnInit() {

@@ -71,6 +71,7 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-examples.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExampleSourceCodeComponent } from './example-source-code/example-source-code.component';
+import { NgxMaterialTimepickerModule1 } from './material-timepicker/ngx-material-timepicker.module';
 
 @NgModule({
   declarations: [
@@ -149,8 +150,9 @@ import { ExampleSourceCodeComponent } from './example-source-code/example-source
     HttpClientModule,
     AngularDateTimePickerModule,
     AngularNewDateTimePickerModule,
-    NgxMaterialTimepickerModule,
+   // NgxMaterialTimepickerModule,
     // NgxMaterialTimepickerModule.setLocale('ar-AE'),
+    NgxMaterialTimepickerModule1,
     BrowserAnimationsModule
   ],
   providers: [],
