@@ -1,0 +1,63 @@
+//
+<input [owlDateTime]="dt3" [owlDateTimeTrigger]="dt3" placeholder="Date Time">
+<owl-date-time #dt3></owl-date-time>
+<hr>
+//
+<input [owlDateTime]="dt4" placeholder="Date Time">
+<span [owlDateTimeTrigger]="dt4"><i class="fa fa-calendar"></i></span>
+<owl-date-time #dt4></owl-date-time>
+<hr>
+// calendar only
+<input [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1">
+<owl-date-time [pickerType]="'calendar'" #dt1></owl-date-time>
+<hr>
+// timer only
+<input [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2">
+<owl-date-time [pickerType]="'timer'" #dt2 [hour12Timer]="true"></owl-date-time>
+<hr>
+// inline element
+<owl-date-time-inline [(ngModel)]="selectedMoment"></owl-date-time-inline>
+<hr>
+// 
+<input [owlDateTime]="dt5" [selectMode]="'range'" [owlDateTimeTrigger]="dt5" placeholder="Date Time" [rangeSeparator]="'-----'">
+<owl-date-time #dt5></owl-date-time>
+<hr>
+// calendar open on 'multi-years' view
+<input [owlDateTimeTrigger]="dt6" [owlDateTime]="dt6">
+<owl-date-time [startView]="'multi-years'" #dt6></owl-date-time>
+<hr>
+// calendar open on 'year' view
+<input [owlDateTimeTrigger]="dt7" [owlDateTime]="dt7">
+<owl-date-time [startView]="'year'" #dt7></owl-date-time>
+<hr>
+// calendar open on 'year' view
+<input [owlDateTimeTrigger]="dt8" [owlDateTime]="dt8">
+<owl-date-time [startAt]="startAt" #dt8></owl-date-time>
+<hr>
+// picker with min and max restriction
+<input [min]="min" [max]="max" [owlDateTimeTrigger]="dt9" [owlDateTime]="dt9">
+<owl-date-time #dt9></owl-date-time>
+<hr>
+// picker with min and max restriction
+<input [owlDateTimeFilter]="myFilter" [owlDateTimeTrigger]="dt10" [owlDateTime]="dt10">
+<owl-date-time #dt10></owl-date-time>
+<hr>
+// picker with min and max
+<!-- <input [min]="min" [max]="max" [owlDateTimeTrigger]="dt11" [owlDateTime]="dt11" #dateTime="ngModel">
+<owl-date-time #dt11></owl-date-time>
+<div *ngIf="dateTime.invalid && dateTime.errors.owlDateTimeMin">
+    Date Time value must after {{min | date: 'medium'}}
+</div>
+<div *ngIf="dateTime.invalid && dateTime.errors.owlDateTimeMax">
+    Date Time value must before {{max | date: 'medium'}}
+</div> -->
+// Open Picker as a Dialog
+<label>
+    Date Time:
+    <input [owlDateTimeTrigger]="dt12" [owlDateTime]="dt12">
+    <owl-date-time [pickerMode]="'dialog'" #dt12></owl-date-time>
+</label>
+<hr>
+<input [owlDateTimeTrigger]="dt13" [owlDateTime]="dt13">
+<owl-date-time [pickerType]="'calendar'" #dt13 [startView]="'year'"></owl-date-time>
+<hr>

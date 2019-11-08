@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600');
+@import "~ng-pick-datetime/assets/style/picker.min.css";
 /* body {
     background: rgba(0,0,0,0.08) !important;
   font-family: 'Muli', sans-serif;

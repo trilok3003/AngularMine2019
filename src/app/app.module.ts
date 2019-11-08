@@ -72,6 +72,8 @@ import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExampleSourceCodeComponent } from './example-source-code/example-source-code.component';
 import { NgxMaterialTimepickerModule1 } from './material-timepicker/ngx-material-timepicker.module';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-picker-demo.component';
 
 @NgModule({
   declarations: [
@@ -140,7 +142,8 @@ import { NgxMaterialTimepickerModule1 } from './material-timepicker/ngx-material
     DateTimePickerExamplesComponent,
     NavbarSidebarComponent,
     TimePickerExamplesComponent,
-    ExampleSourceCodeComponent
+    ExampleSourceCodeComponent,
+    DateTimePickerDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -153,7 +156,9 @@ import { NgxMaterialTimepickerModule1 } from './material-timepicker/ngx-material
    // NgxMaterialTimepickerModule,
     // NgxMaterialTimepickerModule.setLocale('ar-AE'),
     NgxMaterialTimepickerModule1,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
