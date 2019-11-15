@@ -48,7 +48,8 @@ export class TopicsComponent implements OnInit {
     {path: 'map-set', name: 'Map And Set'},
     {path: 'date_time_picker', name: 'Date Time Picker'},
     {path: 'time_picker', name: 'Time Picker'},
-    {path: 'date_time_picker_2', name: 'Date Time Picker 2'}
+    {path: 'date_time_picker_2', name: 'Date Time Picker 2'},
+    {path: 'custom', name: 'Custom Date Pipe'},
   ]
   constructor(public router: Router) { }
 

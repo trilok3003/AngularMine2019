@@ -38,6 +38,7 @@ listofstudent = [
   searchText = '';
   showDialog;
   formObject: any;
+  todayDate = new Date();
   constructor(public api:ApiService) { 
     this.formObject = [
       {
