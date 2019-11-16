@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
 import { ApiService } from 'src/app/services/api.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-custom',
@@ -39,7 +40,8 @@ listofstudent = [
   showDialog;
   formObject: any;
   todayDate = new Date();
-  constructor(public api:ApiService) { 
+  userForm: FormGroup;
+  constructor(public api:ApiService, public fb: FormBuilder) { 
     this.formObject = [
       {
         label: 'Receiving',
@@ -159,7 +161,14 @@ listofstudent = [
         ]
       }
     ];
-
+    this.userForm = this.fb.group({
+      name: [''],
+      email: ['', [Validators.required, Validators.email]]
+    })
+    const nameControl = this.userForm.get('name');
+    nameControl.setErrors({
+      "notUnique": true
+    });
   }
   postComments = [
   
@@ -237,5 +246,8 @@ listofstudent = [
   formObjectUpdated(e) {
     console.log(e);
   } 
+  submit() {
+    console.log(this.userForm.value)
+  }
 
 }

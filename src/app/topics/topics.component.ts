@@ -50,6 +50,8 @@ export class TopicsComponent implements OnInit {
     {path: 'time_picker', name: 'Time Picker'},
     {path: 'date_time_picker_2', name: 'Date Time Picker 2'},
     {path: 'custom', name: 'Custom Date Pipe'},
+    {path: 'rxjsUses', name: 'Rxjs Uses'},
+    {path: 'custom', name: 'Validation errors'},
   ]
   constructor(public router: Router) { }
 

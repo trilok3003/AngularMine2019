@@ -1,5 +1,28 @@
 <div class="card">
   <div class="card-header">
+  Validation Errors Example
+  </div>
+  <div class="card-body">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+      <div class="form-group">
+          <input  placeholder="name" formControlName="name" class="form-control" required>
+          <p *ngIf="userForm.get('name').status === 'INVALID'" class="alert alert-danger">
+            <app-validation-errors [errors]="userForm.get('name').errors" errorPrefix="name is"></app-validation-errors>      
+          </p>
+    
+      </div>
+      <div class="form-group">
+          <input  placeholder="email" formControlName="email" class="form-control" required>
+          <p *ngIf="userForm.get('email').status === 'INVALID'" class="alert alert-danger">
+            <app-validation-errors [errors]="userForm.get('email').errors"></app-validation-errors>
+          </p>
+      </div>
+      <button class="btn btn-primary">SUBMIT</button>
+    </form>
+  </div> 
+  </div>
+<div class="card">
+  <div class="card-header">
       Custom Date Pipe Example
   </div>
   <div class="card-body">

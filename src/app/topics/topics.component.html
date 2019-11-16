@@ -1,6 +1,6 @@
 
    <div class="row">
-       <div class="col-md-4 mt-2"  *ngFor="let topic of topics" (click)="toNavigate(topic.path)">
+       <div class="col-md-3 mt-2"  *ngFor="let topic of topics" (click)="toNavigate(topic.path)">
         <div class="card border-info mb-3 text-center">
             <div class="card-body">
               <h5 class="card-title">{{topic.name | titlecase}}</h5>

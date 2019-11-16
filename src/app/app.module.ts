@@ -75,6 +75,8 @@ import { NgxMaterialTimepickerModule1 } from './material-timepicker/ngx-material
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-picker-demo.component';
 import { CustomDatePipe } from './pipes/custom-date.pipe';
+import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
+import { ValidationErrorsComponent } from './validation-errors/validation-errors.component';
 
 @NgModule({
   declarations: [
@@ -145,7 +147,9 @@ import { CustomDatePipe } from './pipes/custom-date.pipe';
     TimePickerExamplesComponent,
     ExampleSourceCodeComponent,
     DateTimePickerDemoComponent,
-    CustomDatePipe
+    CustomDatePipe,
+    RxjsUsesComponent,
+    ValidationErrorsComponent
   ],
   imports: [
     BrowserModule,

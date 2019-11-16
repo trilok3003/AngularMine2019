@@ -42,6 +42,7 @@ import { MapSetComponent } from './logic/map-set/map-set.component';
 import { DateTimePickerExamplesComponent } from './date-time-picker-examples/date-time-picker-examples.component';
 import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-examples.component';
 import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-picker-demo.component';
+import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
 
 
 const routes: Routes = [
@@ -86,10 +87,8 @@ const routes: Routes = [
   {path: 'map-set', component: MapSetComponent},
   {path: 'date_time_picker', component: DateTimePickerExamplesComponent},
   {path: 'time_picker', component: TimePickerExamplesComponent},
-  {path: 'date_time_picker_2', component: DateTimePickerDemoComponent}
-
-
-
+  {path: 'date_time_picker_2', component: DateTimePickerDemoComponent},
+  {path: 'rxjsUses', component: RxjsUsesComponent}
 ];
 
 @NgModule({
