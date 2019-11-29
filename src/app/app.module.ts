@@ -77,6 +77,7 @@ import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-p
 import { CustomDatePipe } from './pipes/custom-date.pipe';
 import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
 import { ValidationErrorsComponent } from './validation-errors/validation-errors.component';
+import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
 
 @NgModule({
   declarations: [
@@ -149,7 +150,8 @@ import { ValidationErrorsComponent } from './validation-errors/validation-errors
     DateTimePickerDemoComponent,
     CustomDatePipe,
     RxjsUsesComponent,
-    ValidationErrorsComponent
+    ValidationErrorsComponent,
+    FilteringRxjsComponent
   ],
   imports: [
     BrowserModule,

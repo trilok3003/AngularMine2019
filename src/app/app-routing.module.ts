@@ -43,6 +43,7 @@ import { DateTimePickerExamplesComponent } from './date-time-picker-examples/dat
 import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-examples.component';
 import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-picker-demo.component';
 import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
+import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
 
 
 const routes: Routes = [
@@ -88,7 +89,8 @@ const routes: Routes = [
   {path: 'date_time_picker', component: DateTimePickerExamplesComponent},
   {path: 'time_picker', component: TimePickerExamplesComponent},
   {path: 'date_time_picker_2', component: DateTimePickerDemoComponent},
-  {path: 'rxjsUses', component: RxjsUsesComponent}
+  {path: 'rxjsUses', component: RxjsUsesComponent},
+  {path: 'filteringWithRxjs', component: FilteringRxjsComponent}
 ];
 
 @NgModule({

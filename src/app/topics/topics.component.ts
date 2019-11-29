@@ -52,6 +52,7 @@ export class TopicsComponent implements OnInit {
     {path: 'custom', name: 'Custom Date Pipe'},
     {path: 'rxjsUses', name: 'Rxjs Uses'},
     {path: 'custom', name: 'Validation errors'},
+    {path: 'filteringWithRxjs', name: 'Filtering using rxjs'},
   ]
   constructor(public router: Router) { }
 
