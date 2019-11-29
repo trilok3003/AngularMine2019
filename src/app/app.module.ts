@@ -78,6 +78,8 @@ import { CustomDatePipe } from './pipes/custom-date.pipe';
 import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
 import { ValidationErrorsComponent } from './validation-errors/validation-errors.component';
 import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
+import { StateStoreComponent } from './state-store/state-store.component';
+import { TestsComponent } from './test/tests.component';
 
 @NgModule({
   declarations: [
@@ -151,7 +153,9 @@ import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.componen
     CustomDatePipe,
     RxjsUsesComponent,
     ValidationErrorsComponent,
-    FilteringRxjsComponent
+    FilteringRxjsComponent,
+    StateStoreComponent,
+    TestsComponent
   ],
   imports: [
     BrowserModule,

@@ -44,6 +44,8 @@ import { TimePickerExamplesComponent } from './time-picker-examples/time-picker-
 import { DateTimePickerDemoComponent } from './date-time-picker-demo/date-time-picker-demo.component';
 import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
 import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
+import { StateStoreComponent } from './state-store/state-store.component';
+import { TestsComponent } from './test/tests.component';
 
 
 const routes: Routes = [
@@ -90,7 +92,8 @@ const routes: Routes = [
   {path: 'time_picker', component: TimePickerExamplesComponent},
   {path: 'date_time_picker_2', component: DateTimePickerDemoComponent},
   {path: 'rxjsUses', component: RxjsUsesComponent},
-  {path: 'filteringWithRxjs', component: FilteringRxjsComponent}
+  {path: 'filteringWithRxjs', component: FilteringRxjsComponent},
+  {path: 'stateStore', component: TestsComponent}
 ];
 
 @NgModule({
