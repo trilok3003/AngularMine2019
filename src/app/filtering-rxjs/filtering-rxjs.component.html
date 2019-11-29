@@ -1,0 +1,5 @@
+<input type="text" [formControl]="filter" placeholder="Filter states...">
+
+<ul class="list-group">
+  <li *ngFor="let state of filteredStates$ | async" class="list-group-item">{{state.name}}</li>
+</ul>
