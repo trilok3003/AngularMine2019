@@ -48,6 +48,7 @@ import { StateStoreComponent } from './state-store/state-store.component';
 import { TestsComponent } from './test/tests.component';
 
 
+
 const routes: Routes = [
   {path:'group',component:GroupDataComponent},
   {path:'dynamic_form',component:DyanamicFormComponent},
@@ -94,11 +95,12 @@ const routes: Routes = [
   {path: 'rxjsUses', component: RxjsUsesComponent},
   {path: 'filteringWithRxjs', component: FilteringRxjsComponent},
   {path: 'stateStore', component: TestsComponent},
-  {path: 'customDashboard', loadChildren: () => import('./custom-dashboard/custom-dashboard.module').then(m => m.CustomDashboardModule)}
+  {path: 'customDashboard', loadChildren: () => import('./custom-dashboard/custom-dashboard.module').then(m => m.CustomDashboardModule)},
+  {path: 'nestedLevelModule', loadChildren: () => import('./angular-nested-routing/angular-nested-routing.module').then(m => m.AngularNestedRoutingModule)}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

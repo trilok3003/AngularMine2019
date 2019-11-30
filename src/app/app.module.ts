@@ -80,7 +80,6 @@ import { ValidationErrorsComponent } from './validation-errors/validation-errors
 import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
 import { StateStoreComponent } from './state-store/state-store.component';
 import { TestsComponent } from './test/tests.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -155,7 +154,7 @@ import { TestsComponent } from './test/tests.component';
     ValidationErrorsComponent,
     FilteringRxjsComponent,
     StateStoreComponent,
-    TestsComponent
+    TestsComponent,
   ],
   imports: [
     BrowserModule,

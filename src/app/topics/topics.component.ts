@@ -55,6 +55,7 @@ export class TopicsComponent implements OnInit {
     {path: 'filteringWithRxjs', name: 'Filtering using rxjs'},
     {path: 'stateStore', name: 'State store examples'},
     {path: 'customDashboard', name: 'Lazy loading feature modules'},
+    {path: 'nestedLevelModule', name: 'nested level routing module'},
 
   ]
   constructor(public router: Router) { }
