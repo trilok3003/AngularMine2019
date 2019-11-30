@@ -56,6 +56,8 @@ export class TopicsComponent implements OnInit {
     {path: 'stateStore', name: 'State store examples'},
     {path: 'customDashboard', name: 'Lazy loading feature modules'},
     {path: 'nestedLevelModule', name: 'nested level routing module'},
+    {path: 'checkboxSelect', name: 'Parent Child Checkbox List Structure with Expand Collapse'},
+
 
   ]
   constructor(public router: Router) { }

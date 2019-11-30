@@ -80,6 +80,7 @@ import { ValidationErrorsComponent } from './validation-errors/validation-errors
 import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
 import { StateStoreComponent } from './state-store/state-store.component';
 import { TestsComponent } from './test/tests.component';
+import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-child-checkbox.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -155,6 +156,7 @@ import { TestsComponent } from './test/tests.component';
     FilteringRxjsComponent,
     StateStoreComponent,
     TestsComponent,
+    ParentChildCheckboxComponent,
   ],
   imports: [
     BrowserModule,

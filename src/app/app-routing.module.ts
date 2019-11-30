@@ -46,6 +46,7 @@ import { RxjsUsesComponent } from './rxjs-uses/rxjs-uses.component';
 import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.component';
 import { StateStoreComponent } from './state-store/state-store.component';
 import { TestsComponent } from './test/tests.component';
+import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-child-checkbox.component';
 
 
 
@@ -96,7 +97,8 @@ const routes: Routes = [
   {path: 'filteringWithRxjs', component: FilteringRxjsComponent},
   {path: 'stateStore', component: TestsComponent},
   {path: 'customDashboard', loadChildren: () => import('./custom-dashboard/custom-dashboard.module').then(m => m.CustomDashboardModule)},
-  {path: 'nestedLevelModule', loadChildren: () => import('./angular-nested-routing/angular-nested-routing.module').then(m => m.AngularNestedRoutingModule)}
+  {path: 'nestedLevelModule', loadChildren: () => import('./angular-nested-routing/angular-nested-routing.module').then(m => m.AngularNestedRoutingModule)},
+  {path: 'checkboxSelect', component: ParentChildCheckboxComponent}
 ];
 
 @NgModule({
