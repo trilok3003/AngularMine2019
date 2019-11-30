@@ -12,8 +12,11 @@
 </div>
 <div class="row">
       <app-sidebar *ngIf="sidebarShow"></app-sidebar>
-    <div class="container mt-4">
+    <!-- <div class="container mt-4">
       <router-outlet></router-outlet>
-    </div>
+    </div> -->
+    <div [@myAnimation]="o.isActivated ? o.activatedRoute : ''" class="container mt-4">
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
 </div>
 <!-- <app-navbar-sidebar></app-navbar-sidebar> -->
