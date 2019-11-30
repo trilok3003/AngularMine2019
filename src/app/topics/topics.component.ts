@@ -54,6 +54,8 @@ export class TopicsComponent implements OnInit {
     {path: 'custom', name: 'Validation errors'},
     {path: 'filteringWithRxjs', name: 'Filtering using rxjs'},
     {path: 'stateStore', name: 'State store examples'},
+    {path: 'customDashboard', name: 'Lazy loading feature modules'},
+
   ]
   constructor(public router: Router) { }
 

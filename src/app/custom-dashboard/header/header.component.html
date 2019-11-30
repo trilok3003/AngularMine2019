@@ -1,0 +1,22 @@
+<header>
+    <div class="bg-primary">
+      <h1>
+        <a routerLink="view" class="text-white">Home</a>
+      </h1>
+    </div>
+    <nav id="nav" class="nav" role="navigation">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a
+            routerLink="list"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">List</a>
+            <a
+            routerLink="view"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" class="ml-2">View</a>
+        </li>
+       
+      </ul>
+    </nav>
+  </header>

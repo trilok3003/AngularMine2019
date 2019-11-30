@@ -93,7 +93,8 @@ const routes: Routes = [
   {path: 'date_time_picker_2', component: DateTimePickerDemoComponent},
   {path: 'rxjsUses', component: RxjsUsesComponent},
   {path: 'filteringWithRxjs', component: FilteringRxjsComponent},
-  {path: 'stateStore', component: TestsComponent}
+  {path: 'stateStore', component: TestsComponent},
+  {path: 'customDashboard', loadChildren: () => import('./custom-dashboard/custom-dashboard.module').then(m => m.CustomDashboardModule)}
 ];
 
 @NgModule({
