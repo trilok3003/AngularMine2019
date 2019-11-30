@@ -1,5 +1,5 @@
 
-   <div class="row">
+   <div class="row" *ngIf="false">
        <div class="col-md-3 mt-2"  *ngFor="let topic of topics" (click)="toNavigate(topic.path)">
         <div class="card border-info mb-3 text-center">
             <div class="card-body">
@@ -20,3 +20,8 @@
       <a href="#" class="btn btn-outline-info">Message</a>
     </div>
   </div> -->
+  <div class="chip mt-2" *ngFor="let topic of topics" (click)="toNavigate(topic.path)">
+      <!-- <img src="" alt="Angular" width="96" height="96"> -->
+      <h5>{{topic.name | titlecase}}</h5>
+      <hr>
+    </div>
