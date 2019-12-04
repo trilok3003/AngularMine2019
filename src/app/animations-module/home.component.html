@@ -1,0 +1,19 @@
+<h1>Animations</h1>
+
+Toggle All Animations <input type="checkbox" [checked]="!animationsDisabled" (click)="toggleAnimations()"/>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- <a id="home" routerLink="/home" routerLinkActive="active">Home</a> -->
+  <a id="about" routerLink="about" routerLinkActive="active" class="navbar-brand">About</a>
+  <a id="open-close" routerLink="open-close" routerLinkActive="active" class="navbar-brand">Open/Close</a>
+  <a id="status" routerLink="status-slider" routerLinkActive="active" class="navbar-brand">Status Slider</a>
+  <a id="toggle" routerLink="toggle" routerLinkActive="active" class="navbar-brand">Toggle Animations</a>
+  <a id="enter-leave" routerLink="enter-leave" routerLinkActive="active" class="navbar-brand">Enter/Leave</a>
+  <!-- <a id="auto" routerLink="/auto" routerLinkActive="active">Auto Calculation</a> -->
+  <a id="list" routerLink="list" routerLinkActive="active" class="navbar-brand">Filter Stagger</a>
+  <!-- <a id="hero-groups" routerLink="/hero-groups" routerLinkActive="active">Hero Groups</a> -->
+</nav>
+
+<div [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

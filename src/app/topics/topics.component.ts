@@ -57,6 +57,8 @@ export class TopicsComponent implements OnInit {
     {path: 'customDashboard', name: 'Lazy loading feature modules'},
     {path: 'nestedLevelModule', name: 'nested level routing module'},
     {path: 'checkboxSelect', name: 'Parent Child Checkbox List Structure with Expand Collapse'},
+    {path: 'animationModule', name: 'Animation Examples'},
+
 
 
   ]

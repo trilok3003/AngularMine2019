@@ -1,0 +1,14 @@
+<h2>Filter/Stagger</h2>
+
+<form>
+  <input #criteria (input)="updateCriteria(criteria.value)" placeholder="Search Heroes" />
+</form>    
+
+<ul class="list-group" [@filterAnimation]="heroTotal">
+  <li *ngFor="let hero of heroes" class="list-group-item">
+    <div>
+      <span>{{ hero.id }}</span>
+      <span>{{ hero.name }}</span>
+    </div>
+  </li>
+</ul>

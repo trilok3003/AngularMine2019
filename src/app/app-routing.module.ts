@@ -98,7 +98,9 @@ const routes: Routes = [
   {path: 'stateStore', component: TestsComponent},
   {path: 'customDashboard', loadChildren: () => import('./custom-dashboard/custom-dashboard.module').then(m => m.CustomDashboardModule)},
   {path: 'nestedLevelModule', loadChildren: () => import('./angular-nested-routing/angular-nested-routing.module').then(m => m.AngularNestedRoutingModule)},
-  {path: 'checkboxSelect', component: ParentChildCheckboxComponent}
+  {path: 'checkboxSelect', component: ParentChildCheckboxComponent},
+  {path: 'animationModule', loadChildren: () => import('./animations-module/animations-module.module').then(m => m.AnimationsModuleModule)},
+
 ];
 
 @NgModule({
