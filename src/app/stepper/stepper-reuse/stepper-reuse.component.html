@@ -1,0 +1,24 @@
+<div class="stepper">
+        <ng-container *ngFor="let step of steps; let l = last; let i = index">
+        <div class="rounded rounded-circle px-2 mr-2 text-center text-white circle" (click)="onSelect(step, i)" [ngClass]="{'select': step.selected}">
+        <ng-container *ngIf="step.selected">
+            {{i + 1}}
+        </ng-container>  
+        <ng-container *ngIf="!step.selected">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="100%" height="100%" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="checkmark"><rect width="24" height="24" opacity="0"></rect><path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z"></path></g></g></svg>
+        </ng-container>  
+    </div>
+    <div class="label">{{step.name}} Step</div>
+    <div class="connector" *ngIf="!l"></div>
+    </ng-container>
+    </div>
+    <div class="content col-md-12 " *ngIf="selectStepper">
+        <h4>Step content # {{selectStepper.name}} </h4>
+    <p>
+        {{selectStepper.content}}
+    </p>
+    </div>
+    <div class="col-md-12">
+        <button class="btn btn-primary btn-sm" (click)="onPrev()">Prev</button>
+        <button class="btn btn-primary btn-sm ml-2" (click)="onNext()">Next</button>
+    </div>

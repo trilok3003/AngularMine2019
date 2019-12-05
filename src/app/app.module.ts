@@ -84,6 +84,7 @@ import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-chi
 import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { StepperReuseComponent } from './stepper/stepper-reuse/stepper-reuse.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -163,6 +164,7 @@ import { StepperComponent } from './stepper/stepper.component';
     TimelineFlowComponent,
     TimelineComponent,
     StepperComponent,
+    StepperReuseComponent,
   ],
   imports: [
     BrowserModule,
