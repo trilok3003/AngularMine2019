@@ -90,3 +90,32 @@ background: darken(deepskyblue, 2%);
     .aside-2 { order: 3; }
     .footer  { order: 4; }
   }
+  /* header sidebar content  */
+  #header {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#444444, #333333);
+    color: #bbbbbb;
+  }
+  
+  #headerContent {
+    margin-left: 10px;
+  }
+  
+  #page {
+    display: flex;
+    height: calc( 100vh - 30px);
+    /* calculate the height. Header is 30px */
+  }
+  
+  #sideBar {
+    width: 100px;
+    background: red;
+  }
+  
+  #content {
+    background: blue;
+    flex: 1 0 auto;
+    /* enable grow, disable shrink */
+  }
