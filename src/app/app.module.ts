@@ -83,6 +83,7 @@ import { TestsComponent } from './test/tests.component';
 import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-child-checkbox.component';
 import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
+import { StepperComponent } from './stepper/stepper.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -161,6 +162,7 @@ import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
     ParentChildCheckboxComponent,
     TimelineFlowComponent,
     TimelineComponent,
+    StepperComponent,
   ],
   imports: [
     BrowserModule,
@@ -175,8 +177,8 @@ import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
     NgxMaterialTimepickerModule1,
     BrowserAnimationsModule,
     OwlDateTimeModule,
-    OwlNativeDateTimeModule,
-  ],
+    OwlNativeDateTimeModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

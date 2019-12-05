@@ -1,0 +1,62 @@
+.stepper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.circle {
+    background-color: #3366ff;
+    border-color: #3366ff;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+ .connector {
+    height: 2px;
+    background-color: #edf1f7;
+    width: 105px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.label {
+    color: #8f9bb3;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+.select {
+   color: #3366ff;
+   background-color: red;
+   border-color: #3366ff;
+   width: 32px;
+   height: 32px;
+   cursor: pointer;
+}
+.content {
+    margin-top: 25px;
+}
+.content h4 {
+    font-size: 1.625rem;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.content p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .flex>div {
+    flex: 1 0 33%;
+  }
+  
+  /* .flex>div:first-child {
+    flex: 0 1 100%;
+  } */

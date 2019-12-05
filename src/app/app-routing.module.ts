@@ -49,6 +49,7 @@ import { TestsComponent } from './test/tests.component';
 import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-child-checkbox.component';
 import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 
 
@@ -103,7 +104,8 @@ const routes: Routes = [
   {path: 'checkboxSelect', component: ParentChildCheckboxComponent},
   {path: 'animationModule', loadChildren: () => import('./animations-module/animations-module.module').then(m => m.AnimationsModuleModule)},
   {path: 'angularModelModule', loadChildren: () => import('./angular-model/angular-model.module').then(m => m.AngularModelModule)},
-  {path: 'timeline', component: TimelineComponent}
+  {path: 'timeline', component: TimelineComponent},
+  {path: 'stepper', component: StepperComponent}
 ];
 
 @NgModule({

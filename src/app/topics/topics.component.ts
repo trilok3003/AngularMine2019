@@ -60,6 +60,8 @@ export class TopicsComponent implements OnInit {
     {path: 'animationModule', name: 'Animation Examples'},
     {path: 'angularModelModule', name: 'Angular model example'},
     {path: 'timeline', name: 'Time Line example'},
+    {path: 'stepper', name: 'Stepper example'}
+
   ]
   constructor(public router: Router) { }
 
