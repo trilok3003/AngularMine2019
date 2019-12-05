@@ -58,9 +58,7 @@ export class TopicsComponent implements OnInit {
     {path: 'nestedLevelModule', name: 'nested level routing module'},
     {path: 'checkboxSelect', name: 'Parent Child Checkbox List Structure with Expand Collapse'},
     {path: 'animationModule', name: 'Animation Examples'},
-
-
-
+    {path: 'angularModelModule', name: 'Angular model example'},
   ]
   constructor(public router: Router) { }
 

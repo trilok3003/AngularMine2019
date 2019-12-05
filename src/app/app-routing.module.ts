@@ -100,7 +100,7 @@ const routes: Routes = [
   {path: 'nestedLevelModule', loadChildren: () => import('./angular-nested-routing/angular-nested-routing.module').then(m => m.AngularNestedRoutingModule)},
   {path: 'checkboxSelect', component: ParentChildCheckboxComponent},
   {path: 'animationModule', loadChildren: () => import('./animations-module/animations-module.module').then(m => m.AnimationsModuleModule)},
-
+  {path: 'angularModelModule', loadChildren: () => import('./angular-model/angular-model.module').then(m => m.AngularModelModule)},
 ];
 
 @NgModule({
