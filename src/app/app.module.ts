@@ -81,6 +81,8 @@ import { FilteringRxjsComponent } from './filtering-rxjs/filtering-rxjs.componen
 import { StateStoreComponent } from './state-store/state-store.component';
 import { TestsComponent } from './test/tests.component';
 import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-child-checkbox.component';
+import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
+import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -157,6 +159,8 @@ import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-chi
     StateStoreComponent,
     TestsComponent,
     ParentChildCheckboxComponent,
+    TimelineFlowComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule,

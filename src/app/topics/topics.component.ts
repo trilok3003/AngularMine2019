@@ -59,6 +59,7 @@ export class TopicsComponent implements OnInit {
     {path: 'checkboxSelect', name: 'Parent Child Checkbox List Structure with Expand Collapse'},
     {path: 'animationModule', name: 'Animation Examples'},
     {path: 'angularModelModule', name: 'Angular model example'},
+    {path: 'timeline', name: 'Time Line example'},
   ]
   constructor(public router: Router) { }
 
