@@ -50,6 +50,7 @@ import { ParentChildCheckboxComponent } from './parent-child-checkbox/parent-chi
 import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { Css3FlexBoxGuideComponent } from './css3-flex-box-guide/css3-flex-box-guide.component';
 
 
 
@@ -105,7 +106,8 @@ const routes: Routes = [
   {path: 'animationModule', loadChildren: () => import('./animations-module/animations-module.module').then(m => m.AnimationsModuleModule)},
   {path: 'angularModelModule', loadChildren: () => import('./angular-model/angular-model.module').then(m => m.AngularModelModule)},
   {path: 'timeline', component: TimelineComponent},
-  {path: 'stepper', component: StepperComponent}
+  {path: 'stepper', component: StepperComponent},
+  {path: 'css3FlexBox', component: Css3FlexBoxGuideComponent}
 ];
 
 @NgModule({

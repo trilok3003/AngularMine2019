@@ -6,7 +6,7 @@
 .circle {
     background-color: #3366ff;
     border-color: #3366ff;
-    color: #ffffff;
+    color: #ffffff !important;
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -28,7 +28,7 @@
 }
 .select {
    color: #3366ff;
-   background-color: red;
+   background-color: #FF9149;
    border-color: #3366ff;
    width: 32px;
    height: 32px;

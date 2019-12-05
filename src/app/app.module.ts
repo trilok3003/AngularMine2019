@@ -85,6 +85,7 @@ import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { StepperReuseComponent } from './stepper/stepper-reuse/stepper-reuse.component';
+import { Css3FlexBoxGuideComponent } from './css3-flex-box-guide/css3-flex-box-guide.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -165,6 +166,7 @@ import { StepperReuseComponent } from './stepper/stepper-reuse/stepper-reuse.com
     TimelineComponent,
     StepperComponent,
     StepperReuseComponent,
+    Css3FlexBoxGuideComponent,
   ],
   imports: [
     BrowserModule,
