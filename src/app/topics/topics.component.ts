@@ -61,7 +61,9 @@ export class TopicsComponent implements OnInit {
     {path: 'angularModelModule', name: 'Angular model example'},
     {path: 'timeline', name: 'Time Line example'},
     {path: 'stepper', name: 'Stepper example'},
-    {path: 'css3FlexBox', name: 'Css3 flexbox guide'}
+    {path: 'css3FlexBox', name: 'Css3 flexbox guide'},
+    {path: 'animations', name: 'Animation Module Example'}
+
   ]
   constructor(public router: Router) { }
 

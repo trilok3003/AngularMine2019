@@ -1,0 +1,26 @@
+<button class="btn btn-primary btn-sm" (click)="show = !show">{{ show ? 'HIDE' : 'SHOW' }}</button>
+<button class="btn btn-primary btn-sm" (click)="show1 = !show1">{{ show1 ? 'HIDE' : 'SHOW' }}</button>
+<ng-container *ngIf="show"  @enterLeave>
+    <div class="car" *ngFor="let car of cars"    [@selected]="car.selected" (@selected.done)="logIt($event)"  @enterLeave>
+        <h5>{{ car.name | uppercase }} ({{ car.year }}) - <i>{{ car.price }}€</i></h5>
+        <button 
+        (click)="car.selected === 'selected' ?
+                        car.selected = 'notSelected' :
+                        car.selected = 'selected'"
+        class="btn btn-primary btn-sm">
+    {{ car.selected === 'selected' ? 'Deselect' : 'Select' }}
+    </button>
+    </div>
+</ng-container>
+<ng-container *ngIf="show1"  @enterLeave1>
+        <div class="car" *ngFor="let car of cars"    [@selected1]="car.selected" (@selected1.done)="logIt($event)"  @enterLeave1>
+            <h5>{{ car.name | uppercase }} ({{ car.year }}) - <i>{{ car.price }}€</i></h5>
+            <button 
+            (click)="car.selected === 'selected1' ?
+                            car.selected = 'notSelected' :
+                            car.selected = 'selected1'"
+            class="btn btn-primary btn-sm">
+        {{ car.selected === 'selected' ? 'Deselect' : 'Select' }}
+        </button>
+        </div>
+    </ng-container>

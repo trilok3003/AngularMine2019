@@ -107,7 +107,8 @@ const routes: Routes = [
   {path: 'angularModelModule', loadChildren: () => import('./angular-model/angular-model.module').then(m => m.AngularModelModule)},
   {path: 'timeline', component: TimelineComponent},
   {path: 'stepper', component: StepperComponent},
-  {path: 'css3FlexBox', component: Css3FlexBoxGuideComponent}
+  {path: 'css3FlexBox', component: Css3FlexBoxGuideComponent},
+  {path: 'animations', loadChildren: () => import('./animation-demo/animation-demo.module').then(m => m.AnimationDemoModule)},
 ];
 
 @NgModule({
