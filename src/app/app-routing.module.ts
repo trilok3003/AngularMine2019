@@ -51,6 +51,7 @@ import { TimelineFlowComponent } from './timeline-flow/timeline-flow.component';
 import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { Css3FlexBoxGuideComponent } from './css3-flex-box-guide/css3-flex-box-guide.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -109,6 +110,7 @@ const routes: Routes = [
   {path: 'stepper', component: StepperComponent},
   {path: 'css3FlexBox', component: Css3FlexBoxGuideComponent},
   {path: 'animations', loadChildren: () => import('./animation-demo/animation-demo.module').then(m => m.AnimationDemoModule)},
+  {path: 'searches', component: SearchComponent}
 ];
 
 @NgModule({

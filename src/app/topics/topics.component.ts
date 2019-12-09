@@ -62,7 +62,9 @@ export class TopicsComponent implements OnInit {
     {path: 'timeline', name: 'Time Line example'},
     {path: 'stepper', name: 'Stepper example'},
     {path: 'css3FlexBox', name: 'Css3 flexbox guide'},
-    {path: 'animations', name: 'Animation Module Example'}
+    {path: 'animations', name: 'Animation Module Example'},
+    {path: 'searches', name: 'Real Time Search using rxjs Examples'}
+
 
   ]
   constructor(public router: Router) { }
