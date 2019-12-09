@@ -52,6 +52,10 @@ import { TimelineComponent } from './timeline-flow/timeline/timeline.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { Css3FlexBoxGuideComponent } from './css3-flex-box-guide/css3-flex-box-guide.component';
 import { SearchComponent } from './search/search.component';
+import { CheckUncheckListComponent } from './check-uncheck-list/check-uncheck-list.component';
+import { SelectUnselectComponent } from './check-uncheck-list/select-unselect/select-unselect.component';
+import { PaginationsComponent } from './paginations/paginations.component';
+import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showmore-showless.component';
 
 
 
@@ -110,7 +114,12 @@ const routes: Routes = [
   {path: 'stepper', component: StepperComponent},
   {path: 'css3FlexBox', component: Css3FlexBoxGuideComponent},
   {path: 'animations', loadChildren: () => import('./animation-demo/animation-demo.module').then(m => m.AnimationDemoModule)},
-  {path: 'searches', component: SearchComponent}
+  {path: 'searches', component: SearchComponent},
+  {path: 'checkUncheckList', component: CheckUncheckListComponent},
+  {path: 'selectUnselect', component: SelectUnselectComponent},
+  {path: 'paginations', component: PaginationsComponent},
+  {path: 'showMoreShowLess', component: ShowmoreShowlessComponent}
+
 ];
 
 @NgModule({

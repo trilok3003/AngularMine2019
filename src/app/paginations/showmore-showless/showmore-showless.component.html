@@ -1,0 +1,14 @@
+<div>
+    <h3> {{title}}</h3>
+    <ul class="list-group">
+     <li *ngFor="let l of list | slice : startPage:paginationLimit" class="list-group-item">
+       {{l.name}} ({{l.age}})
+     </li>
+    </ul>
+    <button *ngIf ="paginationLimit < list.length" (click)="showMoreItems()" class="btn btn-outline-primary btn-sm mt-2">
+     Show More
+    </button>
+    <button *ngIf ="paginationLimit > 3" (click)="showLessItems()" class="btn btn-outline-primary btn-sm ml-2 mt-2">
+     Show Less
+    </button>
+   </div>

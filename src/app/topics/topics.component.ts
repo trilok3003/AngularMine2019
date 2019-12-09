@@ -63,7 +63,12 @@ export class TopicsComponent implements OnInit {
     {path: 'stepper', name: 'Stepper example'},
     {path: 'css3FlexBox', name: 'Css3 flexbox guide'},
     {path: 'animations', name: 'Animation Module Example'},
-    {path: 'searches', name: 'Real Time Search using rxjs Examples'}
+    {path: 'searches', name: 'Real Time Search using rxjs Examples'},
+    {path: 'checkUncheckList', name: 'Check Uncheck Examples'},
+    {path: 'selectUnselect', name: 'Select and unselect examples'},
+    {path: 'paginations', name: 'Paginations Examples'},
+    {path: 'showMoreShowLess', name: 'Show More Show Less Examples'}
+
 
 
   ]

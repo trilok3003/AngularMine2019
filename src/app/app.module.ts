@@ -87,6 +87,10 @@ import { StepperComponent } from './stepper/stepper.component';
 import { StepperReuseComponent } from './stepper/stepper-reuse/stepper-reuse.component';
 import { Css3FlexBoxGuideComponent } from './css3-flex-box-guide/css3-flex-box-guide.component';
 import { SearchComponent } from './search/search.component';
+import { CheckUncheckListComponent } from './check-uncheck-list/check-uncheck-list.component';
+import { SelectUnselectComponent } from './check-uncheck-list/select-unselect/select-unselect.component';
+import { PaginationsComponent } from './paginations/paginations.component';
+import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showmore-showless.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -169,6 +173,10 @@ import { SearchComponent } from './search/search.component';
     StepperReuseComponent,
     Css3FlexBoxGuideComponent,
     SearchComponent,
+    CheckUncheckListComponent,
+    SelectUnselectComponent,
+    PaginationsComponent,
+    ShowmoreShowlessComponent,
   ],
   imports: [
     BrowserModule,
