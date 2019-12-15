@@ -68,8 +68,10 @@ export class TopicsComponent implements OnInit {
     {path: 'selectUnselect', name: 'Select and unselect examples'},
     {path: 'paginations', name: 'Paginations Examples'},
     {path: 'showMoreShowLess', name: 'Show More Show Less Examples'},
-    {path: 'crud', name: 'Crud Examples'},
-    {path: 'progressbar', name: 'progressbar file uploads'}
+    {path: 'crud', name: 'Crud Examples api'},
+    {path: 'progressbar', name: 'progressbar file uploads'},
+    {path: 'testing', name: 'Display a loader on every HTTP request using Interceptor'}
+
   ]
   constructor(public router: Router) { }
 

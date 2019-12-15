@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header text-white bg-info">Display a loader on every HTTP request using Interceptor</div>
+    <div class="card-body">
+     <app-shared-loader></app-shared-loader>
+    <button (click)="callApi()">Click</button>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">overlay css example</div>
+    <div class="card-body">
+        <div class="card-block overlay"  [ngStyle]="{'display': overlay ? 'flex' : 'none'}">
+            <p>additional content.</p>
+        </div>
+    <button (click)="overlay = !overlay">Click</button>
+    </div>
+</div>

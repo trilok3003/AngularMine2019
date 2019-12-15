@@ -27,7 +27,7 @@ import { CompoentsComponent } from './compoents/compoents.component';
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -94,6 +94,10 @@ import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showm
 import { ProgressbarComponent } from './common/progressbar/progressbar.component';
 import { UploadsComponent } from './common/uploads/uploads.component';
 import { UploadFileExampleComponent } from './common/upload-file-example/upload-file-example.component';
+import { SharedModule } from './shared/shared.module';
+import { XyzComponent } from './xyz/xyz.component';
+import { LoaderService } from './services/loader.service';
+import { LoaderInterceptor } from './interceptor/loader.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -183,6 +187,7 @@ import { UploadFileExampleComponent } from './common/upload-file-example/upload-
     ProgressbarComponent,
     UploadsComponent,
     UploadFileExampleComponent,
+    XyzComponent,
   ],
   imports: [
     BrowserModule,
@@ -197,9 +202,13 @@ import { UploadFileExampleComponent } from './common/upload-file-example/upload-
     NgxMaterialTimepickerModule1,
     BrowserAnimationsModule,
     OwlDateTimeModule,
-    OwlNativeDateTimeModule
+    OwlNativeDateTimeModule,
+    SharedModule
     ],
-  providers: [],
+    providers: [
+      LoaderService,
+      { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
