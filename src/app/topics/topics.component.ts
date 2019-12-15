@@ -67,10 +67,9 @@ export class TopicsComponent implements OnInit {
     {path: 'checkUncheckList', name: 'Check Uncheck Examples'},
     {path: 'selectUnselect', name: 'Select and unselect examples'},
     {path: 'paginations', name: 'Paginations Examples'},
-    {path: 'showMoreShowLess', name: 'Show More Show Less Examples'}
-
-
-
+    {path: 'showMoreShowLess', name: 'Show More Show Less Examples'},
+    {path: 'crud', name: 'Crud Examples'},
+    {path: 'progressbar', name: 'progressbar file uploads'}
   ]
   constructor(public router: Router) { }
 

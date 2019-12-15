@@ -1,0 +1,10 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': show }" (click)="show=true">upload file example1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': !show }"  (click)="show=false">upload file example1</a>
+    </li>
+  </ul>
+  <app-uploads *ngIf="!show"></app-uploads>
+  <app-progressbar *ngIf="show"></app-progressbar>

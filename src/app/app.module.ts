@@ -91,6 +91,9 @@ import { CheckUncheckListComponent } from './check-uncheck-list/check-uncheck-li
 import { SelectUnselectComponent } from './check-uncheck-list/select-unselect/select-unselect.component';
 import { PaginationsComponent } from './paginations/paginations.component';
 import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showmore-showless.component';
+import { ProgressbarComponent } from './common/progressbar/progressbar.component';
+import { UploadsComponent } from './common/uploads/uploads.component';
+import { UploadFileExampleComponent } from './common/upload-file-example/upload-file-example.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -177,6 +180,9 @@ import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showm
     SelectUnselectComponent,
     PaginationsComponent,
     ShowmoreShowlessComponent,
+    ProgressbarComponent,
+    UploadsComponent,
+    UploadFileExampleComponent,
   ],
   imports: [
     BrowserModule,

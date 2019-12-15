@@ -56,6 +56,8 @@ import { CheckUncheckListComponent } from './check-uncheck-list/check-uncheck-li
 import { SelectUnselectComponent } from './check-uncheck-list/select-unselect/select-unselect.component';
 import { PaginationsComponent } from './paginations/paginations.component';
 import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showmore-showless.component';
+import { ProgressbarComponent } from './common/progressbar/progressbar.component';
+import { UploadFileExampleComponent } from './common/upload-file-example/upload-file-example.component';
 
 
 
@@ -118,7 +120,9 @@ const routes: Routes = [
   {path: 'checkUncheckList', component: CheckUncheckListComponent},
   {path: 'selectUnselect', component: SelectUnselectComponent},
   {path: 'paginations', component: PaginationsComponent},
-  {path: 'showMoreShowLess', component: ShowmoreShowlessComponent}
+  {path: 'showMoreShowLess', component: ShowmoreShowlessComponent},
+  {path: 'crud', loadChildren: () => import('./crud-module/crud-module.module').then(m => m.CrudModuleModule)},
+  {path: 'progressbar', component: UploadFileExampleComponent},
 
 ];
 

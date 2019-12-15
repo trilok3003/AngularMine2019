@@ -1,0 +1,27 @@
+<strong>crud example</strong>
+Enter the value  : <input [value]='name' (input)='name = $event.target.value'>  
+<br>  
+ Entered value : Hi  {{name}} 
+ <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.email}}</td>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+        </tr>
+    </tbody>
+</table>
+<form>
+    <input placeholder="Enter email" [(ngModel)]="user.email" #email="ngModel" name="email"/>
+    <input placeholder="Enter First Name"[(ngModel)]="user.first_name" #first_name="ngModel" name="first_name">
+    <input placeholder="Enter Last Name" [(ngModel)]="user.last_name" #last_name="ngModel" name="last_name"/>
+    <button type="submit" (click)="createUser()">Save</button>
+  </form>
+<router-outlet></router-outlet>

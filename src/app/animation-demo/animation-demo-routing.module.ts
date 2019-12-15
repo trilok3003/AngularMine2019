@@ -9,8 +9,7 @@ import { DemoComponent } from './demo/demo.component';
 
 const routes: Routes = [
   {path:'', component: StartComponent, children: [
-    { path: '', redirectTo: 'start', pathMatch: 'full' }, 
-    {path: 'start', component: StartComponent},
+    { path: '', redirectTo: 'example1', pathMatch: 'full' }, 
     {path: 'example1', component: Example1Component},
     {path: 'example2', component: Example2Component},
     {path: 'showhide', component: ShowHideComponent},
