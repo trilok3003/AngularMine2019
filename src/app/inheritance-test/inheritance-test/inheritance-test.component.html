@@ -1,0 +1,18 @@
+
+<button (click)="displayTable = true" class="btn btn-primary">Table</button>
+<button (click)="displayTable = false" class="btn btn-primary ml-2">List</button>
+
+<p>
+  Selected Employee: <br>
+  {{selectedEmployee.firstName}} {{selectedEmployee.lastName}}
+</p>
+
+<app-employee-list 
+  *ngIf="!displayTable"
+  [employees]="employees"
+  (select)="selectEmployee($event)"></app-employee-list>
+  
+<app-employee-table
+  *ngIf="displayTable"
+  [employees]="employees"
+  (select)="selectEmployee($event)"></app-employee-table>

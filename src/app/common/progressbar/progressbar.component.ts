@@ -9,7 +9,7 @@ import { UploadService } from '../upload.service';
 })
 export class ProgressbarComponent implements OnInit {
   form: FormGroup;
-  error: string;
+  error: any;
   userId: number = 1;
   uploadResponse = { status: '', message: '', filePath: '' };
   constructor(private formBuilder: FormBuilder, private uploadService: UploadService) { }

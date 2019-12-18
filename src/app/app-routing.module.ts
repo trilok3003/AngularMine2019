@@ -59,6 +59,7 @@ import { ShowmoreShowlessComponent } from './paginations/showmore-showless/showm
 import { ProgressbarComponent } from './common/progressbar/progressbar.component';
 import { UploadFileExampleComponent } from './common/upload-file-example/upload-file-example.component';
 import { XyzComponent } from './xyz/xyz.component';
+import { InheritanceTestComponent } from './inheritance-test/inheritance-test/inheritance-test.component';
 
 
 
@@ -125,6 +126,8 @@ const routes: Routes = [
   {path: 'crud', loadChildren: () => import('./crud-module/crud-module.module').then(m => m.CrudModuleModule)},
   {path: 'progressbar', component: UploadFileExampleComponent},
   {path: 'testing', component: XyzComponent},
+  {path: 'inheritance', component: InheritanceTestComponent},
+
 ];
 
 @NgModule({

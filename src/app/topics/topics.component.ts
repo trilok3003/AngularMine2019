@@ -70,7 +70,8 @@ export class TopicsComponent implements OnInit {
     {path: 'showMoreShowLess', name: 'Show More Show Less Examples'},
     {path: 'crud', name: 'Crud Examples api'},
     {path: 'progressbar', name: 'progressbar file uploads'},
-    {path: 'testing', name: 'Display a loader on every HTTP request using Interceptor'}
+    {path: 'testing', name: 'Display a loader on every HTTP request using Interceptor'},
+    {path: 'inheritance', name: 'Component Inheritance'}
 
   ]
   constructor(public router: Router) { }

@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowmoreShowlessComponent implements OnInit {
 
-  title:String;
+  title: string;
   list:any;
-  startPage : Number;
-  paginationLimit:Number; 
+  startPage : number;
+  paginationLimit: number; 
   constructor(){
     this.title = "Angular: Show more/show less pagination";
     this.list = [

@@ -98,6 +98,11 @@ import { SharedModule } from './shared/shared.module';
 import { XyzComponent } from './xyz/xyz.component';
 import { LoaderService } from './services/loader.service';
 import { LoaderInterceptor } from './interceptor/loader.interceptor';
+import { InheritanceTestComponent } from './inheritance-test/inheritance-test/inheritance-test.component';
+import { EmployeeListComponent } from './inheritance-test/employee/employee-list.component';
+import { EmployeeComponent } from './inheritance-test/employee/employee.component';
+import { EmployeeTableComponent } from './inheritance-test/employee/employee-table.component';
+import { FormDirective } from './utillibrary/form.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -188,6 +193,11 @@ import { LoaderInterceptor } from './interceptor/loader.interceptor';
     UploadsComponent,
     UploadFileExampleComponent,
     XyzComponent,
+    InheritanceTestComponent,
+    EmployeeListComponent,
+    EmployeeComponent,
+    EmployeeTableComponent,
+    FormDirective,
   ],
   imports: [
     BrowserModule,

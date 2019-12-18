@@ -14,3 +14,22 @@
     <button (click)="overlay = !overlay">Click</button>
     </div>
 </div>
+
+<div class="card">
+        <div class="card-header text-white bg-info">
+            Focus first invalid input on submit
+        </div>
+        <div class="card-body">
+
+                <form focusInvalidFormInput [formGroup]="form" (ngSubmit)="submit()">
+                  <label for="first">First Name</label>
+                  <input formControlName="first" id="first" />
+                
+                  <label for="last">Last Name</label>
+                  <input formControlName="last" id="last" />
+                
+                  <br />
+                  <button>submit</button>
+                </form>
+        </div>
+    </div>
