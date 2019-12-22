@@ -103,6 +103,7 @@ import { EmployeeListComponent } from './inheritance-test/employee/employee-list
 import { EmployeeComponent } from './inheritance-test/employee/employee.component';
 import { EmployeeTableComponent } from './inheritance-test/employee/employee-table.component';
 import { FormDirective } from './utillibrary/form.directive';
+import { RatingComponent } from './xyz/rating/rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -198,6 +199,7 @@ import { FormDirective } from './utillibrary/form.directive';
     EmployeeComponent,
     EmployeeTableComponent,
     FormDirective,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,

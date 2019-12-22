@@ -1,43 +1,143 @@
 <div class="card">
     <div class="card-header text-white bg-info">Display a loader on every HTTP request using Interceptor</div>
     <div class="card-body">
-     <app-shared-loader></app-shared-loader>
-    <button (click)="callApi()">Click</button>
+        <app-shared-loader></app-shared-loader>
+        <button (click)="callApi()">Click</button>
     </div>
 </div>
 <div class="card">
     <div class="card-header text-white bg-info">overlay css example</div>
     <div class="card-body">
-        <div class="card-block overlay"  [ngStyle]="{'display': overlay ? 'flex' : 'none'}">
+        <div class="card-block overlay" [ngStyle]="{'display': overlay ? 'flex' : 'none'}">
             <p>additional content.</p>
         </div>
-    <button (click)="overlay = !overlay">Click</button>
+        <button (click)="overlay = !overlay">Click</button>
     </div>
 </div>
 
 <div class="card">
-        <div class="card-header text-white bg-info">
-            Focus first invalid input on submit
-        </div>
-        <div class="card-body">
+    <div class="card-header text-white bg-info">
+        Focus first invalid input on submit
+    </div>
+    <div class="card-body">
 
-                <form focusInvalidFormInput [formGroup]="form" (ngSubmit)="submit()">
-                  <label for="first">First Name</label>
-                  <input formControlName="first" id="first" />
-                
-                  <label for="last">Last Name</label>
-                  <input formControlName="last" id="last" />
-                
-                  <br />
-                  <button>submit</button>
-                </form>
+        <form focusInvalidFormInput [formGroup]="form" (ngSubmit)="submit()">
+            <label for="first">First Name</label>
+            <input formControlName="first" id="first" />
+
+            <label for="last">Last Name</label>
+            <input formControlName="last" id="last" />
+
+            <br />
+            <button>submit</button>
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        Text Area Direactive
+    </div>
+    <div class="card-body">
+        <textarea></textarea>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        Image Resize
+    </div>
+    <div class="card-body">
+        <img [src]="'https://placekitten.com/g/' + w + '/' + h ">
+        {{ w }} x {{ h }}
+        <br>
+        Width :
+        <input type="range" min="16" max="500" value="1" class="slider" [(ngModel)]="w">
+        <br>
+        Height :
+        <input type="range" min="16" max="500" value="1" class="slider" [(ngModel)]="h">
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        NgModel
+    </div>
+    <div class="card-body">
+        <ng-container *ngFor="let v of animals">
+            <label>
+                <input type="checkbox" [(ngModel)]="selectedValues[v]" (ngModelChange)="onChange(selectedValues)">
+                {{ v }}
+            </label>
+        </ng-container>
+        {{selectedValues}}
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        File upload
+    </div>
+    <div class="card-body">
+
+        <input type="file" (change)="onUploadChange($event)" accept=".png, .jpg, .jpeg, .pdf" />
+        <img [src]="base64textString" alt="" id="img" width="50px">
+        <button *ngIf="base64textString" (click)="delete()">X</button>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        Random Color Directive
+    </div>
+    <div class="card-body">
+        <div class="col-md-12" randomColor>Random</div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        ....
+    </div>
+    <div class="card-body">
+        <p *ngFor="let name of names" randomColor> {{name.value}}</p>
+        <input type="text" [(ngModel)]="namesString" (ngModelChange)="valueChanged($event)">
+
+        <div>{{name}}</div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        Local Storage
+    </div>
+    <div class="card-body">
+        <input type="text" [(ngModel)]="model"><button (click)="addValue(model)">Add</button>
+        <div class="values-grid">
+            <div *ngFor="let value of values; let i = index">
+                {{value}} <div (click)="removeValue(i)">x</div>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-header text-white bg-info">
-           Text Area Direactive
-        </div>
-        <div class="card-body">
-            <textarea></textarea>
-        </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+        Editable directive
     </div>
+    <div class="card-body">
+        <label>
+            <input type="checkbox" [(ngModel)]="editable"> editable
+          </label>
+          <ng-container [formGroup]="form1">
+            <h1 [editable]="editable" formControlName="bigTitle"></h1>
+            <h3 [editable]="editable" formControlName="smallerTitle"></h3>
+            <p [editable]="editable" formControlName="text"></p>
+          </ng-container>
+          <hr>
+          Form Value : <br/>
+          {{ form1.value | json }}
+    </div>
+</div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+       Control Value accesor in rating component
+    </div>
+    <div class="card-body">
+        <ng-container [formGroup]="ratingForm">
+            <app-rating formControlName="rating"></app-rating>
+          </ng-container>
+    </div>
+</div>
