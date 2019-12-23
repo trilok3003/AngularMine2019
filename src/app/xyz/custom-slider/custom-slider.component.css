@@ -1,0 +1,19 @@
+.container1 {
+    background-color: yellow;
+    padding: 10px;
+    width: 400px;
+    overflow: hidden;
+  }
+  .myDiv {
+    display: inline-block;
+    background-color: red;
+    padding: 10px;
+  }
+  .element {
+    float: left;
+    color: white;
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 10px;
+  }

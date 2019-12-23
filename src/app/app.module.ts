@@ -104,6 +104,9 @@ import { EmployeeComponent } from './inheritance-test/employee/employee.componen
 import { EmployeeTableComponent } from './inheritance-test/employee/employee-table.component';
 import { FormDirective } from './utillibrary/form.directive';
 import { RatingComponent } from './xyz/rating/rating.component';
+import { CustomSliderComponent } from './xyz/custom-slider/custom-slider.component';
+import { ReactFormComponent } from './xyz/react-form/react-form.component';
+import { BehaviourSubjectsComponent } from './xyz/behaviour-subjects/behaviour-subjects.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -200,6 +203,9 @@ import { RatingComponent } from './xyz/rating/rating.component';
     EmployeeTableComponent,
     FormDirective,
     RatingComponent,
+    CustomSliderComponent,
+    ReactFormComponent,
+    BehaviourSubjectsComponent,
   ],
   imports: [
     BrowserModule,

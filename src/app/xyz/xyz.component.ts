@@ -94,4 +94,6 @@ export class XyzComponent implements OnInit {
   //
   showBar = false;
   showVericalBar = false;
+  //
+ 
 }

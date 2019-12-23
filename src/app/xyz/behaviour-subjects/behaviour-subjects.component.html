@@ -1,0 +1,17 @@
+<ng-container *ngIf="state$ | async as state">
+	<div>
+		<input type="color" [ngModel]="state.color" (ngModelChange)="colorChanged($event)">
+  </div>
+  <div>
+		<input type="text" [ngModel]="state.name" (ngModelChange)="nameChanged($event)">
+  </div>
+  <div class="first">
+    {{ state.color }}
+  </div>
+  <div class="second" [style.color]="state.color">
+	 {{ state.name }}
+  </div>
+  <div class="third" [style.background]="state.color">
+	 {{ state.color }}
+  </div>
+</ng-container>
