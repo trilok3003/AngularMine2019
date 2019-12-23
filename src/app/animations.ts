@@ -116,5 +116,23 @@ import {
       )
     ])
   ]);
+  export const horizontalBarGrow =
+    trigger('horizontalBarGrow', [
+      transition(':enter', [
+        style({ width: '5px' }),
+        animate('500ms ease-out', style({ width: '{{widthValue}}' })),
+      ], { params: { widthValue: '50%' } }),
+    ])
+  export const horizontalBarGrow1 =   trigger('horizontalBarGrow1', [
+    state('true', style({ width: '50px' })),
+    state('false', style({ width: '0px' })),
+    transition('false <=> true', animate(500))
+  ])
+  export const verticalBarGrow =   trigger('verticalBarGrow', [
+    state('true', style({ height: '100px' })),
+    state('false', style({ height: '0px' })),
+    transition('false <=> true', animate(500))
+  ])
+  
   
   

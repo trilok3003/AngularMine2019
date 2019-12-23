@@ -3,11 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { interval } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { horizontalBarGrow, horizontalBarGrow1, verticalBarGrow } from '../animations';
 
 @Component({
   selector: 'app-xyz',
   templateUrl: './xyz.component.html',
-  styleUrls: ['./xyz.component.css']
+  styleUrls: ['./xyz.component.css'],
+  animations: [horizontalBarGrow, horizontalBarGrow1, verticalBarGrow]
 })
 export class XyzComponent implements OnInit {
   overlay: boolean;
@@ -83,5 +85,13 @@ export class XyzComponent implements OnInit {
   values: any = [];
   model;
   //
+  bars = []
 
+  addBars() {
+    // this.bars.push({ width: '10%' });
+    this.bars.push({ width: '100%' });
+  }
+  //
+  showBar = false;
+  showVericalBar = false;
 }

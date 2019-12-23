@@ -141,3 +141,28 @@
           </ng-container>
     </div>
 </div>
+<div class="card">
+    <div class="card-header text-white bg-info">
+      horizonatal progress bar animation
+    </div>
+    <div class="card-body">
+        <button (click)="addBars()">Toggle Bar 1</button>
+
+
+        <div *ngFor="let bar of bars">
+          <div id="bar" [@horizontalBarGrow]="{value: 'horizontalBarGrow', params: { widthValue : bar.width }}" [style.width]="bar.width"></div>
+        </div>
+        <button (click)="showBar = !showBar">Toggle Bar 2</button>
+
+<div >
+  <ng-container *ngIf="showBar">A bar:</ng-container>
+  <div id="bar" [@horizontalBarGrow1]="showBar"></div>
+</div>
+<button (click)="showVericalBar = !showVericalBar">Toggle Bar 3</button>
+<div >
+    <ng-container *ngIf="showVericalBar">A bar:</ng-container>
+    <div id="bar" [@verticalBarGrow]="showVericalBar">
+    </div>
+  </div>
+    </div>
+</div>
