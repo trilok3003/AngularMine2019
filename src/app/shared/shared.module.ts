@@ -6,10 +6,11 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { TextareaDirective } from './directives/textarea.directive';
 import { RandomColorDirective } from './directives/random-color.directive';
 import { EditableDirective } from './directives/editable.directive';
+import { ScrollDirective } from './directives/scroll.directive';
 
 
 @NgModule({
-  declarations: [LoaderComponent, TextareaDirective, RandomColorDirective, EditableDirective],
+  declarations: [LoaderComponent, TextareaDirective, RandomColorDirective, EditableDirective, ScrollDirective],
   imports: [
     CommonModule,
     SharedRoutingModule
@@ -18,7 +19,8 @@ import { EditableDirective } from './directives/editable.directive';
     LoaderComponent,
     TextareaDirective,
     RandomColorDirective,
-    EditableDirective
+    EditableDirective,
+    ScrollDirective
   ]
 })
 export class SharedModule { }

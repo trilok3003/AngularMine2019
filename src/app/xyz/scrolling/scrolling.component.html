@@ -1,0 +1,45 @@
+<h1>Current Section : [{{currentSection}}]</h1>
+
+<h2>Menu</h2>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" [ngClass]="{'active': currentSection==='section1'}" (click)="scrollTo('section1')">Section 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [ngClass]="{'active': currentSection==='section2'}" (click)="scrollTo('section2')">Section 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [ngClass]="{'active': currentSection==='section3'}" (click)="scrollTo('section3')">Section 3</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [ngClass]="{'active': currentSection==='section4'}" (click)="scrollTo('section4')">Section 4</a>
+  </li>
+  </ul>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" [ngClass]="{'active': currentSection==='section1'}" (click)="scrollTo('section1')">Section 1</a>
+  <a class="navbar-brand" [ngClass]="{'active': currentSection==='section2'}" (click)="scrollTo('section2')">Section 2</a>
+  <a class="navbar-brand" [ngClass]="{'active': currentSection==='section3'}" (click)="scrollTo('section3')">Section 3</a>
+  <a class="navbar-brand" [ngClass]="{'active': currentSection==='section4'}" (click)="scrollTo('section4')">Section 4</a>
+</nav> -->
+<br/>
+
+
+<div id="parentDiv" appScroll [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" style="height:150px;overflow-y: scroll;">
+  <div id="section1">
+    <h2 style="margin:0">Section 1</h2>
+    <lorem-ipsum></lorem-ipsum>
+  </div>
+  <div id="section2">
+    <h1>Section 2</h1>
+    <lorem-ipsum></lorem-ipsum>
+  </div>
+  <div id="section3">
+    <h1>Section 3</h1>
+    <lorem-ipsum></lorem-ipsum>
+  </div>
+  <div id="section4">
+    <h1>Section 4</h1>
+    <lorem-ipsum></lorem-ipsum>
+  </div>
+</div>
+<br/>

@@ -107,6 +107,8 @@ import { RatingComponent } from './xyz/rating/rating.component';
 import { CustomSliderComponent } from './xyz/custom-slider/custom-slider.component';
 import { ReactFormComponent } from './xyz/react-form/react-form.component';
 import { BehaviourSubjectsComponent } from './xyz/behaviour-subjects/behaviour-subjects.component';
+import { ScrollingComponent } from './xyz/scrolling/scrolling.component';
+import { LoremComponent } from './xyz/lorem/lorem.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -206,6 +208,8 @@ import { BehaviourSubjectsComponent } from './xyz/behaviour-subjects/behaviour-s
     CustomSliderComponent,
     ReactFormComponent,
     BehaviourSubjectsComponent,
+    ScrollingComponent,
+    LoremComponent,
   ],
   imports: [
     BrowserModule,

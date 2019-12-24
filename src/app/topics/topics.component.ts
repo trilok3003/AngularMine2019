@@ -71,8 +71,8 @@ export class TopicsComponent implements OnInit {
     {path: 'crud', name: 'Crud Examples api'},
     {path: 'progressbar', name: 'progressbar file uploads'},
     {path: 'testing', name: 'Display a loader on every HTTP request using Interceptor'},
-    {path: 'inheritance', name: 'Component Inheritance'}
-
+    {path: 'inheritance', name: 'Component Inheritance'},
+    {path: ':section1', name: 'Scrolling example'}
   ]
   constructor(public router: Router) { }
 
