@@ -1,0 +1,10 @@
+:host {
+    display: block;
+  }
+  
+  .itemCard {
+    display: block;
+    background: lightblue;
+    margin: 16px;
+    height: 300px;
+  }

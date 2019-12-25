@@ -109,6 +109,8 @@ import { ReactFormComponent } from './xyz/react-form/react-form.component';
 import { BehaviourSubjectsComponent } from './xyz/behaviour-subjects/behaviour-subjects.component';
 import { ScrollingComponent } from './xyz/scrolling/scrolling.component';
 import { LoremComponent } from './xyz/lorem/lorem.component';
+import { ScrollingListComponent } from './xyz/scrolling-list/scrolling-list.component';
+import { ScrollingList2Component, ItemCardDirective } from './xyz/scrolling-list2/scrolling-list2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -210,6 +212,9 @@ import { LoremComponent } from './xyz/lorem/lorem.component';
     BehaviourSubjectsComponent,
     ScrollingComponent,
     LoremComponent,
+    ScrollingListComponent,
+    ScrollingList2Component,
+    ItemCardDirective
   ],
   imports: [
     BrowserModule,

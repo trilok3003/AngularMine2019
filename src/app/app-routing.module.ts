@@ -61,6 +61,8 @@ import { UploadFileExampleComponent } from './common/upload-file-example/upload-
 import { XyzComponent } from './xyz/xyz.component';
 import { InheritanceTestComponent } from './inheritance-test/inheritance-test/inheritance-test.component';
 import { ScrollingComponent } from './xyz/scrolling/scrolling.component';
+import { ScrollingListComponent } from './xyz/scrolling-list/scrolling-list.component';
+import { ScrollingList2Component } from './xyz/scrolling-list2/scrolling-list2.component';
 
 
 
@@ -128,7 +130,9 @@ const routes: Routes = [
   {path: 'progressbar', component: UploadFileExampleComponent},
   {path: 'testing', component: XyzComponent},
   {path: 'inheritance', component: InheritanceTestComponent},
-    {path: ':sectionId', component: ScrollingComponent}   
+    {path: 'scrollingMenu/:sectionId', component: ScrollingComponent},
+    {path: 'scrolling_list', component: ScrollingListComponent},
+    {path: 'scrolling_list2', component: ScrollingList2Component}   
 ];
 
 @NgModule({

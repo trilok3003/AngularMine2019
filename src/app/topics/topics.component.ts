@@ -72,7 +72,9 @@ export class TopicsComponent implements OnInit {
     {path: 'progressbar', name: 'progressbar file uploads'},
     {path: 'testing', name: 'Display a loader on every HTTP request using Interceptor'},
     {path: 'inheritance', name: 'Component Inheritance'},
-    {path: ':section1', name: 'Scrolling example'}
+    {path: 'scrollingMenu/:section1', name: 'Scrolling example'},
+    {path: 'scrolling_list', name: 'Scrolling List'},
+    {path: 'scrolling_list2', name: 'Scrolling2 List'},
   ]
   constructor(public router: Router) { }
 
