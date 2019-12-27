@@ -23,6 +23,7 @@ export class ScrollingComponent implements OnInit {
 
   onSectionChange(sectionId: string) {
     this._location.go(sectionId);
+    // this._router.navigateByUrl(`scrollingMenu/:${sectionId}`)
     this.currentSection = sectionId;
   }
 

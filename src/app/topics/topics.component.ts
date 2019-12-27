@@ -75,6 +75,7 @@ export class TopicsComponent implements OnInit {
     {path: 'scrollingMenu/:section1', name: 'Scrolling example'},
     {path: 'scrolling_list', name: 'Scrolling List'},
     {path: 'scrolling_list2', name: 'Scrolling2 List'},
+    {path: 'otherExample', name: 'Other Examples implements very useful'},
   ]
   constructor(public router: Router) { }
 

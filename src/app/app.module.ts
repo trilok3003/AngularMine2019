@@ -111,6 +111,17 @@ import { ScrollingComponent } from './xyz/scrolling/scrolling.component';
 import { LoremComponent } from './xyz/lorem/lorem.component';
 import { ScrollingListComponent } from './xyz/scrolling-list/scrolling-list.component';
 import { ScrollingList2Component, ItemCardDirective } from './xyz/scrolling-list2/scrolling-list2.component';
+import { XExamplesComponent } from './x-examples/x-examples.component';
+import { AngularRouterComponent } from './x-examples/angular-router/angular-router.component';
+import { AngularViewchildComponent } from './x-examples/angular-viewchild/angular-viewchild.component';
+import { AngularNgtempleteOutletComponent } from './x-examples/angular-ngtemplete-outlet/angular-ngtemplete-outlet.component';
+import { AngularNgContainerComponent } from './x-examples/angular-ng-container/angular-ng-container.component';
+import { AngularHostBindingHostListenerComponent } from './x-examples/angular-host-binding-host-listener/angular-host-binding-host-listener.component';
+import { AngularAsyncPipeComponent } from './x-examples/angular-async-pipe/angular-async-pipe.component';
+import { AngularChangeDetectionComponent } from './x-examples/angular-change-detection/angular-change-detection.component';
+import { AngularKeysEventComponent } from './x-examples/angular-keys-event/angular-keys-event.component';
+import { AngularLocationServiceComponent } from './x-examples/angular-location-service/angular-location-service.component';
+import { TextDirective } from './directives/text.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -214,7 +225,18 @@ import { ScrollingList2Component, ItemCardDirective } from './xyz/scrolling-list
     LoremComponent,
     ScrollingListComponent,
     ScrollingList2Component,
-    ItemCardDirective
+    ItemCardDirective,
+    XExamplesComponent,
+    AngularRouterComponent,
+    AngularViewchildComponent,
+    AngularNgtempleteOutletComponent,
+    AngularNgContainerComponent,
+    AngularHostBindingHostListenerComponent,
+    AngularAsyncPipeComponent,
+    AngularChangeDetectionComponent,
+    AngularKeysEventComponent,
+    AngularLocationServiceComponent,
+    TextDirective
   ],
   imports: [
     BrowserModule,

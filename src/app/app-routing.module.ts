@@ -63,6 +63,7 @@ import { InheritanceTestComponent } from './inheritance-test/inheritance-test/in
 import { ScrollingComponent } from './xyz/scrolling/scrolling.component';
 import { ScrollingListComponent } from './xyz/scrolling-list/scrolling-list.component';
 import { ScrollingList2Component } from './xyz/scrolling-list2/scrolling-list2.component';
+import { XExamplesComponent } from './x-examples/x-examples.component';
 
 
 
@@ -132,7 +133,9 @@ const routes: Routes = [
   {path: 'inheritance', component: InheritanceTestComponent},
     {path: 'scrollingMenu/:sectionId', component: ScrollingComponent},
     {path: 'scrolling_list', component: ScrollingListComponent},
-    {path: 'scrolling_list2', component: ScrollingList2Component}   
+    {path: 'scrolling_list2', component: ScrollingList2Component},
+    {path: 'otherExample', component: XExamplesComponent}   
+
 ];
 
 @NgModule({

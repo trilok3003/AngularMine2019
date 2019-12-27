@@ -95,5 +95,13 @@ export class XyzComponent implements OnInit {
   showBar = false;
   showVericalBar = false;
   //
- 
+  removeValue(i) {
+    console.log(i)
+  }
+  //
+  editable
+  //
+  addValue(model) {
+    
+  }
 }

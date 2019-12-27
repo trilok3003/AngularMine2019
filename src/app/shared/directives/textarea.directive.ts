@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: 'textarea'
+  // selector: 'textarea'
+  selector: '[appTextarea]'
 })
 export class TextareaDirective {
   constructor(private el: ElementRef) { }
