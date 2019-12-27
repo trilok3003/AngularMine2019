@@ -122,6 +122,7 @@ import { AngularChangeDetectionComponent } from './x-examples/angular-change-det
 import { AngularKeysEventComponent } from './x-examples/angular-keys-event/angular-keys-event.component';
 import { AngularLocationServiceComponent } from './x-examples/angular-location-service/angular-location-service.component';
 import { TextDirective } from './directives/text.directive';
+import { RainbowDirective } from './directives/rainbow.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -236,7 +237,8 @@ import { TextDirective } from './directives/text.directive';
     AngularChangeDetectionComponent,
     AngularKeysEventComponent,
     AngularLocationServiceComponent,
-    TextDirective
+    TextDirective,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
