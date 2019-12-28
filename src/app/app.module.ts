@@ -123,6 +123,7 @@ import { AngularKeysEventComponent } from './x-examples/angular-keys-event/angul
 import { AngularLocationServiceComponent } from './x-examples/angular-location-service/angular-location-service.component';
 import { TextDirective } from './directives/text.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { RealTimeSearchComponent } from './x-examples/real-time-search/real-time-search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -238,7 +239,8 @@ import { RainbowDirective } from './directives/rainbow.directive';
     AngularKeysEventComponent,
     AngularLocationServiceComponent,
     TextDirective,
-    RainbowDirective
+    RainbowDirective,
+    RealTimeSearchComponent
   ],
   imports: [
     BrowserModule,
