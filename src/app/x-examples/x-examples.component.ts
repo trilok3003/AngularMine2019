@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./x-examples.component.css']
 })
 export class XExamplesComponent implements OnInit {
-
+  mode = 'list';
+  items = [
+    {
+      header: 'Creating Reuseable Components with NgTemplateOutlet in Angular',
+      content: 'The single responsibility principle...'
+    } 
+  ];
   constructor() { }
 
   ngOnInit() {

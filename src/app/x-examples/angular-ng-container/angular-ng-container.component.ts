@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-ng-container.component.css']
 })
 export class AngularNgContainerComponent implements OnInit {
-
+  todos = [
+    {content: 'math'},
+    {content: 'art'},
+    {content: 'english'},
+    {content: 'hindi'},
+    {content: 'physics'}
+  ]
   constructor() { }
 
   ngOnInit() {

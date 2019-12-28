@@ -1,1 +1,7 @@
-<p>angular-ng-container works!</p>
+<ul>
+    <ng-container *ngFor="let todo of todos">
+      <li *ngIf="todo.content !== 'physics'">
+        {{ todo.content }}
+      </li>
+    </ng-container>
+  </ul>

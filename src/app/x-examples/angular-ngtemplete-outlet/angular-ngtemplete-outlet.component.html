@@ -1,1 +1,13 @@
-<p>angular-ngtemplete-outlet works!</p>
+<ng-container [ngSwitch]="mode">
+    <ng-container *ngSwitchCase="'card'">
+      <div *ngFor="let item of items" class="card">
+        <h1>{{item.header}}</h1>
+        <p>{{item.content}}</p>
+      </div>
+    </ng-container>
+    <ul *ngSwitchCase="'list'" class="list-group">
+      <li *ngFor="let item of items" class="list-group-item">
+        {{item.header}}: {{item.content}}
+      </li>
+    </ul>
+  </ng-container>

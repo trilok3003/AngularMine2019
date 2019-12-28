@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-angular-ngtemplete-outlet',
@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-ngtemplete-outlet.component.css']
 })
 export class AngularNgtempleteOutletComponent implements OnInit {
+  @Input() items: {
+    header: string,
+    content: string
+  }[] = [];
 
+  @Input() mode: 'card' | 'list' = 'card';
   constructor() { }
 
   ngOnInit() {
