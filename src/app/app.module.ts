@@ -27,7 +27,7 @@ import { CompoentsComponent } from './compoents/compoents.component';
 import { RxjsOperators2Component } from './compoents/rxjs-operators2/rxjs-operators2.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { SubjectExampleComponent } from './compoents/subject-example/subject-example.component';
-import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS, HttpClientJsonpModule} from '@angular/common/http';
 import { AsyncPipeComponent } from './examples/async-pipe/async-pipe.component';
 import { StickySidebarComponent } from './components/sticky-sidebar/sticky-sidebar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -125,6 +125,8 @@ import { TextDirective } from './directives/text.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { RealTimeSearchComponent } from './x-examples/real-time-search/real-time-search.component';
 import { MarkAsteriskDirective } from './directives/mark-asterisk.directive';
+import { ChangeDetectionExampleComponent } from './x-examples/change-detection-example/change-detection-example.component';
+import { WikipediaComponent } from './x-examples/wikipedia/wikipedia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -242,7 +244,9 @@ import { MarkAsteriskDirective } from './directives/mark-asterisk.directive';
     TextDirective,
     RainbowDirective,
     RealTimeSearchComponent,
-    MarkAsteriskDirective
+    MarkAsteriskDirective,
+    ChangeDetectionExampleComponent,
+    WikipediaComponent
   ],
   imports: [
     BrowserModule,
@@ -258,7 +262,8 @@ import { MarkAsteriskDirective } from './directives/mark-asterisk.directive';
     BrowserAnimationsModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
-    SharedModule
+    SharedModule,
+    HttpClientJsonpModule
     ],
     providers: [
       LoaderService,

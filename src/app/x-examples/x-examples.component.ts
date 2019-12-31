@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-x-examples',
@@ -13,9 +14,24 @@ export class XExamplesComponent implements OnInit {
       content: 'The single responsibility principle...'
     } 
   ];
+  //.....
+  name: any;
+  data: any;
   constructor() { }
 
   ngOnInit() {
+    this.name = {
+      firstname: 'trilok',
+      lastname: 'singh'
+    };
+    this.data = new BehaviorSubject(this.name);
   }
+  changeName() {
+    this.name = {
+        firstname: 'john',
+        lastname: 'verma'
+    };
+    this.data.next(this.name);
+}
 
 }
