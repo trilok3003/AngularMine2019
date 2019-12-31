@@ -124,6 +124,7 @@ import { AngularLocationServiceComponent } from './x-examples/angular-location-s
 import { TextDirective } from './directives/text.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { RealTimeSearchComponent } from './x-examples/real-time-search/real-time-search.component';
+import { MarkAsteriskDirective } from './directives/mark-asterisk.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -240,7 +241,8 @@ import { RealTimeSearchComponent } from './x-examples/real-time-search/real-time
     AngularLocationServiceComponent,
     TextDirective,
     RainbowDirective,
-    RealTimeSearchComponent
+    RealTimeSearchComponent,
+    MarkAsteriskDirective
   ],
   imports: [
     BrowserModule,
