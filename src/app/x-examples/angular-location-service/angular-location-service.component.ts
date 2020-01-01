@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AngularLocationServiceComponent implements OnInit {
 
-  constructor(private location: Location, private router: Router) { }
+  constructor(public location: Location, private router: Router) { }
 
   ngOnInit() {
     this.router.events.subscribe(event => {

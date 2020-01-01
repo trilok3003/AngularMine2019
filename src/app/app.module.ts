@@ -127,6 +127,8 @@ import { RealTimeSearchComponent } from './x-examples/real-time-search/real-time
 import { MarkAsteriskDirective } from './directives/mark-asterisk.directive';
 import { ChangeDetectionExampleComponent } from './x-examples/change-detection-example/change-detection-example.component';
 import { WikipediaComponent } from './x-examples/wikipedia/wikipedia.component';
+import { Tabs1Component } from './x-examples/tabs/tabs.component';
+import { Tab1Component } from './x-examples/tab/tab.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -246,7 +248,9 @@ import { WikipediaComponent } from './x-examples/wikipedia/wikipedia.component';
     RealTimeSearchComponent,
     MarkAsteriskDirective,
     ChangeDetectionExampleComponent,
-    WikipediaComponent
+    WikipediaComponent,
+    Tabs1Component,
+    Tab1Component
   ],
   imports: [
     BrowserModule,

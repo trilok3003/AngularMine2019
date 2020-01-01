@@ -1,1 +1,15 @@
-<p>wikipedia works!</p>
+<div>
+    <h2>Wikipedia Search</h2>
+    <input #term type="text" (keyup)="search(term.value)">
+    <ul>
+      <li *ngFor="let item of items">{{item}}</li>
+    </ul>
+  </div>
+
+  <div>
+    <!-- <h2>Wikipedia Search</h2>
+    <input type="text" [formControl]="term"/>
+    <ul>
+      <li *ngFor="let item of items | async">{{item}}</li>
+    </ul>
+  </div> -->
