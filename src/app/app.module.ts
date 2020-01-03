@@ -129,6 +129,13 @@ import { ChangeDetectionExampleComponent } from './x-examples/change-detection-e
 import { WikipediaComponent } from './x-examples/wikipedia/wikipedia.component';
 import { Tabs1Component } from './x-examples/tabs/tabs.component';
 import { Tab1Component } from './x-examples/tab/tab.component';
+import { CardHoveDirective } from './directives/card-hove.directive';
+import { XSet1Component } from './x-set1/x-set1.component';
+import { HoverFocusDirective } from './directives/hover-focus.directive';
+import { HttpWithObservablesComponent } from './x-set1/http-with-observables/http-with-observables.component';
+import { HttpWithPromisesComponent } from './x-set1/http-with-promises/http-with-promises.component';
+import { JsonpWithObservablesComponent } from './x-set1/jsonp-with-observables/jsonp-with-observables.component';
+import { CoreHttpApiComponent } from './x-set1/core-http-api/core-http-api.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -250,7 +257,14 @@ import { Tab1Component } from './x-examples/tab/tab.component';
     ChangeDetectionExampleComponent,
     WikipediaComponent,
     Tabs1Component,
-    Tab1Component
+    Tab1Component,
+    CardHoveDirective,
+    XSet1Component,
+    HoverFocusDirective,
+    HttpWithObservablesComponent,
+    HttpWithPromisesComponent,
+    JsonpWithObservablesComponent,
+    CoreHttpApiComponent
   ],
   imports: [
     BrowserModule,

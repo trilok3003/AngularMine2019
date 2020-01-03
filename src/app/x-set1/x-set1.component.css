@@ -1,0 +1,9 @@
+.disabled {
+    background-color: #eee;
+    color: #777;
+    cursor: not-allowed;
+}
+.list-group-item :hover {
+    background-color: #eee;
+    color: #777; 
+}

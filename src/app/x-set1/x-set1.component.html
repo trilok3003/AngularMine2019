@@ -1,0 +1,12 @@
+<div class="col-md-8 col-md-offset-2">
+    <div class="list-group">
+        <a class="list-group-item" *ngFor="let list of lists; let i = index; let e= odd" [ngClass]="{'disabled': e}">
+            {{list}}
+            <span class="pull-right">
+                <i class="fa fa-chevron-right"></i>
+                </span>
+        </a>
+    </div>
+</div>
+
+<input type="text" hoverfocus>
