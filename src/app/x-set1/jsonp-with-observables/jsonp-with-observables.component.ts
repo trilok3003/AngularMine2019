@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchPromiseService, SearchItem } from '../service/search-promise.service';
+import { Observable } from 'rxjs';
+import { FormControl } from '@angular/forms';
+import { debounceTime, distinctUntilChanged, tap, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-jsonp-with-observables',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JsonpWithObservablesComponent implements OnInit {
 
-  constructor() { }
+  private loading: boolean = false;
+  private results: Observable<SearchItem[]>;
+  private searchField: FormControl;
+
+  constructor(private itunes: SearchPromiseService) {}
 
   ngOnInit() {
+    this.searchField = new FormControl();
+    this.results = this.searchField.valueChanges.pipe(
+      debounceTime(400),
+      distinctUntilChanged(),
+      tap(_ => (this.loading = true)),
+      switchMap(term => this.itunes.searchWithJsonpWithObservables(term)),
+      tap(_ => (this.loading = false))
+    );
   }
 
 }

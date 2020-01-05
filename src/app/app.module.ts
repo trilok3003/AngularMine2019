@@ -136,6 +136,8 @@ import { HttpWithObservablesComponent } from './x-set1/http-with-observables/htt
 import { HttpWithPromisesComponent } from './x-set1/http-with-promises/http-with-promises.component';
 import { JsonpWithObservablesComponent } from './x-set1/jsonp-with-observables/jsonp-with-observables.component';
 import { CoreHttpApiComponent } from './x-set1/core-http-api/core-http-api.component';
+import { ClassInterfaceComponent } from './x-set1/class-interface/class-interface.component';
+import { TypesComponent } from './x-set1/types/types.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -264,7 +266,9 @@ import { CoreHttpApiComponent } from './x-set1/core-http-api/core-http-api.compo
     HttpWithObservablesComponent,
     HttpWithPromisesComponent,
     JsonpWithObservablesComponent,
-    CoreHttpApiComponent
+    CoreHttpApiComponent,
+    ClassInterfaceComponent,
+    TypesComponent
   ],
   imports: [
     BrowserModule,
