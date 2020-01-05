@@ -138,6 +138,7 @@ import { JsonpWithObservablesComponent } from './x-set1/jsonp-with-observables/j
 import { CoreHttpApiComponent } from './x-set1/core-http-api/core-http-api.component';
 import { ClassInterfaceComponent } from './x-set1/class-interface/class-interface.component';
 import { TypesComponent } from './x-set1/types/types.component';
+import { ContentProjectionComponent1 } from './x-set1/content-projection/content-projection.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -268,7 +269,8 @@ import { TypesComponent } from './x-set1/types/types.component';
     JsonpWithObservablesComponent,
     CoreHttpApiComponent,
     ClassInterfaceComponent,
-    TypesComponent
+    TypesComponent,
+    ContentProjectionComponent1
   ],
   imports: [
     BrowserModule,
