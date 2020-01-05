@@ -139,6 +139,9 @@ import { CoreHttpApiComponent } from './x-set1/core-http-api/core-http-api.compo
 import { ClassInterfaceComponent } from './x-set1/class-interface/class-interface.component';
 import { TypesComponent } from './x-set1/types/types.component';
 import { ContentProjectionComponent1 } from './x-set1/content-projection/content-projection.component';
+import { XSet2Component } from './x-set2/x-set2.component';
+import { ReactiveFormExampleComponent } from './x-set2/reactive-form-example/reactive-form-example.component';
+import { DefaultPipe } from './pipes/default.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -270,7 +273,10 @@ import { ContentProjectionComponent1 } from './x-set1/content-projection/content
     CoreHttpApiComponent,
     ClassInterfaceComponent,
     TypesComponent,
-    ContentProjectionComponent1
+    ContentProjectionComponent1,
+    XSet2Component,
+    ReactiveFormExampleComponent,
+    DefaultPipe,
   ],
   imports: [
     BrowserModule,

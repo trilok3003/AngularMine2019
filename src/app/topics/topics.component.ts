@@ -77,6 +77,7 @@ export class TopicsComponent implements OnInit {
     {path: 'scrolling_list2', name: 'Scrolling2 List'},
     {path: 'otherExample', name: 'Other Examples implements very useful'},
     {path: 'set1', name: 'Set 1 examples implements'},
+    {path: 'set2', name: 'Set 2 examples implements'},
 
   ]
   constructor(public router: Router) { }

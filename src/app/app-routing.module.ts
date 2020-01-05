@@ -65,6 +65,7 @@ import { ScrollingListComponent } from './xyz/scrolling-list/scrolling-list.comp
 import { ScrollingList2Component } from './xyz/scrolling-list2/scrolling-list2.component';
 import { XExamplesComponent } from './x-examples/x-examples.component';
 import { XSet1Component } from './x-set1/x-set1.component';
+import { XSet2Component } from './x-set2/x-set2.component';
 
 
 
@@ -136,7 +137,9 @@ const routes: Routes = [
     {path: 'scrolling_list', component: ScrollingListComponent},
     {path: 'scrolling_list2', component: ScrollingList2Component},
     {path: 'otherExample', component: XExamplesComponent},
-    {path: 'set1', component: XSet1Component},   
+    {path: 'set1', component: XSet1Component}, 
+    {path: 'set2', component: XSet2Component},   
+
 
 ];
 
