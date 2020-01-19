@@ -49,7 +49,7 @@ export class ProductAddEditComponent implements OnInit {
                 this.router.navigate(['module1/products']);
 
                 // publish event so list component refreshes
-                this.pubSubService.publish('module1/products-updated');
+                this.pubSubService.publish('products-updated');
             });
     }
 }

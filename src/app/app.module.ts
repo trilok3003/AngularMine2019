@@ -145,6 +145,7 @@ import { DefaultPipe } from './pipes/default.pipe';
 import { ReactiveFormValidatonsComponent } from './x-set2/reactive-form-validatons/reactive-form-validatons.component';
 import { SubjectExamplesComponent } from './x-set2/subject-example/subject-example.component';
 import { fakeBackendProvider } from './xset3-module/_helpers';
+import { PaginationsExamplessComponent } from './x-set2/paginations-exampless/paginations-exampless.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -281,7 +282,8 @@ import { fakeBackendProvider } from './xset3-module/_helpers';
     ReactiveFormExampleComponent,
     DefaultPipe,
     ReactiveFormValidatonsComponent,
-    SubjectExamplesComponent
+    SubjectExamplesComponent,
+    PaginationsExamplessComponent
   ],
   imports: [
     BrowserModule,
