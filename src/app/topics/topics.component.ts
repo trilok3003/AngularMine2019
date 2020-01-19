@@ -78,6 +78,8 @@ export class TopicsComponent implements OnInit {
     {path: 'otherExample', name: 'Other Examples implements very useful'},
     {path: 'set1', name: 'Set 1 examples implements'},
     {path: 'set2', name: 'Set 2 examples implements'},
+    {path: 'module1', name: 'Fackbackend module examples'},
+
 
   ]
   constructor(public router: Router) { }

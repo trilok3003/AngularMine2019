@@ -142,6 +142,9 @@ import { ContentProjectionComponent1 } from './x-set1/content-projection/content
 import { XSet2Component } from './x-set2/x-set2.component';
 import { ReactiveFormExampleComponent } from './x-set2/reactive-form-example/reactive-form-example.component';
 import { DefaultPipe } from './pipes/default.pipe';
+import { ReactiveFormValidatonsComponent } from './x-set2/reactive-form-validatons/reactive-form-validatons.component';
+import { SubjectExamplesComponent } from './x-set2/subject-example/subject-example.component';
+import { fakeBackendProvider } from './xset3-module/_helpers';
 @NgModule({
   declarations: [
     AppComponent,
@@ -277,6 +280,8 @@ import { DefaultPipe } from './pipes/default.pipe';
     XSet2Component,
     ReactiveFormExampleComponent,
     DefaultPipe,
+    ReactiveFormValidatonsComponent,
+    SubjectExamplesComponent
   ],
   imports: [
     BrowserModule,
@@ -297,7 +302,8 @@ import { DefaultPipe } from './pipes/default.pipe';
     ],
     providers: [
       LoaderService,
-      { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+      { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
+      fakeBackendProvider
   ],
   bootstrap: [AppComponent]
 })

@@ -139,8 +139,7 @@ const routes: Routes = [
     {path: 'otherExample', component: XExamplesComponent},
     {path: 'set1', component: XSet1Component}, 
     {path: 'set2', component: XSet2Component},   
-
-
+    {path: 'module1', loadChildren: () => import('./xset3-module/xset3-module.module').then(m => m.Xset3ModuleModule)},
 ];
 
 @NgModule({
