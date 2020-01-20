@@ -1,4 +1,4 @@
-<app-navbar *ngIf="navbarShow"></app-navbar>
+<app-navbar *ngIf="navbarShow && false"></app-navbar>
 <app-pop-up-dialog *ngIf="getMarkServiceReopenPopup"></app-pop-up-dialog>
 <!-- <p>
 {{time}}
@@ -20,3 +20,18 @@
       </div>
 </div>
 <!-- <app-navbar-sidebar></app-navbar-sidebar> -->
+<!-- ......................................................................................... -->
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/home">Home</a>
+      <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
+      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

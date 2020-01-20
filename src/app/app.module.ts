@@ -146,6 +146,19 @@ import { ReactiveFormValidatonsComponent } from './x-set2/reactive-form-validato
 import { SubjectExamplesComponent } from './x-set2/subject-example/subject-example.component';
 import { fakeBackendProvider } from './xset3-module/_helpers';
 import { PaginationsExamplessComponent } from './x-set2/paginations-exampless/paginations-exampless.component';
+import { HttpAuthenticationComponent } from './x-set2/http-authentication/http-authentication.component';
+import { JwtAuthenticationComponent } from './x-set2/jwt-authentication/jwt-authentication.component';
+import { RoleBasedAuthenticationComponent } from './x-set2/role-based-authentication/role-based-authentication.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { fakeBackendProvider1 } from './_helpers/fake-backend';
+import { BasicAuthInterceptor } from './_helpers/basic-auth.interceptor';
+import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { JwtInterceptor } from './_helpers/jwt.interceptor';
+import { AdminComponent } from './admin/admin.component';
+import {fakeBackendRoleBasedProvider} from './_helpers/fake-backend-role-based'
+import { JwtInterceptorRoleBased } from './_helpers/jwt-role-based.interceptor';
+import { ErrorInterceptorRoleBased } from './_helpers/error-role-based.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -283,7 +296,13 @@ import { PaginationsExamplessComponent } from './x-set2/paginations-exampless/pa
     DefaultPipe,
     ReactiveFormValidatonsComponent,
     SubjectExamplesComponent,
-    PaginationsExamplessComponent
+    PaginationsExamplessComponent,
+    HttpAuthenticationComponent,
+    JwtAuthenticationComponent,
+    RoleBasedAuthenticationComponent,
+    LoginComponent,
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -305,7 +324,14 @@ import { PaginationsExamplessComponent } from './x-set2/paginations-exampless/pa
     providers: [
       LoaderService,
       { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
-      fakeBackendProvider
+      // fakeBackendProvider,
+      // fakeBackendProvider1,
+      // { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },
+      // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+      // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+      fakeBackendRoleBasedProvider,
+      { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorRoleBased, multi: true },
+      { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorRoleBased, multi: true },
   ],
   bootstrap: [AppComponent]
 })

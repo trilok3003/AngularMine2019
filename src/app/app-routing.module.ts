@@ -66,6 +66,12 @@ import { ScrollingList2Component } from './xyz/scrolling-list2/scrolling-list2.c
 import { XExamplesComponent } from './x-examples/x-examples.component';
 import { XSet1Component } from './x-set1/x-set1.component';
 import { XSet2Component } from './x-set2/x-set2.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { AuthGuard } from './_helpers/auth.guard';
+import { AdminComponent } from './admin/admin.component';
+import { Role } from './_models/role';
+import { AuthGuardRoleBased } from './_helpers/auth-role-based.guard';
 
 
 
@@ -140,6 +146,15 @@ const routes: Routes = [
     {path: 'set1', component: XSet1Component}, 
     {path: 'set2', component: XSet2Component},   
     {path: 'module1', loadChildren: () => import('./xset3-module/xset3-module.module').then(m => m.Xset3ModuleModule)},
+    {path: 'login', component: LoginComponent},
+    {
+      path: 'admin',
+      component: AdminComponent,
+      canActivate: [AuthGuardRoleBased],
+      data: { roles: [Role.Admin] }
+  },
+    { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
+    { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

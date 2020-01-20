@@ -11,6 +11,10 @@ import {
   animateChild
 } from '@angular/animations';
 import { routeAnimation } from './route-animation';
+import { User } from './_models/user';
+import { AuthenticationService } from './_service/authentication.service';
+import { Router } from '@angular/router';
+import { Role } from './_models/role';
 
 @Component({
   selector: 'app-root',
@@ -45,14 +49,25 @@ export class AppComponent {
   getMarkServiceReopenPopup = '';
   navbarShow: boolean = true;
   sidebarShow;
-  constructor(public globalService: GlobalService, public momentService: MomentService) {
+  currentUser: User;
+  constructor(public globalService: GlobalService, public momentService: MomentService,
+    private router: Router,
+    private authenticationService: AuthenticationService
+    ) {
     this.globalService.getMarkServiceReopenPopup$.subscribe((value) => {
       this.getMarkServiceReopenPopup = value;
     });
    this.time =this.momentService.getDateAndTimeFormat();
+   this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
   }
   callMarkServiceReopen() {
     this.globalService.setMarkServiceReopenPopup(true);
   }
-  
+  get isAdmin() {
+    return this.currentUser && this.currentUser.role === Role.Admin;
+}
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
+}
 }
