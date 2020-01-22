@@ -160,6 +160,7 @@ import {fakeBackendRoleBasedProvider} from './_helpers/fake-backend-role-based'
 import { JwtInterceptorRoleBased } from './_helpers/jwt-role-based.interceptor';
 import { ErrorInterceptorRoleBased } from './_helpers/error-role-based.interceptor';
 import { DivScrollingComponent } from './x-set2/div-scrolling/div-scrolling.component';
+import { AngularHttpPendingRequestPatternComponent } from './angular-http-pending-request-pattern/angular-http-pending-request-pattern.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -304,7 +305,8 @@ import { DivScrollingComponent } from './x-set2/div-scrolling/div-scrolling.comp
     LoginComponent,
     HomeComponent,
     AdminComponent,
-    DivScrollingComponent
+    DivScrollingComponent,
+    AngularHttpPendingRequestPatternComponent
   ],
   imports: [
     BrowserModule,

@@ -72,6 +72,7 @@ import { AuthGuard } from './_helpers/auth.guard';
 import { AdminComponent } from './admin/admin.component';
 import { Role } from './_models/role';
 import { AuthGuardRoleBased } from './_helpers/auth-role-based.guard';
+import { AngularHttpPendingRequestPatternComponent } from './angular-http-pending-request-pattern/angular-http-pending-request-pattern.component';
 
 
 
@@ -147,6 +148,8 @@ const routes: Routes = [
     {path: 'set2', component: XSet2Component},   
     {path: 'module1', loadChildren: () => import('./xset3-module/xset3-module.module').then(m => m.Xset3ModuleModule)},
     {path: 'login', component: LoginComponent},
+    {path: 'httpPendingRequest', component: AngularHttpPendingRequestPatternComponent},
+
     {
       path: 'admin',
       component: AdminComponent,
