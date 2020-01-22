@@ -1,0 +1,18 @@
+.outerDiv{
+    overflow:auto;
+    white-space: nowrap;
+ 
+ }
+ .column{
+    width:20%;
+    height:100%;
+    display:table-cell;
+    padding:0 10px 0 0;
+ }
+.row1{
+    width:100%;
+    height:10%;
+   }
+   .value{
+    font-size:18px;
+   }

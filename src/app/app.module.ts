@@ -159,6 +159,7 @@ import { AdminComponent } from './admin/admin.component';
 import {fakeBackendRoleBasedProvider} from './_helpers/fake-backend-role-based'
 import { JwtInterceptorRoleBased } from './_helpers/jwt-role-based.interceptor';
 import { ErrorInterceptorRoleBased } from './_helpers/error-role-based.interceptor';
+import { DivScrollingComponent } from './x-set2/div-scrolling/div-scrolling.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -302,7 +303,8 @@ import { ErrorInterceptorRoleBased } from './_helpers/error-role-based.intercept
     RoleBasedAuthenticationComponent,
     LoginComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    DivScrollingComponent
   ],
   imports: [
     BrowserModule,
