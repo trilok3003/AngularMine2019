@@ -16,7 +16,6 @@ import { AuthenticationService } from './_service/authentication.service';
 import { Router } from '@angular/router';
 import { Role } from './_models/role';
 import { fadeAnimation } from './_animation/fade.animation';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

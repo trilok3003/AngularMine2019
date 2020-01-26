@@ -144,7 +144,7 @@ import { ReactiveFormExampleComponent } from './x-set2/reactive-form-example/rea
 import { DefaultPipe } from './pipes/default.pipe';
 import { ReactiveFormValidatonsComponent } from './x-set2/reactive-form-validatons/reactive-form-validatons.component';
 import { SubjectExamplesComponent } from './x-set2/subject-example/subject-example.component';
-import { fakeBackendProvider } from './xset3-module/_helpers';
+import { fakeBackendProviderForProducts } from './xset3-module/_helpers';
 import { PaginationsExamplessComponent } from './x-set2/paginations-exampless/paginations-exampless.component';
 import { HttpAuthenticationComponent } from './x-set2/http-authentication/http-authentication.component';
 import { JwtAuthenticationComponent } from './x-set2/jwt-authentication/jwt-authentication.component';
@@ -161,6 +161,10 @@ import { JwtInterceptorRoleBased } from './_helpers/jwt-role-based.interceptor';
 import { ErrorInterceptorRoleBased } from './_helpers/error-role-based.interceptor';
 import { DivScrollingComponent } from './x-set2/div-scrolling/div-scrolling.component';
 import { AngularHttpPendingRequestPatternComponent } from './angular-http-pending-request-pattern/angular-http-pending-request-pattern.component';
+import { XSet3Component } from './x-set3/x-set3.component';
+import { AngularReactiveFormValidationComponent } from './x-set3/angular-reactive-form-validation/angular-reactive-form-validation.component';
+import { DialogExampleTestComponent } from './x-set3/dialog-example-test/dialog-example-test.component';
+import {DialogModule} from './_dialog/dialog/dialog.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -306,7 +310,10 @@ import { AngularHttpPendingRequestPatternComponent } from './angular-http-pendin
     HomeComponent,
     AdminComponent,
     DivScrollingComponent,
-    AngularHttpPendingRequestPatternComponent
+    AngularHttpPendingRequestPatternComponent,
+    XSet3Component,
+    AngularReactiveFormValidationComponent,
+    DialogExampleTestComponent
   ],
   imports: [
     BrowserModule,
@@ -323,12 +330,13 @@ import { AngularHttpPendingRequestPatternComponent } from './angular-http-pendin
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
     SharedModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    DialogModule
     ],
     providers: [
       LoaderService,
       { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
-      // fakeBackendProvider,
+       fakeBackendProviderForProducts,
       // fakeBackendProvider1,
       // { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },
       // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
@@ -337,6 +345,7 @@ import { AngularHttpPendingRequestPatternComponent } from './angular-http-pendin
       { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorRoleBased, multi: true },
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorRoleBased, multi: true },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent]
 })
 export class AppModule { }

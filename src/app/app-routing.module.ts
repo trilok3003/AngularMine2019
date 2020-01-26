@@ -73,6 +73,7 @@ import { AdminComponent } from './admin/admin.component';
 import { Role } from './_models/role';
 import { AuthGuardRoleBased } from './_helpers/auth-role-based.guard';
 import { AngularHttpPendingRequestPatternComponent } from './angular-http-pending-request-pattern/angular-http-pending-request-pattern.component';
+import { XSet3Component } from './x-set3/x-set3.component';
 
 
 
@@ -96,7 +97,7 @@ const routes: Routes = [
   {path:'alert', component: AlertComponent},
   {path:'breadcrumb', component: BreadcrumbComponent},
   {path: 'modal', component: ModalComponent},
-  {path: 'home', component: TopicsComponent},
+  {path: 'home', component: TopicsComponent, canActivate: [AuthGuardRoleBased]},
   {path: 'sidebar1', component: SidebarComponent},
   {path: 'others',component: OthersComponent},
   {path: 'table', component: TableDynamicComponent},
@@ -156,8 +157,10 @@ const routes: Routes = [
       canActivate: [AuthGuardRoleBased],
       data: { roles: [Role.Admin] }
   },
+    { path: 'xset3', component: XSet3Component },
     { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: '' },
+
 ];
 
 @NgModule({

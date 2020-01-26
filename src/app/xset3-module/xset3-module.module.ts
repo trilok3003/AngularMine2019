@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 // used to create fake backend
-import { fakeBackendProvider } from './_helpers';
+import { fakeBackendProviderForProducts } from './_helpers';
 import { StartComponent1 } from './start.component';
 
 
@@ -20,7 +20,7 @@ import { StartComponent1 } from './start.component';
   ],
   providers: [
     // provider used to create fake backend
-    fakeBackendProvider
+  //  fakeBackendProviderForProducts
 ],
 })
 export class Xset3ModuleModule { }

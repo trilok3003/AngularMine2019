@@ -80,6 +80,8 @@ export class TopicsComponent implements OnInit {
     {path: 'set2', name: 'Set 2 examples implements'},
     {path: 'module1', name: 'Fackbackend module examples'},
     {path: 'httpPendingRequest', name: 'angular-http-pending-request-pattern'},
+    {path: 'xset3', name: 'Set 3 examples'},
+
 
 
 
