@@ -9,9 +9,9 @@ import { SearchPromiseService } from '../service/search-promise.service';
 })
 export class HttpWithPromisesComponent implements OnInit {
 
-  private loading: boolean = false;
+   loading: boolean = false;
 
-  constructor(private itunes: SearchPromiseService) {}
+  constructor(public itunes: SearchPromiseService) {}
 
   doSearch(term: string) {
     this.loading = true;

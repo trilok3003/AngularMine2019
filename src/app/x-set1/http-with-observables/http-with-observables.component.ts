@@ -10,9 +10,9 @@ import { debounceTime, distinctUntilChanged, tap, switchMap } from 'rxjs/operato
   styleUrls: ['./http-with-observables.component.css']
 })
 export class HttpWithObservablesComponent implements OnInit {
-  private loading: boolean = false;
-  private results: Observable<SearchItem[]>;
-  private searchField: FormControl;
+  loading: boolean = false;
+   results: Observable<SearchItem[]>;
+   searchField: FormControl;
   constructor(private itunes: SearchPromiseService) {}
 
   ngOnInit() {

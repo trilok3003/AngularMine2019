@@ -5,7 +5,7 @@ import { Directive, ElementRef, Renderer, Input, HostBinding, HostListener } fro
 })
 export class CardHoveDirective {
 
-  @HostBinding('class.card-outline-primary') private ishovering: boolean;
+  @HostBinding('class.card-outline-primary')  ishovering: boolean;
 
   @Input('appCardHove') config: Object = {
     querySelector: '.card-text'

@@ -11,11 +11,11 @@ import { debounceTime, distinctUntilChanged, tap, switchMap } from 'rxjs/operato
 })
 export class JsonpWithObservablesComponent implements OnInit {
 
-  private loading: boolean = false;
-  private results: Observable<SearchItem[]>;
-  private searchField: FormControl;
+   loading: boolean = false;
+   results: Observable<SearchItem[]>;
+   searchField: FormControl;
 
-  constructor(private itunes: SearchPromiseService) {}
+  constructor(public itunes: SearchPromiseService) {}
 
   ngOnInit() {
     this.searchField = new FormControl();
