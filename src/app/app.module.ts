@@ -164,7 +164,19 @@ import { AngularHttpPendingRequestPatternComponent } from './angular-http-pendin
 import { XSet3Component } from './x-set3/x-set3.component';
 import { AngularReactiveFormValidationComponent } from './x-set3/angular-reactive-form-validation/angular-reactive-form-validation.component';
 import { DialogExampleTestComponent } from './x-set3/dialog-example-test/dialog-example-test.component';
-import {DialogModule} from './_dialog/dialog/dialog.module'
+import {DialogModule} from './_dialog/dialog/dialog.module';
+import { DynamicLoadComponent } from './x-set3/dynamic-load/dynamic-load.component';
+import { DynamicLoadMessageComponent } from './x-set3/dynamic-load-message/dynamic-load-message.component'
+import { ModalDirective } from './_dialog_pop/modal.directive';
+import { XSet4Component } from './x-set4/x-set4.component';
+import { Xset4alertComponent } from './x-set4/xset4alert/xset4alert.component';
+import { XSet5Component } from './x-set5/x-set5.component';
+import { CustomDialogComponent } from './x-set5/custom-dialog/custom-dialog.component';
+import { DialogDirective } from './x-set5/dialog.directive';
+import { CustomDialog1Component } from './x-set5/custom-dialog1/custom-dialog1.component';
+import { CustomDialog2Component } from './x-set5/custom-dialog2/custom-dialog2.component';
+import { CDialogComponent } from './x-set5/c-dialog/c-dialog.component';
+import { CustomDialogModule } from './_module/dialog/custom-dialog.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -313,7 +325,18 @@ import {DialogModule} from './_dialog/dialog/dialog.module'
     AngularHttpPendingRequestPatternComponent,
     XSet3Component,
     AngularReactiveFormValidationComponent,
-    DialogExampleTestComponent
+    DialogExampleTestComponent,
+    DynamicLoadComponent,
+    DynamicLoadMessageComponent,
+    ModalDirective,
+    XSet4Component,
+    Xset4alertComponent,
+    XSet5Component,
+    CustomDialogComponent,
+    DialogDirective,
+    CustomDialog1Component,
+    CustomDialog2Component,
+    CDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -331,7 +354,8 @@ import {DialogModule} from './_dialog/dialog/dialog.module'
     OwlNativeDateTimeModule,
     SharedModule,
     HttpClientJsonpModule,
-    DialogModule
+    DialogModule,
+    CustomDialogModule
     ],
     providers: [
       LoaderService,
@@ -346,6 +370,8 @@ import {DialogModule} from './_dialog/dialog/dialog.module'
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorRoleBased, multi: true },
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent]
+  entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
+    CustomDialog1Component, CustomDialog2Component
+  ]
 })
 export class AppModule { }

@@ -81,10 +81,7 @@ export class TopicsComponent implements OnInit {
     {path: 'module1', name: 'Fackbackend module examples'},
     {path: 'httpPendingRequest', name: 'angular-http-pending-request-pattern'},
     {path: 'xset3', name: 'Set 3 examples'},
-
-
-
-
+    {path: 'xset4', name: 'Set 4 examples'},
   ]
   constructor(public router: Router) { }
 

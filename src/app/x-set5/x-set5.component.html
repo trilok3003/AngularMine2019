@@ -1,0 +1,6 @@
+<app-custom-dialog [newsfeeds]="newsfeeds"></app-custom-dialog>
+<button class="btn btn-primary" (click)="openDialog()">open</button>
+<app-c-dialog [item]="item" *ngIf="item"></app-c-dialog>
+<button class="btn btn-primary" (click)="openCustomDialog()">custom dialogopen</button>
+
+<custom-dialog [item]="customItem" *ngIf="customItem"></custom-dialog>
