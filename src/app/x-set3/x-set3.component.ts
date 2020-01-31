@@ -9,7 +9,7 @@ import { PaginationsExamplessComponent } from '../x-set2/paginations-exampless/p
   styleUrls: ['./x-set3.component.css']
 })
 export class XSet3Component implements OnInit {
-
+  data1 = "content here"
   constructor(public dialog: DialogService) { 
   
   }
