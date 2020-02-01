@@ -181,6 +181,10 @@ import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
 import { SumPipe } from './pipes/sum.pipe';
 import { CustomCurrency1Pipe } from './pipes/custom-currency1.pipe';
 import { SortPipe } from './pipes/sort.pipe';
+import { OrderPipe } from './pipes/order.pipe';
+import { OrderByExampleComponent } from './x-set5/order-by-example/order-by-example.component';
+import { DynamicHtmlTemplateComponent } from './x-set5/dynamic-html-template/dynamic-html-template.component';
+import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-month-picker.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -344,7 +348,11 @@ import { SortPipe } from './pipes/sort.pipe';
     CustomCurrencyPipe,
     SumPipe,
     CustomCurrency1Pipe,
-    SortPipe
+    SortPipe,
+    OrderPipe,
+    OrderByExampleComponent,
+    DynamicHtmlTemplateComponent,
+    CustomMonthPickerComponent
   ],
   imports: [
     BrowserModule,
@@ -376,6 +384,7 @@ import { SortPipe } from './pipes/sort.pipe';
       fakeBackendRoleBasedProvider,
       { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorRoleBased, multi: true },
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorRoleBased, multi: true },
+      OrderPipe
   ],
   bootstrap: [AppComponent],
   entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
