@@ -177,6 +177,10 @@ import { CustomDialog1Component } from './x-set5/custom-dialog1/custom-dialog1.c
 import { CustomDialog2Component } from './x-set5/custom-dialog2/custom-dialog2.component';
 import { CDialogComponent } from './x-set5/c-dialog/c-dialog.component';
 import { CustomDialogModule } from './_module/dialog/custom-dialog.module';
+import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
+import { SumPipe } from './pipes/sum.pipe';
+import { CustomCurrency1Pipe } from './pipes/custom-currency1.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -336,7 +340,11 @@ import { CustomDialogModule } from './_module/dialog/custom-dialog.module';
     DialogDirective,
     CustomDialog1Component,
     CustomDialog2Component,
-    CDialogComponent
+    CDialogComponent,
+    CustomCurrencyPipe,
+    SumPipe,
+    CustomCurrency1Pipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,

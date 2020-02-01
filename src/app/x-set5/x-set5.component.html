@@ -1,6 +1,39 @@
-<app-custom-dialog [newsfeeds]="newsfeeds"></app-custom-dialog>
-<button class="btn btn-primary" (click)="openDialog()">open</button>
-<app-c-dialog [item]="item" *ngIf="item"></app-c-dialog>
-<button class="btn btn-primary" (click)="openCustomDialog()">custom dialogopen</button>
+<div class="jumbotron">
+    dynamic components
+    <app-custom-dialog [newsfeeds]="newsfeeds"></app-custom-dialog>
+</div>
+<div class="jumbotron">
+    dialog example 1
+    <button class="btn btn-primary" (click)="openDialog()">open</button>
+    <app-c-dialog [item]="item" *ngIf="item"></app-c-dialog>
+</div>
+<div class="jumbotron">
+    dialog example 2
+    <button class="btn btn-primary" (click)="openCustomDialog()">custom dialogopen</button>
+    <custom-dialog [item]="customItem" *ngIf="customItem"></custom-dialog>
+</div>
+<div class="jumbotron">
+        currency pipe
+        {{number |  currency:"₹ ": 'symbol': '1.0'}}
+</div>
+<div class="jumbotron">
+   custom currency pipe
+   {{number |  indCurrency}}
+</div>
+<div class="jumbotron">
+    sum pipe
+    {{numbers1 | sum: 'amount'}}
+    {{numbers | sum}}
+    {{(numbers2 | search: 'credit') | sum: 'amount'}}
+    {{(numbers2 | filterBykey: 'debit': 'type') | sum: 'amount'}}
 
-<custom-dialog [item]="customItem" *ngIf="customItem"></custom-dialog>
+    
+ </div>
+ <div class="jumbotron">
+    sort pipe
+    <ul class="list-group">
+        <li class="list-group-item"  *ngFor="let movie of movies | sort: 'release' ">
+          {{movie?.title}} | {{movie?.rating}} | {{movie?.release}}
+        </li>
+    </ul>   
+ </div>

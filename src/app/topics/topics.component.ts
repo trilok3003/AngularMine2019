@@ -82,6 +82,8 @@ export class TopicsComponent implements OnInit {
     {path: 'httpPendingRequest', name: 'angular-http-pending-request-pattern'},
     {path: 'xset3', name: 'Set 3 examples'},
     {path: 'xset4', name: 'Set 4 examples'},
+    {path: 'xset5', name: 'Set 5 examples'},
+
   ]
   constructor(public router: Router) { }
 

@@ -14,6 +14,29 @@ export class XSet5Component implements OnInit {
   newsfeeds: DialogItem[];
   item;
   customItem;
+  number = 1000000000000.87;
+  numbers = [23,45,43,12,65];
+  numbers1 = [
+    {amount: 20},
+    {amount: 30},
+    {amount: 40},
+    {amount: 60},
+    {amount: 50},
+    {amount: 150},
+];
+numbers2 = [
+  {amount: 20, type: 'credit'},
+  {amount: 30, type: 'debit'},
+  {amount: 40,  type: 'debit'},
+  {amount: 60, type: 'credit'},
+  {amount: 50, type: 'credit'},
+  {amount: 150, type: 'debit'},
+];
+ movies = [
+  {title: 'The Godfather', rating: 8.2, release: '24 March 1972'},
+  {title: 'The Godfather: Part II', rating: 9.0, release: '20 December 1972'},
+  {title: 'The Shawshank Redemption', rating: 8.3, release: '14 October 1994'},
+];
   constructor(public cdialogService: CdialogService, public customDialogService: CustomdialogService) { }
 
   ngOnInit() {

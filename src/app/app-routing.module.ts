@@ -75,6 +75,7 @@ import { AuthGuardRoleBased } from './_helpers/auth-role-based.guard';
 import { AngularHttpPendingRequestPatternComponent } from './angular-http-pending-request-pattern/angular-http-pending-request-pattern.component';
 import { XSet3Component } from './x-set3/x-set3.component';
 import { XSet4Component } from './x-set4/x-set4.component';
+import { XSet5Component } from './x-set5/x-set5.component';
 
 
 
@@ -160,6 +161,7 @@ const routes: Routes = [
   },
   { path: 'xset3', component: XSet3Component },
   { path: 'xset4', component: XSet4Component },
+    { path: 'xset5', component: XSet5Component },
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
   { path: '**', redirectTo: '' },
 
