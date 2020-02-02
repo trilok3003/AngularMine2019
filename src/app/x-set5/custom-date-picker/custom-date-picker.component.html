@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+      <div class="d-flex align-items-center">
+  
+        <button class="btn mr-auto" (click)="decrement()">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+  
+        <button class="btn" (click)="toggleShowYears()">
+          {{model.selectedYearText}}
+        </button>
+        <button class="btn" (click)="toggleShowMonths()">
+            {{model.months[model.selectedMonth]}}
+          </button>
+        <button class="btn ml-auto" (click)="increment()">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+  
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row" *ngIf="!isShowYears && !isShowDays">
+        <div class="col col-4" *ngFor="let month of model.months; let i = index">
+          <button class="btn btn-block" style="margin-bottom:10px" [ngClass]="{'btn-primary': isSelectedMonth(i)}"
+            [disabled]="isDisabled(i)" (click)="selectMonth(i)">
+            <small>{{month}}</small>
+          </button>
+        </div>
+      </div>
+      <div class="row" *ngIf="isShowYears && !isShowDays">
+        <div class="col col-4" *ngFor="let year of years; let i = index">
+          <button class="btn btn-block" style="margin-bottom:10px" [ngClass]="{'btn-primary': isSelectedYear(year)}"
+            [disabled]="isDisabledYear(year)" (click)="selectYear(year)">
+            <small>{{year}}</small>
+          </button>
+        </div>
+      </div>
+      <div class="row" *ngIf="isShowDays">
+        <div class="col col-2" *ngFor="let date of loop; let i = index">
+          <button class="btn btn-block" style="margin-bottom:10px" [ngClass]="{'btn-primary': isSelectedDate(date)}"
+            [disabled]="isDisabledDate(date)" (click)="selectDate(date)">
+            <small>{{date}}</small>
+          </button>
+        </div>
+      </div>
+   </div> 
+  </div> 

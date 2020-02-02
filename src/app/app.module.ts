@@ -185,6 +185,7 @@ import { OrderPipe } from './pipes/order.pipe';
 import { OrderByExampleComponent } from './x-set5/order-by-example/order-by-example.component';
 import { DynamicHtmlTemplateComponent } from './x-set5/dynamic-html-template/dynamic-html-template.component';
 import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-month-picker.component';
+import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -352,7 +353,8 @@ import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-
     OrderPipe,
     OrderByExampleComponent,
     DynamicHtmlTemplateComponent,
-    CustomMonthPickerComponent
+    CustomMonthPickerComponent,
+    CustomDatePickerComponent
   ],
   imports: [
     BrowserModule,

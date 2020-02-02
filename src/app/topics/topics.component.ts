@@ -83,8 +83,8 @@ export class TopicsComponent implements OnInit {
     {path: 'xset3', name: 'Set 3 examples'},
     {path: 'xset4', name: 'Set 4 examples'},
     {path: 'xset5', name: 'Set 5 examples'},
-    {path: 'month-picker', name: 'custom month picker'}
-
+    {path: 'month-picker', name: 'custom month picker'},
+    {path: 'date-picker', name: 'custom date picker'}
   ]
   constructor(public router: Router) { }
 
