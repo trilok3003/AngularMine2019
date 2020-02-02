@@ -44,3 +44,20 @@
 <div class="jumbotron">
 <app-dynamic-html-template></app-dynamic-html-template>
 </div>
+<hr>
+<h3>Basic month picker</h3>
+<app-custom-month-picker (change)="onChange($event)"></app-custom-month-picker>
+<h3>Enabled months picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [enabledMonths]="[5,9,11]"></app-custom-month-picker>
+<h3>Desabled months picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [disabledMonths]="[2,9,11]"></app-custom-month-picker>
+<h3>Enabled years picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [enabledYears]="[2019,2021,2022]"></app-custom-month-picker>
+<h3>Desabled years picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [disabledYears]="[2019,2020,2021]"></app-custom-month-picker>
+<h3>preselected year picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [year]="2010"></app-custom-month-picker>
+<h3>preselected month picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [month]="3"></app-custom-month-picker>
+<h3>preselected month and year picker</h3>
+<app-custom-month-picker (change)="onChange($event)" [year]="2010" [month]="4"></app-custom-month-picker>

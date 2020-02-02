@@ -61,5 +61,10 @@ numbers2 = [
   openCustomDialog() {
     this.customDialogService.open(CustomDialog2Component, {name: 'custom dialog ...', bio: 'bio..'})
   }
+  // month picker
+
+  onChange(event: { monthIndex: number, year: number }) {
+   console.log(event);
+  }
 
 }
