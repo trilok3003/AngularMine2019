@@ -3,3 +3,24 @@
     <button (click)="createComponent('success')">Create success alert</button>
     <button (click)="createComponent('danger')">Create danger alert</button>
 </div>
+
+<div class="jumbotron">
+ <h3>loader directive implements</h3>
+<div style="width:100%;" class="bd">  
+    <h3 [appLoader]="isLoader">My content with width:100% :     
+        {{tempData | json}}  
+   </h3>  
+</div>  
+
+<div style="width:50%;" class="bd">  
+    <h3 [appLoader]="isLoader">My content with width:50% :     
+        {{tempData | json}}  
+   </h3>  
+</div>  
+
+<div style="width:25%;" class="bd">  
+    <h3 [appLoader]="isLoader">My content :     
+        {{tempData | json}}  
+    </h3>  
+</div>
+</div>

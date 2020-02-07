@@ -9,7 +9,7 @@ import { Xset4alertComponent } from './xset4alert/xset4alert.component';
 export class XSet4Component implements OnInit, OnDestroy {
   @ViewChild("alertContainer", { read: ViewContainerRef, static: true }) container;
   componentRef: ComponentRef<Xset4alertComponent>;
-  
+  isLoader: boolean = true;
    constructor(private resolver: ComponentFactoryResolver) {}
    
    createComponent(type) {

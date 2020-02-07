@@ -186,6 +186,8 @@ import { OrderByExampleComponent } from './x-set5/order-by-example/order-by-exam
 import { DynamicHtmlTemplateComponent } from './x-set5/dynamic-html-template/dynamic-html-template.component';
 import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-month-picker.component';
 import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
+import { ScrollToFirstInvalidDirective } from './directives/scroll-to-first-invalid.directive';
+import { LoaderDirective } from './directives/loader.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -354,7 +356,9 @@ import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-da
     OrderByExampleComponent,
     DynamicHtmlTemplateComponent,
     CustomMonthPickerComponent,
-    CustomDatePickerComponent
+    CustomDatePickerComponent,
+    ScrollToFirstInvalidDirective,
+    LoaderDirective
   ],
   imports: [
     BrowserModule,
