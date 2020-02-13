@@ -4,6 +4,8 @@ import { CustomDialog1Component } from './custom-dialog1/custom-dialog1.componen
 import { CustomDialog2Component } from './custom-dialog2/custom-dialog2.component';
 import { CdialogService } from './cdialog.service';
 import { CustomdialogService } from '../_module/dialog/cdialog.service';
+import { of } from 'rxjs';
+import { scan } from 'rxjs/operators';
 
 @Component({
   selector: 'app-x-set5',

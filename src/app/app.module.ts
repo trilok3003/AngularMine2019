@@ -188,6 +188,10 @@ import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-
 import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
 import { ScrollToFirstInvalidDirective } from './directives/scroll-to-first-invalid.directive';
 import { LoaderDirective } from './directives/loader.directive';
+import { ChatModule } from './chat/chat.module';
+import { HttpPipe } from './_helpers/pipe/http.pipe';
+import { PluckPipe } from './_helpers/pipe/pluck.pipe';
+import { RxjsOperatorComponent } from './rxjs-operators/rxjs-operators.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -358,7 +362,10 @@ import { LoaderDirective } from './directives/loader.directive';
     CustomMonthPickerComponent,
     CustomDatePickerComponent,
     ScrollToFirstInvalidDirective,
-    LoaderDirective
+    LoaderDirective,
+    HttpPipe,
+    PluckPipe,
+    RxjsOperatorComponent
   ],
   imports: [
     BrowserModule,
@@ -377,7 +384,8 @@ import { LoaderDirective } from './directives/loader.directive';
     SharedModule,
     HttpClientJsonpModule,
     DialogModule,
-    CustomDialogModule
+    CustomDialogModule,
+    ChatModule
     ],
     providers: [
       LoaderService,

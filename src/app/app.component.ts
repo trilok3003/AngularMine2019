@@ -70,4 +70,7 @@ export class AppComponent {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
 }
+// public getRouterOutletState(outlet) {
+//   return outlet.isActivated ? outlet.activatedRoute : '';
+// }
 }

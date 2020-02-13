@@ -154,7 +154,6 @@ const routes: Routes = [
   { path: 'module1', loadChildren: () => import('./xset3-module/xset3-module.module').then(m => m.Xset3ModuleModule) },
   { path: 'login', component: LoginComponent },
   { path: 'httpPendingRequest', component: AngularHttpPendingRequestPatternComponent },
-
   {
     path: 'admin',
     component: AdminComponent,
@@ -167,6 +166,7 @@ const routes: Routes = [
     {path: 'month-picker', component: CustomMonthPickerComponent},
     {path: 'date-picker', component: CustomDatePickerComponent},
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
+  { path: 'crud_json', loadChildren: () => import('./crud-json-server/crud/crud.module').then(m => m.CrudModule) },
   { path: '**', redirectTo: '' },
 
 

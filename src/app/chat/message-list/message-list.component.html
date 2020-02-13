@@ -1,0 +1,11 @@
+<ol #messageList>
+
+  <li *ngFor="let message of messages; trackBy: trackMessage">
+    <app-message-bubble
+      [ngClass]="message.sender === userId ? 'sent' : 'received'" 
+      [message]="message"
+      [rateable]="message.sender !== userId">
+    </app-message-bubble>
+  </li>
+
+</ol>

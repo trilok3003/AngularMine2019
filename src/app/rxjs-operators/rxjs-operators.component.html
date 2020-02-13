@@ -1,0 +1,35 @@
+<div class="jumbotron">
+    <pre><code>{{
+        'https://swapi.co/api/starships/9'
+          | http
+          | async
+          | pluck:'data'
+          | json
+      
+      }}</code></pre>
+</div>
+<hr>
+<h1>
+    Default Hello:
+  </h1>
+  <strong>
+    {{defaultValue}}
+  </strong>
+  
+  <h1>mapTo  world:</h1>
+  <strong>
+    {{source$ | async}}
+  </strong>
+  <hr>
+check even
+<br>
+<input #inp type="number" value="1" (keyup.enter)="checkEven(inp.value)">
+<br>
+<hr>
+{{time}}}
+<hr>
+<div #app style="height: 200px; margin: 10px; border: 1px dashed #777; position: relative;">
+    <div style="position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); font-weight: 700; font-size: 7vw;">Trilok</div>
+  </div>
+  <hr>
+  <input type="search" id="search-box">
