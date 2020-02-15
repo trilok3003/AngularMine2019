@@ -39,6 +39,7 @@ numbers2 = [
   {title: 'The Godfather: Part II', rating: 9.0, release: '20 December 1972'},
   {title: 'The Shawshank Redemption', rating: 8.3, release: '14 October 1994'},
 ];
+firstname;
   constructor(public cdialogService: CdialogService, public customDialogService: CustomdialogService) { }
 
   ngOnInit() {

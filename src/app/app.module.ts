@@ -192,6 +192,8 @@ import { ChatModule } from './chat/chat.module';
 import { HttpPipe } from './_helpers/pipe/http.pipe';
 import { PluckPipe } from './_helpers/pipe/pluck.pipe';
 import { RxjsOperatorComponent } from './rxjs-operators/rxjs-operators.component';
+import { TitleCaseDirective } from './_helpers/directive/title-case.directive';
+import { TitleCasePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -365,7 +367,8 @@ import { RxjsOperatorComponent } from './rxjs-operators/rxjs-operators.component
     LoaderDirective,
     HttpPipe,
     PluckPipe,
-    RxjsOperatorComponent
+    RxjsOperatorComponent,
+    TitleCaseDirective
   ],
   imports: [
     BrowserModule,
@@ -398,7 +401,8 @@ import { RxjsOperatorComponent } from './rxjs-operators/rxjs-operators.component
       fakeBackendRoleBasedProvider,
       { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptorRoleBased, multi: true },
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorRoleBased, multi: true },
-      OrderPipe
+      OrderPipe,
+      TitleCasePipe
   ],
   bootstrap: [AppComponent],
   entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
