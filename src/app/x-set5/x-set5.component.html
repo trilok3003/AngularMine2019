@@ -71,3 +71,10 @@
     <input type="text" appTitleCase [(ngModel)]="firstname" name="firstname"/>
 </div>
 <app-tree [items]="sampleData"></app-tree>
+<div class="jumbotron">
+<h3>recursive pipe</h3>
+<input type="text" name="search" [(ngModel)]="filter">
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of items">{{item?.name}}</li>
+</ul>
+</div>

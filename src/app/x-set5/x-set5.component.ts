@@ -42,6 +42,63 @@ numbers2 = [
 ];
 firstname;
 sampleData = new SampleData().data; 
+public filter: string;
+public items = [
+  {
+      "name": "India",
+      "children": [
+          {
+              "name": "Delhi",
+              "children": [
+                  {
+                      "name": "South Delhi"
+                  },
+                  {
+                      "name": "North Delhi"
+                  }
+              ]
+          },
+          {
+              "name": "Tamil Nadu",
+              "children": [
+                  {
+                      "name": "Chennai"
+                  },
+                  {
+                      "name": "Coimbatore"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "name": "America",
+      "chilren": [
+          {
+              "name": "California",
+              "children": [
+                  {
+                      "name": "Trinity"
+                  },
+                  {
+                      "name": "Yolo"
+                  }
+              ]
+          },
+          {
+              "name": "Florida",
+              "children": [
+                  {
+                      "name": "Bradford"
+                  },
+                  {
+                      "name": "Calhoun"
+                  }
+              ]
+          }
+      ]
+  }
+]
   constructor(public cdialogService: CdialogService, public customDialogService: CustomdialogService) { }
 
   ngOnInit() {
