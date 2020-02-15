@@ -6,6 +6,7 @@ import { CdialogService } from './cdialog.service';
 import { CustomdialogService } from '../_module/dialog/cdialog.service';
 import { of } from 'rxjs';
 import { scan } from 'rxjs/operators';
+import { SampleData } from '../test/tree/sampleData.model';
 
 @Component({
   selector: 'app-x-set5',
@@ -40,6 +41,7 @@ numbers2 = [
   {title: 'The Shawshank Redemption', rating: 8.3, release: '14 October 1994'},
 ];
 firstname;
+sampleData = new SampleData().data; 
   constructor(public cdialogService: CdialogService, public customDialogService: CustomdialogService) { }
 
   ngOnInit() {

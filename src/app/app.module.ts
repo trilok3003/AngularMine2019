@@ -194,6 +194,7 @@ import { PluckPipe } from './_helpers/pipe/pluck.pipe';
 import { RxjsOperatorComponent } from './rxjs-operators/rxjs-operators.component';
 import { TitleCaseDirective } from './_helpers/directive/title-case.directive';
 import { TitleCasePipe } from '@angular/common';
+import { TreeComponent } from './test/tree/tree.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -368,7 +369,8 @@ import { TitleCasePipe } from '@angular/common';
     HttpPipe,
     PluckPipe,
     RxjsOperatorComponent,
-    TitleCaseDirective
+    TitleCaseDirective,
+    TreeComponent
   ],
   imports: [
     BrowserModule,
