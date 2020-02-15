@@ -198,6 +198,7 @@ import { TreeComponent } from './test/tree/tree.component';
 import { RecursivePipe } from './_helpers/pipe/recursive.pipe';
 import { DynamicTemplateDrivenFormComponent } from './test/dynamic-template-driven-form/dynamic-template-driven-form.component';
 import { DynamicReactiveFormComponent } from './test/dynamic-reactive-form/dynamic-reactive-form.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -376,7 +377,8 @@ import { DynamicReactiveFormComponent } from './test/dynamic-reactive-form/dynam
     TreeComponent,
     RecursivePipe,
     DynamicTemplateDrivenFormComponent,
-    DynamicReactiveFormComponent
+    DynamicReactiveFormComponent,
+    FlexboxComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+<header class="main-header">
+    <div class="main-header-content">
+        <h1>Fixed Sidebar with Flexbox Demo</h1>
+    </div>
+  </header>
+  <section class="wrap-whole">
+    <!-- fixed vertical sidebar -->
+    <section class="vertical-nav-bar">
+       <div class="menu-container">
+          <div class="main-nav-link" *ngFor="let item of [1,2,3,4]; let i = index">
+             <a href="#">
+                <i class="fa fa-home main-nav-icon"></i>
+                <div>Home {{i + 1}}</div>
+             </a>
+          </div>
+       </div>
+    </section>
+  
+   <!-- main content of the page -->
+    <section class="container__main">
+        <header class="container__header">
+            <h1>Hello How are you?</h1>
+        </header>
+            
+        <article class="container__content">
+          <p *ngFor="let item of [1,2,3,4,5, 6,7,8]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             Morbi in ligula vitae nisl scelerisque efficitur. Sed sed erat more.... </p>
+        </article>
+    </section>
+ </section>
