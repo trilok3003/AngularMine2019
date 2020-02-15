@@ -196,6 +196,8 @@ import { TitleCaseDirective } from './_helpers/directive/title-case.directive';
 import { TitleCasePipe } from '@angular/common';
 import { TreeComponent } from './test/tree/tree.component';
 import { RecursivePipe } from './_helpers/pipe/recursive.pipe';
+import { DynamicTemplateDrivenFormComponent } from './test/dynamic-template-driven-form/dynamic-template-driven-form.component';
+import { DynamicReactiveFormComponent } from './test/dynamic-reactive-form/dynamic-reactive-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -372,7 +374,9 @@ import { RecursivePipe } from './_helpers/pipe/recursive.pipe';
     RxjsOperatorComponent,
     TitleCaseDirective,
     TreeComponent,
-    RecursivePipe
+    RecursivePipe,
+    DynamicTemplateDrivenFormComponent,
+    DynamicReactiveFormComponent
   ],
   imports: [
     BrowserModule,

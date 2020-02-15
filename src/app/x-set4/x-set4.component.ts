@@ -10,6 +10,7 @@ export class XSet4Component implements OnInit, OnDestroy {
   @ViewChild("alertContainer", { read: ViewContainerRef, static: true }) container;
   componentRef: ComponentRef<Xset4alertComponent>;
   isLoader: boolean = true;
+  tempData = 'loading'
    constructor(private resolver: ComponentFactoryResolver) {}
    
    createComponent(type) {

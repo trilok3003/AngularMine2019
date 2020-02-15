@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SumPipe implements PipeTransform {
 
-  transform(items: any[], key: string, query: string, value: any): any[]{
+  transform(items: any[], key?: string, query?: string, value?: any): any[]{
     if(key) {
     const   sum = items.reduce((pre, cur) => 
     pre + cur[key], 0);
