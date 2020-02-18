@@ -199,6 +199,18 @@ import { RecursivePipe } from './_helpers/pipe/recursive.pipe';
 import { DynamicTemplateDrivenFormComponent } from './test/dynamic-template-driven-form/dynamic-template-driven-form.component';
 import { DynamicReactiveFormComponent } from './test/dynamic-reactive-form/dynamic-reactive-form.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
+import { ArrowsComponent } from './_css/arrows/arrows.component';
+import { TooltipComponent } from './_css/tooltip/tooltip.component';
+import { DiffDatesComponent } from './test/diff-dates/diff-dates.component';
+import { TutorialsComponent } from './_tutorials/tutorials/tutorials.component';
+import { Chagedetector1Component } from './_tutorials/chagedetector1/chagedetector1.component';
+import { Chagedetector2Component } from './_tutorials/chagedetector2/chagedetector2.component';
+import { Chagedetector3Component } from './_tutorials/chagedetector3/chagedetector3.component';
+import { ReactiveFormComponent } from './_tutorials/reactive-form/reactive-form.component';
+import { AutocompleteModule } from './autocomplete/autocomplete.module';
+import { AutoCompleteExampleComponent } from './_tutorials/auto-complete-example/auto-complete-example.component';
+import { AutocompleteComponent1 } from './autocomplete/autocomplete1.component';
+import { FilteredPipe } from './_helpers/pipe/filtered.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -378,7 +390,17 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
     RecursivePipe,
     DynamicTemplateDrivenFormComponent,
     DynamicReactiveFormComponent,
-    FlexboxComponent
+    FlexboxComponent,
+    ArrowsComponent,
+    TooltipComponent,
+    DiffDatesComponent,
+    TutorialsComponent,
+    Chagedetector1Component,
+    Chagedetector2Component,
+    Chagedetector3Component,
+    ReactiveFormComponent,
+    AutoCompleteExampleComponent,
+    FilteredPipe
   ],
   imports: [
     BrowserModule,
@@ -398,7 +420,8 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
     HttpClientJsonpModule,
     DialogModule,
     CustomDialogModule,
-    ChatModule
+    ChatModule,
+    AutocompleteModule
     ],
     providers: [
       LoaderService,
@@ -416,7 +439,7 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
   ],
   bootstrap: [AppComponent],
   entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
-    CustomDialog1Component, CustomDialog2Component
+    CustomDialog1Component, CustomDialog2Component, AutocompleteComponent1
   ]
 })
 export class AppModule { }

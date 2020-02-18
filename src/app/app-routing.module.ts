@@ -78,6 +78,7 @@ import { XSet4Component } from './x-set4/x-set4.component';
 import { XSet5Component } from './x-set5/x-set5.component';
 import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-month-picker.component';
 import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
+import { TutorialsComponent } from './_tutorials/tutorials/tutorials.component';
 
 
 
@@ -163,6 +164,7 @@ const routes: Routes = [
   { path: 'xset3', component: XSet3Component },
   { path: 'xset4', component: XSet4Component },
     { path: 'xset5', component: XSet5Component },
+    {path: 'tutorials', component: TutorialsComponent},
     {path: 'month-picker', component: CustomMonthPickerComponent},
     {path: 'date-picker', component: CustomDatePickerComponent},
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },

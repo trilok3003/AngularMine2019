@@ -1,0 +1,30 @@
+<header class="menu-container">
+    <h1 class="menu-container__brand">Quick Access Menu Demo</h1>
+ 
+    <div class="dropdown-container">
+       <a href="#" class="dropdown-container__icon" (click)="onclick()"><i class="fa fa-th"></i></a>
+ 
+       <div class="dropdown-hide" [ngClass]="{'dropdown-show': clicked}">
+          <div class="icon-container">
+             <a href='#'>
+             <i class="fa fa-home"></i>
+             </a>
+          </div>
+ 
+          <div class="icon-container">
+             <a href="#">
+             <i class="fa fa-envelope"></i>
+             </a>
+          </div>
+ 
+          <div class="icon-container">
+             <a href="#">
+             <i class="fa fa-user"></i>
+             </a>
+          </div>
+ 
+          <!-- ADD MORE ICONS IF YOU NEED -->
+ 
+       </div>
+    </div>
+ </header>
