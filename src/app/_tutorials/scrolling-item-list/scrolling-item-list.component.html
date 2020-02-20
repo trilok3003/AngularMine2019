@@ -1,0 +1,25 @@
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<button (click)="getData()">Get Data</button>
+
+<ul *ngIf="users">
+  <li #user *ngFor="let userDetail of users">
+    <h1>{{ userDetail.name }}</h1>
+    <h2>{{ userDetail.username }}</h2>
+    <h3>{{ userDetail.email }}</h3>
+  </li>
+</ul>
+<!-- <div class="main">
+	<hello name="{{ name }}"></hello>
+	<p>
+		Start editing to see some magic happen :)
+	</p>
+
+	<button (click)="showComponent()">Show Component</button>
+</div>
+<div #textCreate>
+  <app-text-create id="textcreate" *ngIf="modeNewEntry">
+  </app-text-create>
+</div> -->

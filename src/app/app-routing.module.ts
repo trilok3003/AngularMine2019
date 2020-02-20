@@ -169,6 +169,7 @@ const routes: Routes = [
     {path: 'date-picker', component: CustomDatePickerComponent},
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
   { path: 'crud_json', loadChildren: () => import('./crud-json-server/crud/crud.module').then(m => m.CrudModule) },
+  { path: 'car', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) }, 
   { path: '**', redirectTo: '' },
 
 

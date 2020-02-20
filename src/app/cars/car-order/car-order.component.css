@@ -1,0 +1,26 @@
+form {
+    border: 2px solid #ccc;
+    padding: 12px;
+    margin-bottom: 24px;
+    max-width: 200px;
+    border-radius: 6px;
+  }
+form:hover {
+    background: #fcfcfc;
+  }
+  h1, h2, h3, p {
+    margin: 0 0 24px 0;
+  }
+  
+  input, select {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    display: block;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }

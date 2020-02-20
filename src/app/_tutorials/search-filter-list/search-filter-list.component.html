@@ -1,0 +1,13 @@
+
+<h4>List</h4>
+<div class="form-group">
+<input type="search" class="form-control" [(ngModel)]="searchModel">
+  <div class="list">
+    <ul class="list-group">
+      <li  class="list-group-item" *ngFor="let contact of contacts | listFilter: searchModel" (click)="onSelect(contact)">
+        {{ contact?.name }}
+      </li>
+    </ul>
+  </div>
+</div>  
+

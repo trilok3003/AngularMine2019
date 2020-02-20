@@ -1,0 +1,7 @@
+<p>
+    <button (click)="addOrder()">Add Car</button>
+  </p>
+  
+  <section class="orders">
+    <app-car-order *ngFor="let o of orders"></app-car-order>
+  </section>

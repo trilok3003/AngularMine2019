@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="log()" [style.border-color]="(car | async)?.color">
+    <h3>EV Car Order 🚗</h3>
+  
+    <label for="color">Color 🎨</label>
+    <input formControlName="color" type="color" id="color"/>
+  
+    <label for="motors">Motors ⚙</label>
+    <input formControlName="motors" type="number" max="2" min="1" value="1" id="motors" />
+  
+    <label for="battery">Battery ⚡</label>
+    <select formControlName="battery" id="battery">
+      <option value="220">Standard (200mi)</option>
+      <option value="265">Mid Range (265mi) +$4000</option>
+      <option value="310">Long Range (310mi) +$6000</option>
+    </select>
+  
+    <app-car-total></app-car-total>
+  </form>

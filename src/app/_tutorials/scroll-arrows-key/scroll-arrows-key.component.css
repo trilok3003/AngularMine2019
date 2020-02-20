@@ -1,0 +1,13 @@
+.container1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+    padding: 12px;
+    overflow: scroll;
+  }
+  
+  button {
+    padding: 12px;
+    width: 100%;
+  }

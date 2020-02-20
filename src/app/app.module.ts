@@ -211,6 +211,15 @@ import { AutocompleteModule } from './autocomplete/autocomplete.module';
 import { AutoCompleteExampleComponent } from './_tutorials/auto-complete-example/auto-complete-example.component';
 import { AutocompleteComponent1 } from './autocomplete/autocomplete1.component';
 import { FilteredPipe } from './_helpers/pipe/filtered.pipe';
+import { SearchFilterListComponent } from './_tutorials/search-filter-list/search-filter-list.component';
+import { ListFilterPipe } from './_helpers/pipe/list-filter.pipe';
+import { ListSearchPipe } from './_helpers/pipe/list-search.pipe';
+import { FilterListWithCheckboxComponent } from './_tutorials/filter-list-with-checkbox/filter-list-with-checkbox.component';
+import { SelectUnselectCheckboxComponent } from './_tutorials/select-unselect-checkbox/select-unselect-checkbox.component';
+import { ComplexReactiveFormComponent } from './_tutorials/complex-reactive-form/complex-reactive-form.component';
+import { ScrollingItemListComponent } from './_tutorials/scrolling-item-list/scrolling-item-list.component';
+import { ScrollArrowsKeyComponent } from './_tutorials/scroll-arrows-key/scroll-arrows-key.component';
+import { ArrowKeyScrollDirective } from './_helpers/directive/arrow-key-scroll.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -400,7 +409,16 @@ import { FilteredPipe } from './_helpers/pipe/filtered.pipe';
     Chagedetector3Component,
     ReactiveFormComponent,
     AutoCompleteExampleComponent,
-    FilteredPipe
+    FilteredPipe,
+    SearchFilterListComponent,
+    ListFilterPipe,
+    ListSearchPipe,
+    FilterListWithCheckboxComponent,
+    SelectUnselectCheckboxComponent,
+    ComplexReactiveFormComponent,
+    ScrollingItemListComponent,
+    ScrollArrowsKeyComponent,
+    ArrowKeyScrollDirective
   ],
   imports: [
     BrowserModule,
