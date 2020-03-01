@@ -220,6 +220,9 @@ import { ComplexReactiveFormComponent } from './_tutorials/complex-reactive-form
 import { ScrollingItemListComponent } from './_tutorials/scrolling-item-list/scrolling-item-list.component';
 import { ScrollArrowsKeyComponent } from './_tutorials/scroll-arrows-key/scroll-arrows-key.component';
 import { ArrowKeyScrollDirective } from './_helpers/directive/arrow-key-scroll.directive';
+import { GroupedByPipe } from './_helpers/pipe/grouped-by.pipe';
+import { ExperimentsComponent } from './_tutorials/experiments/experiments.component';
+import { Renderer2Component } from './_tutorials/renderer2/renderer2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -418,7 +421,10 @@ import { ArrowKeyScrollDirective } from './_helpers/directive/arrow-key-scroll.d
     ComplexReactiveFormComponent,
     ScrollingItemListComponent,
     ScrollArrowsKeyComponent,
-    ArrowKeyScrollDirective
+    ArrowKeyScrollDirective,
+    GroupedByPipe,
+    ExperimentsComponent,
+    Renderer2Component
   ],
   imports: [
     BrowserModule,

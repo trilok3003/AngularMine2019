@@ -1,0 +1,5 @@
+<ul  *ngFor="let object of myArray | groupedBy:'color'">
+    <li *ngFor="let item of object?.value">
+        {{object?.key}} | {{item?.name}} | {{item?.color}}
+    </li>
+    </ul>
