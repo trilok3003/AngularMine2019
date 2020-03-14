@@ -223,6 +223,8 @@ import { ArrowKeyScrollDirective } from './_helpers/directive/arrow-key-scroll.d
 import { GroupedByPipe } from './_helpers/pipe/grouped-by.pipe';
 import { ExperimentsComponent } from './_tutorials/experiments/experiments.component';
 import { Renderer2Component } from './_tutorials/renderer2/renderer2.component';
+import { TemplateFormExComponent } from './_tutorials/template-form-ex/template-form-ex.component';
+import { AddProductTemplateComponent } from './_tutorials/template-form-ex/add-product-template/add-product-template.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -424,7 +426,9 @@ import { Renderer2Component } from './_tutorials/renderer2/renderer2.component';
     ArrowKeyScrollDirective,
     GroupedByPipe,
     ExperimentsComponent,
-    Renderer2Component
+    Renderer2Component,
+    TemplateFormExComponent,
+    AddProductTemplateComponent
   ],
   imports: [
     BrowserModule,
