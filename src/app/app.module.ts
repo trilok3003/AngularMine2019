@@ -225,6 +225,8 @@ import { ExperimentsComponent } from './_tutorials/experiments/experiments.compo
 import { Renderer2Component } from './_tutorials/renderer2/renderer2.component';
 import { TemplateFormExComponent } from './_tutorials/template-form-ex/template-form-ex.component';
 import { AddProductTemplateComponent } from './_tutorials/template-form-ex/add-product-template/add-product-template.component';
+import { PopupcardComponent } from './_tutorials/popupcard/popupcard.component';
+import { DynamicAddRemoveComponent } from './dynamic-add-remove/dynamic-add-remove.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -428,7 +430,9 @@ import { AddProductTemplateComponent } from './_tutorials/template-form-ex/add-p
     ExperimentsComponent,
     Renderer2Component,
     TemplateFormExComponent,
-    AddProductTemplateComponent
+    AddProductTemplateComponent,
+    PopupcardComponent,
+    DynamicAddRemoveComponent
   ],
   imports: [
     BrowserModule,
@@ -467,7 +471,7 @@ import { AddProductTemplateComponent } from './_tutorials/template-form-ex/add-p
   ],
   bootstrap: [AppComponent],
   entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
-    CustomDialog1Component, CustomDialog2Component, AutocompleteComponent1
+    CustomDialog1Component, CustomDialog2Component, AutocompleteComponent1, DynamicAddRemoveComponent
   ]
 })
 export class AppModule { }

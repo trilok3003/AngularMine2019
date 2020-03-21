@@ -10,3 +10,18 @@ Live Update: <input type="checkbox" [(ngModel)]="live">
 <app-experiments></app-experiments>
 <app-renderer2></app-renderer2>
 <app-template-form-ex></app-template-form-ex>
+<app-popupcard>
+    <p class=header>product card</p>
+    <div class="body container p-0 mt-2">
+        prodduct | provider name
+       
+      </div>
+</app-popupcard>
+
+<h4>Add/Remove experience</h4>
+<div #parent></div>
+<div>
+  <button type="button" 
+         (click)="addComponent()"
+         class="btn btn-default">Add Experience </button>
+</div>
