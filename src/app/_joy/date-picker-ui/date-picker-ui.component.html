@@ -1,0 +1,86 @@
+<section class="date-picker-label-wrapper" *ngIf="!isShowDateRange">
+<div class="date-selector-wrapper">
+    <div class="header">
+        <!-- <i class="fa ft-chevron-left left-arrow" (click)="decrement()"></i> -->
+        <i class="fa fa-chevron-left" (click)="decrement()"></i>
+
+
+        <span class="header-label"    (click)="toggleShowYears()">    {{model.selectedYearText}}</span>
+        <span class="header-label"  (click)="toggleShowMonths()">    {{model.months[model.selectedMonth]}}</span>
+        <span class="header-label"  (click)="isShowDays = true">    {{model.selectedDate}}</span>
+    
+        <!-- <i class="fa ft-chevron-right right-arrow" (click)="increment()"></i> -->
+        <i class="fa fa-chevron-right" (click)="increment()"></i>
+
+      </div>
+
+<div class="calender-wrapper">
+    <div class="date-mode-calender" *ngIf="isShowDays">
+      <div class="date-row days-header">
+        <div class="date" *ngFor="let dayHeader of ['S', 'M', 'T', 'W', 'T', 'F', 'S']">
+          <div class="date-text">{{dayHeader}}</div>
+        </div>
+    
+    </div>
+    <div class="date-row" >
+        <div class="date" *ngFor="let date of loop let i = index" [ngClass]="{'selected': isSelectedDate(date)}">
+          <div class="date-text" (click)="selectDate(date)">{{date}}</div>
+        </div>
+    
+    </div>
+</div>
+<div class="month-mode-calender" *ngIf="!isShowYears && !isShowDays">
+    <div class="month-row">
+      <div class="month-pill" (click)="selectMonth(i)"
+      [ngClass]="{'selected': isSelectedMonth(i)}"
+           *ngFor="let month of model.months; let i = index">
+           {{month}}
+      </div>
+    </div>
+  </div>
+  <div class="year-mode-calender" *ngIf="isShowYears && !isShowDays">
+    <div class="year-row">
+      <div class="year-pill" (click)="selectYear(year)"
+      [ngClass]="{'selected': isSelectedYear(year)}"
+           *ngFor="let year of years; let i = index">
+           {{year}}
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+</section>
+<section class="date-picker-label-wrapper" *ngIf="isShowDateRange">
+    <div class="date-selector-wrapper">
+        <div class="header">
+            <!-- <i class="fa ft-chevron-left left-arrow" (click)="decrement()"></i> -->
+            <i class="fa fa-chevron-left" (click)="decrement()"></i>
+    
+    
+            <span class="header-label"    (click)="toggleShowYears()">    {{model.selectedYearText}}</span>
+            <span class="header-label"  (click)="toggleShowMonths()">    {{model.months[model.selectedMonth]}}</span>
+            <span class="header-label"  (click)="isShowDays = true">    {{model.selectedDate}}</span>
+        
+            <!-- <i class="fa ft-chevron-right right-arrow" (click)="increment()"></i> -->
+            <i class="fa fa-chevron-right" (click)="increment()"></i>
+    
+          </div>
+    
+    <div class="calender-wrapper">
+      <div class="date-mode-calender" >
+        <div class="date-row days-header">
+          <div class="date" *ngFor="let dayHeader of ['S', 'M', 'T', 'W', 'T', 'F', 'S']">
+            <div class="date-text">{{dayHeader}}</div>
+          </div>
+      
+      </div>
+      <div class="date-row" >
+          <div class="date" *ngFor="let date of loop let i = index" [ngClass]="{'selected-start':  isSelectedDateRangeStart(date), 'selected-end':  isSelectedDateRangeEnd(date)}">
+            <div class="date-text" (click)="selectDateRange(date)">{{date}}</div>
+          </div>
+      
+      </div>
+    </div>
+    </div>
+     </div>
+    </section>

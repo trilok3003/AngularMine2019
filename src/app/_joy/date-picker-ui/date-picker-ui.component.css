@@ -1,0 +1,235 @@
+.date-picker-label-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  border-radius: 14px;
+}
+.date-picker-label-wrapper .label-wrapper.show-arrows {
+  padding: 0 20px;
+}
+.date-picker-label-wrapper .label-wrapper .label {
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  cursor: pointer;
+}
+.date-picker-label-wrapper .label-wrapper .label.large {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+.date-picker-label-wrapper .label-wrapper .label.small {
+  font-size: 14px;
+  color: #444;
+  font-weight: 400;
+}
+.date-picker-label-wrapper .label-wrapper .left-arrow {
+  position: absolute;
+  left: 5px;
+  font-size: 23px;
+  cursor: pointer;
+  top: 1px;
+}
+.date-picker-label-wrapper .label-wrapper .right-arrow {
+  position: absolute;
+  right: 5px;
+  font-size: 23px;
+  cursor: pointer;
+  top: 1px;
+}
+.date-picker-label-wrapper .date-selector-wrapper {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 300px;
+  min-height: 200px;
+  border-radius: 10px;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+}
+.date-picker-label-wrapper .date-selector-wrapper .header {
+  font-size: 14px;
+  border-bottom: 1px solid #aaa;
+  padding: 3px 10px;
+  text-align: center;
+  font-weight: 400;
+}
+.date-picker-label-wrapper .date-selector-wrapper .header .header-label {
+  cursor: pointer;
+}
+.date-picker-label-wrapper .date-selector-wrapper .header .left-arrow {
+  cursor: pointer;
+  float: left;
+  font-size: 22px;
+  padding: 1px 2px;
+  border-radius: 50%;
+}
+.date-picker-label-wrapper .date-selector-wrapper .header .left-arrow:hover {
+  background: #efefef;
+}
+.date-picker-label-wrapper .date-selector-wrapper .header .right-arrow {
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  padding: 1px 2px;
+  border-radius: 50%;
+}
+.date-picker-label-wrapper .date-selector-wrapper .header .right-arrow:hover {
+  background: #efefef;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper {
+  padding: 5px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row {
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date {
+  display: inline-block;
+  padding: 0;
+  width: calc(100% / 7);
+  text-align: center;
+  cursor: pointer;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date .date-text {
+  width: 36px;
+  height: 36px;
+  padding-top: 6px;
+  margin: auto;
+  border: 1px solid #fff;
+  padding-left: 1px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date.current .date-text {
+  color: #444;
+  font-weight: 600;
+  border: 1px solid #673ab7;
+  padding-left: 1px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date.selected .date-text {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+  /* background: #4caf50;
+  background: #f44336;
+  background: #1E9FF2;
+  background: #ff9149;
+  background-color: #3f51b5; */
+  padding-left: 0;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date.selected-mid-range .date-text {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+  padding-left: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date.selected-start .date-text {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+  padding-left: 0;
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  padding-right: 3px;
+  width: 36px;
+  height: 36px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row .date.selected-end .date-text {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+  padding-left: 3px;
+  width: 36px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row.days-header {
+  font-weight: 500;
+  color: #444;
+  border-bottom: 1px solid #efefef;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .date-mode-calender .date-row.days-header .date {
+  cursor: default;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .month-mode-calender .month-row .month-pill {
+  border: 1px solid #ddd;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 4px 2px;
+  width: calc((100% / 3) - 4px);
+  text-align: center;
+  padding: 1px 10px;
+  border-radius: 15px;
+  line-height: 20px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .month-mode-calender .month-row .month-pill.current {
+  font-weight: 600;
+  border: 1px solid #673ab7;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .month-mode-calender .month-row .month-pill.selected {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .year-mode-calender .year-row .year-pill {
+  border: 1px solid #ddd;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 3px 2px;
+  width: calc((100% / 3) - 4px);
+  text-align: center;
+  padding: 1px 10px;
+  border-radius: 15px;
+  line-height: 20px;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .year-mode-calender .year-row .year-pill.current {
+  font-weight: 600;
+  border: 1px solid #673ab7;
+}
+.date-picker-label-wrapper .date-selector-wrapper .calender-wrapper .year-mode-calender .year-row .year-pill.selected {
+  color: #fff;
+  font-weight: 600;
+  background: #2962ff;
+}
+.date-picker-label-wrapper.input-with-label {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 30px;
+  height: 33px;
+}
+.date-picker-label-wrapper.input-with-label .label-wrapper {
+  opacity: 0;
+}
+.date-picker-label-wrapper.list-header-date-selector-with-arrows .label-wrapper .label {
+  font-size: 20px;
+}
+.date-picker-label-wrapper.list-header-date-selector-with-arrows-left .date-selector-wrapper {
+  left: auto;
+  right: 0;
+}
+.date-picker-label-wrapper.list-header-date-selector-with-arrows-left .label-wrapper {
+  background: #efefef;
+  padding: 0 10px;
+  border-radius: 15px;
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+}
+.date-picker-label-wrapper.list-header-date-selector-with-arrows-left .label-wrapper .label {
+  font-size: 11px;
+}

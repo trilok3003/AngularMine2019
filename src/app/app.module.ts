@@ -227,6 +227,8 @@ import { TemplateFormExComponent } from './_tutorials/template-form-ex/template-
 import { AddProductTemplateComponent } from './_tutorials/template-form-ex/add-product-template/add-product-template.component';
 import { PopupcardComponent } from './_tutorials/popupcard/popupcard.component';
 import { DynamicAddRemoveComponent } from './dynamic-add-remove/dynamic-add-remove.component';
+import { JoyComponent } from './_joy/joy/joy.component';
+import { DatePickerUiComponent } from './_joy/date-picker-ui/date-picker-ui.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -432,7 +434,9 @@ import { DynamicAddRemoveComponent } from './dynamic-add-remove/dynamic-add-remo
     TemplateFormExComponent,
     AddProductTemplateComponent,
     PopupcardComponent,
-    DynamicAddRemoveComponent
+    DynamicAddRemoveComponent,
+    JoyComponent,
+    DatePickerUiComponent
   ],
   imports: [
     BrowserModule,

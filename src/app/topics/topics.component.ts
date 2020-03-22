@@ -87,7 +87,9 @@ export class TopicsComponent implements OnInit {
     {path: 'date-picker', name: 'custom date picker'},
     {path:'crud_json', name: 'crud json using json server'},
     {path: 'tutorials', name: 'tutorials'},
-    {path: 'car', name: 'cars'}
+    {path: 'car', name: 'cars'},
+    {path: 'joy', name: 'joy'}
+
 
   ]
   constructor(public router: Router) { }

@@ -79,6 +79,7 @@ import { XSet5Component } from './x-set5/x-set5.component';
 import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-month-picker.component';
 import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
 import { TutorialsComponent } from './_tutorials/tutorials/tutorials.component';
+import { JoyComponent } from './_joy/joy/joy.component';
 
 
 
@@ -167,6 +168,7 @@ const routes: Routes = [
     {path: 'tutorials', component: TutorialsComponent},
     {path: 'month-picker', component: CustomMonthPickerComponent},
     {path: 'date-picker', component: CustomDatePickerComponent},
+    {path: 'joy', component: JoyComponent},
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
   { path: 'crud_json', loadChildren: () => import('./crud-json-server/crud/crud.module').then(m => m.CrudModule) },
   { path: 'car', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) }, 
