@@ -1,0 +1,11 @@
+<div class="page-header">
+    <ng-content></ng-content>
+  </div>
+  <input type="text" [(ngModel)]="newTask" placeholder="Enter Tasks" />
+  <button type="button" class="btn btn-primary" (click)="add()">Submit</button>
+  <ul class="list-group">
+    <li *ngFor="let task of tasks; let index = index;" [hidden]="!task.active" class="list-group-item">
+      <h3>{{ task.name }}</h3>
+      <app-sub-tasks [taskIndex]="index"></app-sub-tasks>
+    </li>
+  </ul>

@@ -229,6 +229,8 @@ import { PopupcardComponent } from './_tutorials/popupcard/popupcard.component';
 import { DynamicAddRemoveComponent } from './dynamic-add-remove/dynamic-add-remove.component';
 import { JoyComponent } from './_joy/joy/joy.component';
 import { DatePickerUiComponent } from './_joy/date-picker-ui/date-picker-ui.component';
+import { TasksComponent } from './_joy/taskApp/tasks/tasks.component';
+import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -436,7 +438,9 @@ import { DatePickerUiComponent } from './_joy/date-picker-ui/date-picker-ui.comp
     PopupcardComponent,
     DynamicAddRemoveComponent,
     JoyComponent,
-    DatePickerUiComponent
+    DatePickerUiComponent,
+    TasksComponent,
+    SubTasksComponent
   ],
   imports: [
     BrowserModule,
