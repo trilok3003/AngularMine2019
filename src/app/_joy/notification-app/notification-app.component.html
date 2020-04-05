@@ -1,0 +1,14 @@
+<my-notifications></my-notifications>
+
+
+Title : <input type="text" [(ngModel)]="notification.title"><br/> <br/>
+Text : <textarea rows="4" [(ngModel)]="notification.text"></textarea><br/><br/>
+Level : <select [(ngModel)]="notification.level">
+  <option value="success" selected="selected">Success</option>
+  <option value="warning">Warning</option>
+  <option value="error">Error</option>
+</select><br/><br/>
+Timeout : <input type="number" [(ngModel)]="notification.options.timeout"><br/>
+
+<br/>
+<button (click)="addNotification()">Create</button>

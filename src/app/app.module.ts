@@ -231,6 +231,8 @@ import { JoyComponent } from './_joy/joy/joy.component';
 import { DatePickerUiComponent } from './_joy/date-picker-ui/date-picker-ui.component';
 import { TasksComponent } from './_joy/taskApp/tasks/tasks.component';
 import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component';
+import { NotificationAppComponent } from './_joy/notification-app/notification-app.component';
+import { NotificationsModule } from './notifications/notifications.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -440,7 +442,8 @@ import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component'
     JoyComponent,
     DatePickerUiComponent,
     TasksComponent,
-    SubTasksComponent
+    SubTasksComponent,
+    NotificationAppComponent
   ],
   imports: [
     BrowserModule,
@@ -461,7 +464,8 @@ import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component'
     DialogModule,
     CustomDialogModule,
     ChatModule,
-    AutocompleteModule
+    AutocompleteModule,
+    NotificationsModule
     ],
     providers: [
       LoaderService,
