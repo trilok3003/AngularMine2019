@@ -172,9 +172,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuardRoleBased] },
   { path: 'crud_json', loadChildren: () => import('./crud-json-server/crud/crud.module').then(m => m.CrudModule) },
   { path: 'car', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) }, 
+  { path: 'dashboard_module', loadChildren: () => import('./_dashboard/dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: '**', redirectTo: '' },
-
-
 ];
 
 @NgModule({

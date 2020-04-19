@@ -88,7 +88,8 @@ export class TopicsComponent implements OnInit {
     {path:'crud_json', name: 'crud json using json server'},
     {path: 'tutorials', name: 'tutorials'},
     {path: 'car', name: 'cars'},
-    {path: 'joy', name: 'joy'}
+    {path: 'joy', name: 'joy'},
+    {path: 'dashboard_module', name: 'dashboard module'}
 
 
   ]
