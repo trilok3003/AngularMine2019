@@ -483,7 +483,7 @@ import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
       OrderPipe,
       TitleCasePipe
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppDashboardComponent],
   entryComponents: [DialogExampleTestComponent, PaginationsExamplessComponent, DynamicLoadMessageComponent, Xset4alertComponent,
     CustomDialog1Component, CustomDialog2Component, AutocompleteComponent1, DynamicAddRemoveComponent
   ]

@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../_service/authentication.service';
+import { routeAnimation } from '../route-animation';
+import { fadeAnimation } from '../_animation/fade.animation';
 
 @Component({
   selector: 'app-app-dashboard',
   templateUrl: './app-dashboard.component.html',
-  styleUrls: ['./app-dashboard.component.css']
+  styleUrls: ['./app-dashboard.component.css'],
+  animations: [routeAnimation, fadeAnimation]
+
 })
 export class AppDashboardComponent implements OnInit {
 
@@ -92,12 +97,15 @@ export class AppDashboardComponent implements OnInit {
     {path: 'joy', name: 'joy'},
     {path: 'dashboard_module', name: 'dashboard module'}
   ]
-  constructor(public router: Router) { }
+  constructor(public router: Router, private authenticationService: AuthenticationService) { }
 
   ngOnInit() {
   }
   toNavigate(path) {
    this.router.navigate([path]);
   }
-
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
+}
 }
