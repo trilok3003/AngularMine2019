@@ -80,10 +80,13 @@ import { CustomMonthPickerComponent } from './x-set5/custom-month-picker/custom-
 import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-date-picker.component';
 import { TutorialsComponent } from './_tutorials/tutorials/tutorials.component';
 import { JoyComponent } from './_joy/joy/joy.component';
+import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 
 
 
 const routes: Routes = [
+  { path: 'home', component: TopicsComponent, canActivate: [AuthGuardRoleBased] },
+  // { path: 'home', component: AppDashboardComponent, canActivate: [AuthGuardRoleBased] },
   { path: 'group', component: GroupDataComponent },
   { path: 'dynamic_form', component: DyanamicFormComponent },
   { path: 'group_by_pipe', component: GroupByPipeExampleComponent },
@@ -103,7 +106,6 @@ const routes: Routes = [
   { path: 'alert', component: AlertComponent },
   { path: 'breadcrumb', component: BreadcrumbComponent },
   { path: 'modal', component: ModalComponent },
-  { path: 'home', component: TopicsComponent, canActivate: [AuthGuardRoleBased] },
   { path: 'sidebar1', component: SidebarComponent },
   { path: 'others', component: OthersComponent },
   { path: 'table', component: TableDynamicComponent },

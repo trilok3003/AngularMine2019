@@ -233,6 +233,7 @@ import { TasksComponent } from './_joy/taskApp/tasks/tasks.component';
 import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component';
 import { NotificationAppComponent } from './_joy/notification-app/notification-app.component';
 import { NotificationsModule } from './notifications/notifications.module';
+import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -443,7 +444,8 @@ import { NotificationsModule } from './notifications/notifications.module';
     DatePickerUiComponent,
     TasksComponent,
     SubTasksComponent,
-    NotificationAppComponent
+    NotificationAppComponent,
+    AppDashboardComponent
   ],
   imports: [
     BrowserModule,
