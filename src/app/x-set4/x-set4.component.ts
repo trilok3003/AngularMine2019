@@ -27,7 +27,9 @@ export class XSet4Component implements OnInit, OnDestroy {
    }
    
      ngOnDestroy() {
-       this.componentRef.destroy();    
+       if(this.componentRef) {
+        this.componentRef.destroy();    
+       }
      }
   ngOnInit() {
   }

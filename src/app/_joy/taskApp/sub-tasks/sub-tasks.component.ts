@@ -8,7 +8,7 @@ import { TasksComponent } from '../tasks/tasks.component';
   styleUrls: ['./sub-tasks.component.css'],
 })
 export class SubTasksComponent implements OnInit {
-  private subTasks:Array<Task> = [];
+   subTasks:Array<Task> = [];
   private _tasks:TasksComponent;
   @Input()  taskIndex
   constructor(@Inject(forwardRef(() => TasksComponent)) tasks) { 

@@ -234,6 +234,7 @@ import { SubTasksComponent } from './_joy/taskApp/sub-tasks/sub-tasks.component'
 import { NotificationAppComponent } from './_joy/notification-app/notification-app.component';
 import { NotificationsModule } from './notifications/notifications.module';
 import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
+import { DropdownComponent1 } from './_css/dropdown/dropdown.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -445,7 +446,8 @@ import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
     TasksComponent,
     SubTasksComponent,
     NotificationAppComponent,
-    AppDashboardComponent
+    AppDashboardComponent,
+    DropdownComponent1
   ],
   imports: [
     BrowserModule,
