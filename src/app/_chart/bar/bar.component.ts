@@ -29,6 +29,7 @@ export class BarComponent implements OnInit {
     ctx.clearRect(0, 0, this.width, this.height);
   }
   draw() {
+    this.reset();
     var values = this.values.split(',');
 
     let ctx: CanvasRenderingContext2D = this.myCanvas.nativeElement.getContext('2d');
@@ -54,6 +55,7 @@ export class BarComponent implements OnInit {
 
   }
   byJson() {
+    this.reset();
     let ctx: CanvasRenderingContext2D = this.myCanvas.nativeElement.getContext('2d');
     var width = 40; //bar width
     var X = 50; // first bar position   
