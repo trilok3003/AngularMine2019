@@ -81,6 +81,7 @@ import { CustomDatePickerComponent } from './x-set5/custom-date-picker/custom-da
 import { TutorialsComponent } from './_tutorials/tutorials/tutorials.component';
 import { JoyComponent } from './_joy/joy/joy.component';
 import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
+import { WebsiteComponent } from './_bootstrap_website/website/website.component';
 
 
 
@@ -175,6 +176,7 @@ const routes: Routes = [
   { path: 'crud_json', loadChildren: () => import('./crud-json-server/crud/crud.module').then(m => m.CrudModule) },
   { path: 'car', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) }, 
   { path: 'dashboard_module', loadChildren: () => import('./_dashboard/dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: 'bootstrap_website', component: WebsiteComponent },
   { path: '**', redirectTo: '' },
 ];
 

@@ -1,5 +1,6 @@
 export const AppSidebarConfig: any[] = [
-  {path:'home',name: 'home'},
+    {path: 'bootstrap_website', name:'bootstrap website'},
+    {path:'home',name: 'home'},
     {path:'group',name: 'group'},
     {path:'dynamic_form',name: 'dynamic form'},
     {path: 'group_by_pipe',name: 'group by pipe'},

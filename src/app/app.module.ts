@@ -235,6 +235,7 @@ import { NotificationAppComponent } from './_joy/notification-app/notification-a
 import { NotificationsModule } from './notifications/notifications.module';
 import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 import { DropdownComponent1 } from './_css/dropdown/dropdown.component';
+import { WebsiteComponent } from './_bootstrap_website/website/website.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -447,7 +448,8 @@ import { DropdownComponent1 } from './_css/dropdown/dropdown.component';
     SubTasksComponent,
     NotificationAppComponent,
     AppDashboardComponent,
-    DropdownComponent1
+    DropdownComponent1,
+    WebsiteComponent
   ],
   imports: [
     BrowserModule,
