@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        <h1> Creating a Simple Pie Graph on Canvas</h1>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <button class="btn btn-outline-primary btn-sm" (click)="pieSlice()">Pie Slices</button>
+            <button class="btn btn-outline-warning btn-sm ml-1" (click)="entireSlices()">Entire Slices</button>
+            <button class="btn btn-outline-success btn-sm ml-1" (click)="separateSlices()">Seprate Slices</button>
+            <button class="btn btn-outline-danger btn-sm ml-1" (click)="reset()">Reset</button>
+
+        </div>
+        <canvas #myCanvas [width]="width" [height]="height" style="border:1px solid #c3c3c3;"></canvas>
+    </div>
+
+</div>

@@ -238,6 +238,7 @@ import { DropdownComponent1 } from './_css/dropdown/dropdown.component';
 import { WebsiteComponent } from './_bootstrap_website/website/website.component';
 import { BarComponent } from './_chart/bar/bar.component';
 import { ImageLoadInCanvasComponent } from './_chart/image-load-in-canvas/image-load-in-canvas.component';
+import { PieComponent } from './_chart/pie/pie.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -453,7 +454,8 @@ import { ImageLoadInCanvasComponent } from './_chart/image-load-in-canvas/image-
     DropdownComponent1,
     WebsiteComponent,
     BarComponent,
-    ImageLoadInCanvasComponent
+    ImageLoadInCanvasComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,

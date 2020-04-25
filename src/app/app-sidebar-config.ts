@@ -1,4 +1,5 @@
 export const AppSidebarConfig: any[] = [
+  {path: 'pie_chart', name: 'Pie Chart Example'},
    {path: 'imageLoadCanvas', name: 'Image Load in Canvas'},
     {path: 'bar_chart', name: 'Bar Chart Example'},
     {path: 'bootstrap_website', name:'bootstrap website'},

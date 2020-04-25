@@ -1,11 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-bar',
   templateUrl: './bar.component.html',
   styleUrls: ['./bar.component.css']
 })
-export class BarComponent implements OnInit {
+export class BarComponent implements OnInit, AfterViewInit {
   @ViewChild("myCanvas", { static: true }) myCanvas: ElementRef;
   values;
   width = 900;
@@ -21,8 +21,10 @@ export class BarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.byJson();
 
+  }
+  ngAfterViewInit() {
+    this.byJson(); 
   }
   reset() {
     let ctx: CanvasRenderingContext2D = this.myCanvas.nativeElement.getContext('2d');
