@@ -236,6 +236,8 @@ import { NotificationsModule } from './notifications/notifications.module';
 import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 import { DropdownComponent1 } from './_css/dropdown/dropdown.component';
 import { WebsiteComponent } from './_bootstrap_website/website/website.component';
+import { BarComponent } from './_chart/bar/bar.component';
+import { ImageLoadInCanvasComponent } from './_chart/image-load-in-canvas/image-load-in-canvas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -449,7 +451,9 @@ import { WebsiteComponent } from './_bootstrap_website/website/website.component
     NotificationAppComponent,
     AppDashboardComponent,
     DropdownComponent1,
-    WebsiteComponent
+    WebsiteComponent,
+    BarComponent,
+    ImageLoadInCanvasComponent
   ],
   imports: [
     BrowserModule,

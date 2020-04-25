@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+        <h1> Creating a Simple Bar Graph on Canvas</h1>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label class="control-label">
+                Enter the values seperated by a comma
+            </label>
+            <input type="text" class="form-control" name="values" [(ngModel)]="values">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-outline-primary btn-sm" (click)="draw()">Draw</button>
+            <button class="btn btn-outline-warning btn-sm ml-1" (click)="reset()">Reset</button>
+            <button class="btn btn-outline-success btn-sm ml-1" (click)="byJson()">Default</button>
+
+        </div>
+        <canvas #myCanvas [width]="width" [height]="height" style="border:1px solid #c3c3c3;"></canvas>
+    </div>
+
+</div>
