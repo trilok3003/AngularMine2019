@@ -239,6 +239,7 @@ import { WebsiteComponent } from './_bootstrap_website/website/website.component
 import { BarComponent } from './_chart/bar/bar.component';
 import { ImageLoadInCanvasComponent } from './_chart/image-load-in-canvas/image-load-in-canvas.component';
 import { PieComponent } from './_chart/pie/pie.component';
+import { HorizontalBarComponent } from './_chart/horizontal-bar/horizontal-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -455,7 +456,8 @@ import { PieComponent } from './_chart/pie/pie.component';
     WebsiteComponent,
     BarComponent,
     ImageLoadInCanvasComponent,
-    PieComponent
+    PieComponent,
+    HorizontalBarComponent
   ],
   imports: [
     BrowserModule,

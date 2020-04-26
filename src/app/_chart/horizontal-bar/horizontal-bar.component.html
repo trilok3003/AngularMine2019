@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <h1> Creating a Horizontal Bar Graph on Canvas</h1>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <button class="btn btn-outline-primary btn-sm" (click)="draw()">Draw</button>
+            <button class="btn btn-outline-primary btn-sm" (click)="drawMany()">Draw Many</button>
+            <button class="btn btn-outline-warning btn-sm ml-1" (click)="reset()">Reset</button>
+        </div>
+        <canvas #myCanvas [width]="width" [height]="height" style="border:1px solid #c3c3c3;"></canvas>
+    </div>
+
+</div>

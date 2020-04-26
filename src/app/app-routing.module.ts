@@ -85,6 +85,7 @@ import { WebsiteComponent } from './_bootstrap_website/website/website.component
 import { BarComponent } from './_chart/bar/bar.component';
 import { ImageLoadInCanvasComponent } from './_chart/image-load-in-canvas/image-load-in-canvas.component';
 import { PieComponent } from './_chart/pie/pie.component';
+import { HorizontalBarComponent } from './_chart/horizontal-bar/horizontal-bar.component';
 
 
 
@@ -183,6 +184,7 @@ const routes: Routes = [
   { path: 'bar_chart', component: BarComponent },
   { path: 'imageLoadCanvas', component: ImageLoadInCanvasComponent },
   { path: 'pie_chart', component: PieComponent },
+  { path: 'horizontal_bar_chart', component: HorizontalBarComponent },
   { path: '**', redirectTo: '' },
 ];
 
